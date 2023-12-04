@@ -555,7 +555,7 @@ function Math() {
                   <>
                     <div key={index} className="underflex_two_rating">
                       <div className="image_flex_div_column">
-                        <img className="imageflexone_column" src={item.img} />
+                        <img className="imageflexone_column" src={item.img}  alt="Not Found"/>
                       </div>
                       <div className="details_div_dev_column">
                         <b>{item.heading}</b>
