@@ -1,23 +1,23 @@
 import { useEffect, useState } from "react";
-import BusinessRoute from "./Businessrou"
+import BusinessRoute from "./Businessrou";
 
-
-function BuniessStretegy(){
-    const [data, setData] = useState([]);
+function BuniessStretegy() {
+  const [data, setData] = useState([]);
   useEffect(() => {
     async function fetchapi() {
-      const ffdata = await fetch("http://localhost:4500/api/getdata");
+      const ffdata = await fetch(
+        "https://mern-backend-o0hb.onrender.com/api/getdata"
+      );
       const res = await ffdata.json();
       setData(res);
       // console.log(res);
     }
     fetchapi();
   });
-    return(
-        
-        <>
-          <BusinessRoute/>
-          <div className="one_container">
+  return (
+    <>
+      <BusinessRoute />
+      <div className="one_container">
         <div className="developement_Top_container">
           <h1 style={{ height: "8vh" }}>Business Strategy Courses</h1>
           <h2>Courses to get you started</h2>
@@ -38,7 +38,11 @@ function BuniessStretegy(){
                     return (
                       <div key={index} className="underflex_two_dev">
                         <div className="image_flex_div">
-                          <img className="imageflexone_dev" src={item.img} />
+                          <img
+                            className="imageflexone_dev"
+                            src={item.img}
+                            alt="Not Found"
+                          />
                         </div>
                         <div
                           className="  .details_div_devlop {
@@ -91,7 +95,7 @@ function BuniessStretegy(){
                     return (
                       <div key={index} className="underflex_two_dev">
                         <div className="image_flex_div_dev">
-                          <img className="imageflexone_dev" src={item.img} />
+                          <img className="imageflexone_dev" src={item.img}   alt="Not Found"/>
                         </div>
                         <div className="details_div_devlop">
                           <b>{item.heading}</b>
@@ -141,7 +145,7 @@ function BuniessStretegy(){
                     return (
                       <div key={index} className="underflex_two_dev">
                         <div className="image_flex_div_dev">
-                          <img className="imageflexone_dev" src={item.img} />
+                          <img className="imageflexone_dev" src={item.img}   alt="Not Found"/>
                         </div>
                         <div className="details_div_devlop">
                           <b>{item.heading}</b>
@@ -191,7 +195,7 @@ function BuniessStretegy(){
                     return (
                       <div key={index} className="underflex_two_dev">
                         <div className="image_flex_div_dev">
-                          <img className="imageflexone_dev" src={item.img} />
+                          <img className="imageflexone_dev" src={item.img}   alt="Not Found"/>
                         </div>
                         <div className="details_div_devlop">
                           <b>{item.heading}</b>
@@ -467,7 +471,7 @@ function BuniessStretegy(){
                   <>
                     <div key={index} className="underflex_two_rating">
                       <div className="image_flex_div_column">
-                        <img className="imageflexone_column" src={item.img} />
+                        <img className="imageflexone_column" src={item.img}   alt="Not Found"/>
                       </div>
                       <div className="details_div_dev_column">
                         <b>{item.heading}</b>
@@ -557,7 +561,7 @@ function BuniessStretegy(){
                   <>
                     <div key={index} className="underflex_two_rating">
                       <div className="image_flex_div_column">
-                        <img className="imageflexone_column" src={item.img} />
+                        <img className="imageflexone_column" src={item.img}   alt="Not Found"/>
                       </div>
                       <div className="details_div_dev_column">
                         <b>{item.heading}</b>
@@ -598,8 +602,7 @@ function BuniessStretegy(){
           </div>
         </div>
       </div>
-    
-        </>
-    )
+    </>
+  );
 }
-export default BuniessStretegy
+export default BuniessStretegy;
