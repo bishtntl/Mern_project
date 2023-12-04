@@ -4,7 +4,7 @@ function Programming() {
   const [data, setData] = useState([]);
   useEffect(() => {
     async function fetchapi() {
-      const ffdata = await fetch("https://mern-backend-o0hb.onrender.com/getdata");
+      const ffdata = await fetch("https://mern-backend-o0hb.onrender.com/api/getdata");
       const res = await ffdata.json();
       setData(res);
       // console.log(res);
