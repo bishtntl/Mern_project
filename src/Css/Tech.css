@@ -1,0 +1,111 @@
+.tech_container {
+  position: relative;
+}
+.tech_top_img {
+  width: 100%;
+  height: 40vw;
+}
+.tech_second_div {
+  position: absolute;
+  width: 22%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  top: 15%;
+  left: 15%;
+  /* border: 2px solid black; */
+}
+
+.startbtn {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  height: 5vh;
+}
+.many_div_heading {
+  margin: auto;
+  width: 50vw;
+  text-align: center;
+  /* border: 2px solid black; */
+}
+.tech_multi_img_container {
+  display: flex;
+  justify-content: space-evenly;
+  /* border: 2px solid black; */
+}
+.title_sub {
+  width: 80%;
+  position: relative;
+  left: 2.5vw;
+}
+.data {
+  /* border: 2px solid black; */
+  width: 30%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.blue_container {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(62, 62, 200);
+  color: white;
+  margin-top: 5vh;
+}
+.middle_container {
+  margin-top: 5vh;
+}
+.how_to_begin {
+  margin: auto;
+  width: 20%;
+  /* border: 2px solid black; */
+}
+.head_route {
+  width: 60vw;
+  margin: auto;
+  display: flex;
+  /* border: 2px solid black; */
+  justify-content: space-around;
+}
+.hrline_tech {
+  color: black;
+  width: 100%;
+  height: 0.2vh;
+  background-color: black;
+}
+
+.lat_upper_div {
+  display: flex;
+  justify-content: center;
+}
+.lat_upper_div_under_first {
+  width: 30%;
+}
+.last_one_tech {
+  display: flex;
+  gap: 2vw;
+  background-color: aliceblue;
+  justify-content: center;
+}
+.last_one_tech_dtl {
+  width: 30%;
+  font-size: 1.5em;
+  /* border: 2px solid black; */
+}
+.last_tech {
+  display: flex;
+}
+.last_tech_details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 2px solid black; */
+}
+.dtl_dtl {
+  font-size: 1.5em;
+}
+.need_data {
+  color: blue;
+  text-decoration: underline;
+}

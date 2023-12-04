@@ -1,0 +1,1328 @@
+.logo {
+  height: 5vh;
+  width: 5vw;
+  position: absolute;
+  top: 20%;
+  left: 2%;
+  /* border: 2px solid black; */
+}
+a {
+  text-decoration: none;
+}
+.tooltip {
+  position: relative;
+  cursor: pointer;
+}
+.tooltiptext {
+  position: absolute;
+  background-color: black;
+  color: white;
+  width: 15vw;
+  height: 15vh;
+  text-align: center;
+  left: 2vw;
+  top: 10vh;
+  z-index: 99;
+  display: none;
+  border-radius: 10px;
+  border-color: #0000 #0000 #0000 #000;
+}
+.teachonudemy:hover .tooltiptext {
+  display: block;
+}
+
+span {
+  font-size: 1em;
+  font-family: bolder;
+  text-transform: capitalize;
+  color: gray;
+}
+.data_science_cover {
+  position: absolute;
+  /* left: 1vw; */
+  top: -5vh;
+  left: 100%;
+  height: 65vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  /* border: 2px solid black; */
+}
+.web_development_cover {
+  position: absolute;
+  left: 12vw;
+  /* border: 2px solid black; */
+  line-height: 5vh;
+  text-align: center;
+  border: 1px solid gray;
+  top: 0vh;
+  height: 65vh;
+  left: 100%;
+  background-color: rgb(243, 248, 248);
+}
+.mobile_development_cover {
+  position: absolute;
+  left: 12vw;
+  top: -10vh;
+  left: 100%;
+  height: 65vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+}
+.programing_development_cover {
+  position: absolute;
+  left: 12vw;
+  top: -15vh;
+  left: 100%;
+  height: 65vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+}
+.game_development_cover {
+  position: absolute;
+  left: 12vw;
+  top: -20vh;
+  left: 100%;
+  height: 65vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+}
+.database_development_cover {
+  position: absolute;
+  left: 12vw;
+  top: -25vh;
+  left: 100%;
+  height: 65vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+}
+.software_development_cover {
+  position: absolute;
+  left: 12vw;
+  top: -35vh;
+  height: 65vh;
+  left: 100%;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+}
+.engeering_development_cover {
+  position: absolute;
+  height: 65vh;
+  top: -40vh;
+  left: 100%;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+}
+.tools_development_cover {
+  position: absolute;
+  height: 65vh;
+  top: -45vh;
+  left: 100%;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+}
+.nocode_development_cover {
+  position: absolute;
+  height: 65vh;
+  top: -50vh;
+  border: 1px solid gray;
+  left: 100%;
+  background-color: rgb(243, 248, 248);
+  /* border: 1px solid gray; */
+}
+.entrepneurship_development_cover {
+  position: absolute;
+  height: 65vh;
+  top: -0.2vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  left: 100%;
+}
+.communication_science_cover {
+  position: absolute;
+  height: 65vh;
+  top: -5.2vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  left: 100%;
+}
+.management_development_cover {
+  position: absolute;
+  height: 65vh;
+  top: -10.2vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  left: 100%;
+}
+.Accounting_finance_cover {
+  position: absolute;
+  height: 65vh;
+  top: 0vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  left: 100%;
+}
+.sales_cover {
+  position: absolute;
+  height: 65vh;
+  top: -15.2vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  left: 100%;
+}
+.Stetegy_cover {
+  position: absolute;
+  height: 65vh;
+  top: -20.2vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  left: 100%;
+}
+.Oprations_cover {
+  position: absolute;
+  height: 65vh;
+  top: -25.2vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  left: 100%;
+}
+.Project_cover {
+  position: absolute;
+  height: 65vh;
+  top: -30.2vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  left: 100%;
+}
+.law_cover {
+  position: absolute;
+  height: 65vh;
+  top: -35.2vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  left: 100%;
+}
+.Compliance_cover {
+  position: absolute;
+  height: 65vh;
+  top: -5vh;
+  border: 1px solid gray;
+  left: 100%;
+  background-color: rgb(243, 248, 248);
+}
+.Cryptocurrency_cover {
+  position: absolute;
+  height: 65vh;
+  top: -10vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  left: 100%;
+}
+
+.Economics_cover {
+  position: absolute;
+  height: 65vh;
+  top: -15vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  left: 100%;
+}
+.Finance_cover {
+  position: absolute;
+  height: 65vh;
+  top: -20vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  left: 100%;
+}
+.Cert_cert {
+  position: absolute;
+  height: 65vh;
+  top: -25vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  left: 100%;
+}
+.Certification_cover {
+  position: absolute;
+  height: 65vh;
+  top: -0.2vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  left: 100%;
+}
+.Network_cover {
+  position: absolute;
+  height: 65vh;
+  top: -5.2vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  left: 100%;
+}
+.Hardware_cover {
+  position: absolute;
+  height: 65vh;
+  top: -10.2vh;
+  border: 1px solid gray;
+  left: 100%;
+  background-color: rgb(243, 248, 248);
+}
+.Operating_cover {
+  position: absolute;
+  height: 65vh;
+  top: -15.1vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  left: 100%;
+}
+.Otherit_cover {
+  position: absolute;
+  height: 65vh;
+  top: -20.1vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  left: 100%;
+}
+.Microsoft_cover {
+  position: absolute;
+  height: 65vh;
+  top: -0.2vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  left: 100%;
+}
+.Apple_cover {
+  position: absolute;
+  height: 65vh;
+  top: -5.2vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  left: 100%;
+}
+.Google_cover {
+  position: absolute;
+  height: 65vh;
+  top: -10.2vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  left: 100%;
+}
+.sap_cover {
+  position: absolute;
+  height: 65vh;
+  top: -15.1vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  left: 100%;
+}
+.Oracle_cover {
+  position: absolute;
+  height: 65vh;
+  top: -20.1vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  left: 100%;
+}
+.Relationship_cover {
+  position: absolute;
+  height: 65vh;
+  top: -0.2vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  left: 100%;
+}
+.TransfOrmation_cover {
+  position: absolute;
+  height: 65vh;
+  top: -5.2vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  left: 100%;
+}
+.product_cover {
+  position: absolute;
+  height: 65vh;
+  top: -10.2vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  left: 100%;
+}
+.leader_cover {
+  position: absolute;
+  height: 65vh;
+  top: -15.1vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  left: 100%;
+}
+.Carrier_cover {
+  position: absolute;
+  height: 65vh;
+  top: -20.1vh;
+  border: 1px solid gray;
+  left: 100%;
+  background-color: rgb(243, 248, 248);
+}
+.Webdesign_cover {
+  position: absolute;
+  height: 65vh;
+  top: -0.2vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  left: 100%;
+}
+.Illustration_cover {
+  position: absolute;
+  height: 65vh;
+  top: -5.2vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  left: 100%;
+}
+
+.User_cover {
+  position: absolute;
+  height: 65vh;
+  top: -15.1vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  left: 100%;
+}
+.gamedeign_cover {
+  position: absolute;
+  height: 65vh;
+  top: -20.1vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  left: 100%;
+}
+.Digital_cover {
+  position: absolute;
+  height: 65vh;
+  top: -0.2vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  left: 100%;
+}
+.Illustration_cover {
+  position: absolute;
+  height: 65vh;
+  top: -5.2vh;
+  border: 1px solid gray;
+  left: 100%;
+  background-color: rgb(243, 248, 248);
+}
+.tooldesign_cover {
+  position: absolute;
+  height: 65vh;
+  top: -10.2vh;
+  background-color: rgb(243, 248, 248);
+  border: 1px solid gray;
+  left: 100%;
+}
+
+.Arts_cover {
+  position: absolute;
+  height: 65vh;
+  top: -0.2vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  left: 100%;
+}
+.Makeup_cover {
+  position: absolute;
+  height: 65vh;
+  top: -5.2vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  left: 100%;
+}
+.Esoteric_cover {
+  position: absolute;
+  height: 65vh;
+  top: -10.2vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  left: 100%;
+}
+.Bevrage_cover {
+  position: absolute;
+  height: 65vh;
+  top: -15.1vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  left: 100%;
+}
+
+.Digital_cover {
+  position: absolute;
+  height: 65vh;
+  top: -0.2vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  left: 100%;
+}
+.Photographysecond_cover {
+  position: absolute;
+  background-color: rgb(243, 248, 248);
+  height: 65vh;
+  top: -5.2vh;
+  border: 1px solid gray;
+  left: 100%;
+}
+.Portrait_cover {
+  position: absolute;
+  height: 65vh;
+  top: -10.2vh;
+  background-color: rgb(243, 248, 248);
+  border: 1px solid gray;
+  left: 100%;
+}
+.Toolsphoto_cover {
+  position: absolute;
+  height: 65vh;
+  top: -15.2vh;
+  border: 1px solid gray;
+  left: 100%;
+  background-color: rgb(243, 248, 248);
+}
+.Fitness_cover {
+  position: absolute;
+  height: 65vh;
+  top: -0.2vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  left: 100%;
+}
+.General_cover {
+  position: absolute;
+  height: 65vh;
+  top: -5.2vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  left: 100%;
+}
+
+.Sports_cover {
+  position: absolute;
+  height: 65vh;
+  top: -10.2vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  left: 100%;
+}
+.Diet_cover {
+  position: absolute;
+  height: 65vh;
+  top: -15.1vh;
+  background-color: rgb(243, 248, 248);
+  border: 1px solid gray;
+  left: 100%;
+}
+
+.Instrument_cover {
+  position: absolute;
+  background-color: rgb(243, 248, 248);
+  height: 65vh;
+  top: -0.2vh;
+  border: 1px solid gray;
+  left: 100%;
+}
+.Production_cover {
+  position: absolute;
+  height: 65vh;
+  top: -5.2vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  left: 100%;
+}
+.Musicfunda_cover {
+  position: absolute;
+  height: 65vh;
+  top: -10.2vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  left: 100%;
+}
+.Vocal_cover {
+  position: absolute;
+  height: 65vh;
+  top: -15.2vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  left: 100%;
+}
+.Engneering_cover {
+  position: absolute;
+  height: 65vh;
+  top: -0.2vh;
+  background-color: rgb(243, 248, 248);
+  border: 1px solid gray;
+  left: 100%;
+}
+.Humanities_cover {
+  position: absolute;
+  height: 65vh;
+  top: -5.2vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  left: 100%;
+}
+.Math_cover {
+  position: absolute;
+  height: 65vh;
+  top: -10.2vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  left: 100%;
+}
+.Science_cover {
+  position: absolute;
+  height: 65vh;
+  top: -15.1vh;
+  border: 1px solid gray;
+  background-color: rgb(243, 248, 248);
+  left: 100%;
+}
+
+.container {
+  border: 1px solid gray;
+  position: relative;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.parent {
+  position: relative;
+  text-align: center;
+
+  width: 20%;
+  /* border: 2px solid black; */
+  height: 5vh;
+}
+.parent_list_div {
+  /* position: relative; */
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+  /* text-align: center; */
+}
+
+.parent_list_div {
+  /* border: 2px solid black; */
+  width: 10vw;
+}
+.parent_menu {
+  list-style: none;
+}
+.sub_container_two {
+  text-align: left;
+  /* border: 1px solid grey; */
+  position: relative;
+  z-index: 999;
+  left: 0%;
+  line-height: 5vh;
+
+  min-height: 50%;
+  /* background-color: rgb(243, 248, 248); */
+  /* width: 50vw; */
+}
+.parent_list {
+  list-style: none;
+  z-index: 99;
+}
+/* .l {
+  border: 1px solid grey;
+} */
+.sub_container {
+  list-style: none;
+  display: none;
+  border: 1px solid grey;
+  text-align: left;
+  position: relative;
+  line-height: 5vh;
+  top: 5vh;
+  z-index: 9999;
+  /* border: 5px solid red; */
+  background-color: rgb(243, 248, 248);
+  /* width: 5vw; */
+  /* border: 2px solid black; */
+}
+.parent_menu:hover .sub_container {
+  display: block;
+  cursor: pointer;
+}
+.under_div {
+  border: 1px solid gray;
+  position: absolute;
+  left: -13%;
+  text-align: left;
+  height: 45vh;
+  width: 15vw;
+  /* border: 5px solid black; */
+  top: -1%;
+  background-color: rgb(243, 248, 248);
+}
+
+.development_subroute {
+  /* border: 2px solid black; */
+  position: absolute;
+  left: 15vw;
+  width: 10vw;
+  top: 0vh;
+  height: 10vh;
+  display: none;
+  list-style: none;
+}
+
+.developement {
+  position: relative;
+  /* left: -10%; */
+  /* border: 2px solid black; */
+  /* width: 14vw; */
+}
+.developement:hover {
+  color: blue;
+}
+.developement:hover .development_subroute {
+  display: block;
+  color: black;
+}
+
+.web_development_container,
+.data_science_container,
+.mobile_development_container,
+.programing_development_container,
+.game_development_container,
+.database_development_container,
+.software_development_container,
+.engeering_development_container,
+.tools_development_container,
+.nocode_development_container,
+.entrepneurship_development_container,
+.communication_science_container,
+.management_development_container,
+.sales_container,
+.Stetegy_container,
+.Oprations_container,
+.Project_container,
+.Law_container,
+.Accounting_finance_container,
+.Compliance_container,
+.Cryptocurrency_container,
+.Economics_container,
+.Finance_container,
+.Cert_container,
+.Certification_container,
+.Network_container,
+.Hardware_container,
+.Operating_container,
+.Otherit_container,
+.Microsoft_container,
+.Apple_container,
+.Google_container,
+.sap_container,
+.Oracle_container,
+.Relationship_container,
+.TransfOrmation_container,
+.product_container,
+.leader_container,
+.Carrier_container,
+.Webdesign_container,
+.Illustration_container,
+.tooldesign_container,
+.User_container,
+.gamedeign_container,
+.Digital_container,
+.Illustration_container,
+.tooldesign_container,
+.User_container,
+.Arts_container,
+.Makeup_container,
+.Esoteric_container,
+.Bevrage_container,
+.Digital_container,
+.Photographysecond_container,
+.Portrait_container,
+.Toolsphoto_container,
+.Fitness_container,
+.General_container,
+.Sports_container,
+.Diet_container,
+.Instrument_container,
+.Production_container,
+.Musicfunda_container,
+.Vocal_container,
+.Engneering_container,
+.Humanities_container,
+.Math_container,
+.Science_container {
+  position: relative;
+}
+
+.web_development_subroutes,
+.data_science_subroutes,
+.mobile_development_subroutes,
+.programing_development_subroutes,
+.game_development_subroutes,
+.database_development_subroutes,
+.software_development_subroutes,
+.engeering_development_subroutes,
+.tools_development_subroutes,
+.nocode_development_subroutes,
+.entrepneurship_development_subroutes,
+.communication_science_subroutes,
+.menagement_development_subroutes,
+.sales_subroutes,
+.Stetegy_subroutes,
+.Oprations_subroutes,
+.Project_subroutes,
+.Law_subroutes,
+.Accounting_finance_subroute,
+.Compliance_subroute,
+.Cryptocurrency_subroute,
+.Economics_subroute,
+.Finance_subroute,
+.Cert_subroute,
+.Certification_subroute,
+.Network_subroute,
+.Hardware_subroute,
+.Operating_subroute,
+.Otherit_subroute,
+.Microsoft_subroute,
+.Apple_subroute,
+.Google_subroute,
+.sap_subroute,
+.Oracle_subroute,
+.Relationship_subroute,
+.TransfOrmation_subroute,
+.product_subroute,
+.leader_subroute,
+.Carrier_subroute,
+.Webdesign_subroute,
+.Illustration_subroute,
+.tooldesign_subroute,
+.User_subroute,
+.gamedeign_subroute,
+.Digital_subroute,
+.Illustration_subroute,
+.tooldesign_subroute,
+.User_subroute,
+.Arts_subroute,
+.Makeup_subroute,
+.Esoteric_subroute,
+.Bevrage_subroute,
+.Digital_subroute,
+.Photographysecond_subroute,
+.Portrait_subroute,
+.Toolsphoto_subroute,
+.Fitness_subroute,
+.General_subroute,
+.Sports_subroute,
+.Diet_subroute,
+.Instrument_subroute,
+.Production_subroute,
+.Musicfunda_subroute,
+.Vocal_subroute,
+.Engneering_subroute,
+.Humanities_subroute,
+.Math_subroute,
+.Science_subroute {
+  list-style: none;
+  display: none;
+  width: 12vw;
+  text-align: left;
+}
+
+.web_development_container:hover .web_development_subroutes {
+  display: block;
+}
+
+.data_science_container:hover .data_science_subroutes {
+  display: block;
+}
+.mobile_development_container:hover .mobile_development_subroutes {
+  display: block;
+}
+.programing_development_container:hover .programing_development_subroutes {
+  display: block;
+}
+.game_development_container:hover .game_development_subroutes {
+  display: block;
+}
+
+.database_development_container:hover .database_development_subroutes {
+  display: block;
+}
+.software_development_container:hover .software_development_subroutes {
+  display: block;
+}
+.engeering_development_container:hover .engeering_development_subroutes {
+  display: block;
+}
+.tools_development_container:hover .tools_development_subroutes {
+  display: block;
+}
+.nocode_development_container:hover .nocode_development_subroutes {
+  display: block;
+}
+.searchbar {
+  height: 5vh;
+  width: 30vw;
+  border-radius: 20px;
+
+  text-align: center;
+}
+.lgn {
+  height: 5vh;
+}
+.business {
+  position: relative;
+  /* border: 2px solid black; */
+  width: 14vw;
+}
+.business_subroute {
+  position: absolute;
+  left: 13vw;
+  width: 10vw;
+  top: -4vh;
+  height: 10vh;
+  display: none;
+  list-style: none;
+
+  /* border: 2px solid black; */
+}
+.under_div_business {
+  border: 1px solid gray;
+  position: relative;
+  left: -23%;
+  top: -1.1vh;
+  line-height: 5vh;
+  background-color: rgb(243, 248, 248);
+  width: 15vw;
+  height: 45vh;
+}
+.business:hover .business_subroute {
+  display: block;
+}
+
+.bussiness_science_container {
+  text-align: left;
+  border: 1px solid grey;
+  position: relative;
+  left: 0%;
+
+  /* width: 50vw; */
+}
+.entrepneurship_development_container:hover
+  .entrepneurship_development_subroutes {
+  display: block;
+}
+.communication_science_container:hover .communication_science_subroutes {
+  display: block;
+}
+.management_development_container:hover .menagement_development_subroutes {
+  display: block;
+}
+.sales_container:hover .sales_subroutes {
+  display: block;
+}
+
+.Stetegy_container:hover .Stetegy_subroutes {
+  display: block;
+}
+.Oprations_container:hover .Oprations_subroutes {
+  display: block;
+}
+.Project_container:hover .Project_subroutes {
+  display: block;
+}
+
+.Law_container:hover .Law_subroutes {
+  display: block;
+}
+
+.human_container:hover .human_subroutes {
+  display: block;
+}
+.industry_container:hover .industry_subroutes {
+  display: block;
+}
+
+.finance {
+  position: relative;
+  /* border: 2px solid black; */
+  width: 14vw;
+}
+.subroute_finance {
+  position: absolute;
+  left: 13vw;
+  width: 20vw;
+  top: -7.5vh;
+  height: 10vh;
+  display: none;
+  list-style: none;
+  /* border: 2px solid black; */
+}
+.Accounting_finance_subroute {
+  list-style: none;
+}
+
+.finance:hover .subroute_finance {
+  display: block;
+}
+.Accounting_finance_container:hover .Accounting_finance_subroute {
+  display: block;
+}
+.Compliance_container:hover .Compliance_subroute {
+  display: block;
+}
+.Cryptocurrency_container:hover .Cryptocurrency_subroute {
+  display: block;
+}
+.Economics_container:hover .Economics_subroute {
+  display: block;
+}
+.Finance_container:hover .Finance_subroute {
+  display: block;
+}
+.Cert_container:hover .Cert_subroute {
+  display: block;
+}
+.finance_under_div {
+  border: 1px solid gray;
+  position: relative;
+  left: -12%;
+  line-height: 5vh;
+  width: 15vw;
+  top: -2.6vh;
+  height: 45vh;
+  background-color: rgb(243, 248, 248);
+}
+.subroute_It {
+  position: absolute;
+  left: 13vw;
+  width: 20vw;
+  top: 0vh;
+  height: 10vh;
+  display: none;
+  list-style: none;
+}
+.it_software:hover .subroute_It {
+  display: block;
+}
+
+.Certification_container:hover .Certification_subroute {
+  display: block;
+}
+.Network_container:hover .Network_subroute {
+  display: block;
+}
+.Hardware_container:hover .Hardware_subroute {
+  display: block;
+}
+.Operating_container:hover .Operating_subroute {
+  display: block;
+}
+.Otherit_container:hover .Otherit_subroute {
+  display: block;
+}
+
+.It_under_div {
+  border: 1px solid gray;
+  position: relative;
+  left: 2%;
+  background-color: rgb(243, 248, 248);
+  line-height: 5vh;
+  width: 15vw;
+  height: 45vh;
+  top: -0.1vh;
+}
+
+.subroute_Office {
+  position: absolute;
+  left: 13vw;
+  width: 20vw;
+  top: 0vh;
+  height: 10vh;
+  display: none;
+  list-style: none;
+  /* border: 1px solid black; */
+}
+.Office_Productivity:hover .subroute_Office {
+  display: block;
+}
+.Office_under_div {
+  border: 1px solid gray;
+  position: relative;
+  left: 2%;
+  background-color: rgb(243, 248, 248);
+  line-height: 5vh;
+  width: 15vw;
+  height: 45vh;
+  top: -0.1vh;
+}
+.Microsoft_container:hover .Microsoft_subroute {
+  display: block;
+}
+.Apple_container:hover .Apple_subroute {
+  display: block;
+}
+.Google_container:hover .Google_subroute {
+  display: block;
+}
+.sap_container:hover .sap_subroute {
+  display: block;
+}
+
+.Oracle_container:hover .Oracle_subroute {
+  display: block;
+}
+
+.subroute_Personal {
+  position: absolute;
+  left: 13vw;
+  width: 20vw;
+  top: 0vh;
+  height: 10vh;
+  display: none;
+  list-style: none;
+  /* border: 1px solid black; */
+}
+.Personal_under_div {
+  border: 1px solid gray;
+  position: relative;
+  left: 2%;
+  background-color: rgb(243, 248, 248);
+  line-height: 5vh;
+  width: 15vw;
+  height: 45vh;
+  top: -0.1vh;
+}
+.Personal_Development:hover .subroute_Personal {
+  display: block;
+}
+
+.Relationship_container:hover .Relationship_subroute {
+  display: block;
+}
+.TransfOrmation_container:hover .TransfOrmation_subroute {
+  display: block;
+}
+.product_container:hover .product_subroute {
+  display: block;
+}
+.leader_container:hover .leader_subroute {
+  display: block;
+}
+.Carrier_container:hover .Carrier_subroute {
+  display: block;
+}
+
+.subroute_Design {
+  position: absolute;
+  left: 13vw;
+  width: 20vw;
+  top: 0vh;
+  height: 10vh;
+  display: none;
+  list-style: none;
+  /* border: 1px solid black; */
+}
+
+.Design_under_div {
+  border: 1px solid gray;
+  position: relative;
+  left: 2%;
+  background-color: rgb(243, 248, 248);
+  line-height: 5vh;
+  width: 15vw;
+  height: 45vh;
+  top: -0.1vh;
+}
+.Design:hover .subroute_Design {
+  display: block;
+}
+
+.Webdesign_container:hover .Webdesign_subroute {
+  display: block;
+}
+.Illustration_container:hover .Illustration_subroute {
+  display: block;
+}
+.User_container:hover .User_subroute {
+  display: block;
+}
+.gamedeign_container:hover .gamedeign_subroute {
+  display: block;
+}
+.tooldesign_container:hover .tooldesign_subroute {
+  display: block;
+}
+
+.subroute_Marketing,
+.subroute_LifeStyle,
+.subroute_Video {
+  position: absolute;
+  left: 13vw;
+  width: 20vw;
+  top: 0vh;
+  height: 10vh;
+  display: none;
+  list-style: none;
+  /* border: 1px solid black; */
+}
+.Marketing_under_div,
+.LifeStyle_under_div,
+.Video_under_div {
+  border: 1px solid gray;
+  position: relative;
+  left: 2%;
+  background-color: rgb(243, 248, 248);
+  line-height: 5vh;
+  height: 45vh;
+  width: 15vw;
+  top: -0.1vh;
+}
+
+.Marketing:hover .subroute_Marketing {
+  display: block;
+}
+.Digital_container:hover .Digital_subroute {
+  display: block;
+}
+
+.Illustration_container:hover .Illustration_subroute {
+  display: block;
+}
+
+.tooldesign_container:hover .tooldesign_subroute {
+  display: block;
+}
+.User_container:hover .User_subroute {
+  display: block;
+}
+
+.LifeStyle:hover .subroute_LifeStyle {
+  display: block;
+}
+.Arts_container:hover .Arts_subroute {
+  display: block;
+}
+.Makeup_container:hover .Makeup_subroute {
+  display: block;
+}
+.Esoteric_container:hover .Esoteric_subroute {
+  display: block;
+}
+
+.Bevrage_container:hover .Bevrage_subroute {
+  display: block;
+}
+
+.Video:hover .subroute_Video {
+  display: block;
+}
+.Digital_container:hover .Digital_subroute {
+  display: block;
+}
+
+.Photographysecond_container:hover .Photographysecond_subroute {
+  display: block;
+}
+.Portrait_container:hover .Portrait_subroute {
+  display: block;
+}
+.Toolsphoto_container:hover .Toolsphoto_subroute {
+  display: block;
+}
+
+.subroute_Fitness,
+.subroute_music,
+.subroute_Teaching {
+  position: absolute;
+  left: 13vw;
+  width: 20vw;
+  top: 0vh;
+  height: 10vh;
+  display: none;
+  list-style: none;
+  /* border: 1px solid black; */
+}
+.Fitness_under_div {
+  border: 1px solid gray;
+  position: relative;
+  left: 2%;
+  background-color: rgb(243, 248, 248);
+  line-height: 5vh;
+  width: 15vw;
+  height: 45vh;
+  top: -0.1vh;
+}
+
+.Fitness:hover .subroute_Fitness {
+  display: block;
+}
+
+.Fitness_container:hover .Fitness_subroute {
+  display: block;
+}
+
+.General_container:hover .General_subroute {
+  display: block;
+}
+
+.Sports_container:hover .Sports_subroute {
+  display: block;
+}
+
+.Diet_container:hover .Diet_subroute {
+  display: block;
+}
+.music_under_div,
+.Teaching_under_div {
+  border: 1px solid gray;
+  position: relative;
+  /* left: 2%; */
+  background-color: rgb(243, 248, 248);
+  line-height: 5vh;
+  width: 15vw;
+  height: 45vh;
+  top: -0.1vh;
+}
+.music:hover .subroute_music {
+  display: block;
+}
+
+.Instrument_container:hover .Instrument_subroute {
+  display: block;
+}
+.Production_container:hover .Production_subroute {
+  display: block;
+}
+.Musicfunda_container:hover .Musicfunda_subroute {
+  display: block;
+}
+
+.Vocal_container:hover .Vocal_subroute {
+  display: block;
+}
+
+.Teaching:hover .subroute_Teaching {
+  display: block;
+}
+.Engneering_container:hover .Engneering_subroute {
+  display: block;
+}
+
+.Humanities_container:hover .Humanities_subroute {
+  display: block;
+}
+
+.Math_container:hover .Math_subroute {
+  display: block;
+}
+.Science_container:hover .Science_subroute {
+  display: block;
+}
