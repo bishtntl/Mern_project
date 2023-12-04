@@ -80,7 +80,7 @@ function Display() {
     <>
       <div className="container">
         {/* <div> */}
-        <NavLink to="/udemy">
+        <NavLink to="/">
           <img
             className="logo"
             src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"
@@ -405,7 +405,7 @@ function Display() {
       </div>
 
       <Routes>
-        <Route path="/udemy" element={<Udemy />}></Route>
+        <Route path="/" element={<Udemy />}></Route>
         <Route path="/login" element={<LoginButton />}></Route>
         <Route path="/register" element={<RegisterButton />}></Route>
         <Route path="/devroute" element={<DevelopmentRoute />}></Route>
