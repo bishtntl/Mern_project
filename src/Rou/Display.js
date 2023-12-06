@@ -67,7 +67,7 @@ import Math from "../Component/Teaching/Math";
 import Science from "../Component/Teaching/Science";
 import Training from "../Component/Teaching/Training";
 import TechOn from "../Component/Techon";
-import SearchBar from "../Component/Search";
+// import SearchBar from "../Component/Search";
 import { useState } from "react";
 function Display() {
 
@@ -524,7 +524,7 @@ function Display() {
         <Route path="/teaching/Science" element={<Science />}></Route>
         <Route path="/teaching/Teacher/Training" element={<Training />}></Route>
         <Route path="techon/udemy" element={<TechOn />}></Route>
-        <Route path="/search" element={<SearchBar/>}></Route>
+        {/* <Route path="/search" element={<SearchBar/>}></Route> */}
       </Routes>
     </>
   );
