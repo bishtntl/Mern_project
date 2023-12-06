@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { NavLink, useLocation, useNavigate } from "react-router-dom";
+// import React, { useState } from "react";
+// import { NavLink, useLocation, useNavigate } from "react-router-dom";
 // import "../Css/Search.css";
 // import { useDispatch } from "react-redux";
 // import { addtoCart } from "../Redux/Slice";
