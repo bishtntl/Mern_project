@@ -1326,3 +1326,12 @@ span {
 .Science_container:hover .Science_subroute {
   display: block;
 }
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  .container {
+    /* display: none; */
+  }
+  /* * {
+    border: 2px solid black;
+  } */
+}

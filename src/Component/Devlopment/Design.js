@@ -1,11 +1,14 @@
 import DevelopmentRoute from "./Devrou";
 import "./Cssrou/Developement.css";
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 function Development() {
   const [data, setData] = useState([]);
   useEffect(() => {
     async function fetchapi() {
-      const ffdata = await fetch("https://mern-backend-o0hb.onrender.com/api/getdata");
+      const ffdata = await fetch(
+        "https://mern-backend-o0hb.onrender.com/api/getdata"
+      );
       const res = await ffdata.json();
       setData(res);
       // console.log(res);
@@ -26,7 +29,7 @@ function Development() {
             <span className="three_sub">New</span>
             <span className="three_sub">Trending</span>
           </div>
-          <hr className="hrdelevep" style={{}} />
+          <hr className="hrdelevep" />
           <div className="expand_career_two_develop">
             <div className="flex_container_dev">
               <div className="underflex_dev">
@@ -36,10 +39,14 @@ function Development() {
                     return (
                       <div key={index} className="underflex_two_dev">
                         <div className="image_flex_div">
-                          <img className="imageflexone_dev" src={item.img} alt="Not Found"/>
+                          <img
+                            className="imageflexone_dev"
+                            src={item.img}
+                            alt="Not Found"
+                          />
                         </div>
                         <div
-                          className="  .details_div_devlop {
+                          className="details_div_devlop {
 "
                         >
                           <b>{item.heading}</b>
@@ -89,7 +96,11 @@ function Development() {
                     return (
                       <div key={index} className="underflex_two_dev">
                         <div className="image_flex_div_dev">
-                          <img className="imageflexone_dev" src={item.img} alt="Not Found"/>
+                          <img
+                            className="imageflexone_dev"
+                            src={item.img}
+                            alt="Not Found"
+                          />
                         </div>
                         <div className="details_div_devlop">
                           <b>{item.heading}</b>
@@ -139,7 +150,11 @@ function Development() {
                     return (
                       <div key={index} className="underflex_two_dev">
                         <div className="image_flex_div_dev">
-                          <img className="imageflexone_dev" src={item.img} alt="Not Found"/>
+                          <img
+                            className="imageflexone_dev"
+                            src={item.img}
+                            alt="Not Found"
+                          />
                         </div>
                         <div className="details_div_devlop">
                           <b>{item.heading}</b>
@@ -189,7 +204,11 @@ function Development() {
                     return (
                       <div key={index} className="underflex_two_dev">
                         <div className="image_flex_div_dev">
-                          <img className="imageflexone_dev" src={item.img} alt="Not Found"/>
+                          <img
+                            className="imageflexone_dev"
+                            src={item.img}
+                            alt="Not Found"
+                          />
                         </div>
                         <div className="details_div_devlop">
                           <b>{item.heading}</b>
@@ -279,16 +298,20 @@ function Development() {
         <h1>Popular Topic</h1>
       </div>
       <div className="popular_dev_container">
-        <div className="launguge_dev">Python</div>
-        <div className="launguge_dev">Data Science</div>
-        <div className="launguge_dev">React Js</div>
-        <div className="launguge_dev">Java</div>
-        <div className="launguge_dev">C#(Programing language)</div>
-        <div className="launguge_dev">Web Developement</div>
-        <div className="launguge_dev">Java Script</div>
-        <div className="launguge_dev">Unreal Engine</div>
-        <div className="launguge_dev">Machine Learning</div>
-        <div className="launguge_dev">Deep Learning</div>
+        <div className="launguge_dev">
+          <NavLink to="/design/fashion/design"> Fashion Design</NavLink>{" "}
+        </div>
+        <div className="launguge_dev">
+          {" "}
+          <NavLink to="/design/animation"> 3D & Animation</NavLink>
+        </div>
+        <div className="launguge_dev">
+          <NavLink to="/design/gamedesign"> Game Design</NavLink>
+        </div>
+        <div className="launguge_dev">
+          {" "}
+          <NavLink to="/design/webdesign">web Design</NavLink>
+        </div>
       </div>
 
       <div className="popul_head_two">
@@ -354,7 +377,7 @@ function Development() {
       </div>
 
       <div className="fifth_underdiv">
-        <h1>All Developement Courses</h1>
+        <h2>All Developement Courses</h2>
       </div>
       <div className="fifth_container">
         <div className="circle_dev_fifth">
@@ -465,7 +488,11 @@ function Development() {
                   <>
                     <div key={index} className="underflex_two_rating">
                       <div className="image_flex_div_column">
-                        <img className="imageflexone_column" src={item.img} alt="Not Found"/>
+                        <img
+                          className="imageflexone_column"
+                          src={item.img}
+                          alt="Not Found"
+                        />
                       </div>
                       <div className="details_div_dev_column">
                         <b>{item.heading}</b>
@@ -555,10 +582,14 @@ function Development() {
                   <>
                     <div key={index} className="underflex_two_rating">
                       <div className="image_flex_div_column">
-                        <img className="imageflexone_column" src={item.img} alt="Not Found"/>
+                        <img
+                          className="imageflexone_column"
+                          src={item.img}
+                          alt="Not Found"
+                        />
                       </div>
                       <div className="details_div_dev_column">
-                        <b>{item.heading}</b>
+                        <b className="heading_back">{item.heading}</b>
                         <span>{item.name}</span>
                         <p>{item.rating}</p>
 

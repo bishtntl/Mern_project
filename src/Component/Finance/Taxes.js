@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import FinanceRoute from "./FinanceRou"
+import { NavLink } from "react-router-dom";
 
 
 function Taxes(){
@@ -40,7 +41,7 @@ function Taxes(){
                           <img className="imageflexone_dev" src={item.img} alt="Not Found"/>
                         </div>
                         <div
-                          className="  .details_div_devlop {
+                          className="details_div_devlop {
 "
                         >
                           <b>{item.heading}</b>
@@ -280,16 +281,22 @@ function Taxes(){
         <h1>Popular Topic</h1>
       </div>
       <div className="popular_dev_container">
-        <div className="launguge_dev">Python</div>
-        <div className="launguge_dev">Data Science</div>
-        <div className="launguge_dev">React Js</div>
-        <div className="launguge_dev">Java</div>
-        <div className="launguge_dev">C#(Programing language)</div>
-        <div className="launguge_dev">Web Developement</div>
-        <div className="launguge_dev">Java Script</div>
-        <div className="launguge_dev">Unreal Engine</div>
-        <div className="launguge_dev">Machine Learning</div>
-        <div className="launguge_dev">Deep Learning</div>
+      <div className="launguge_dev">
+          <NavLink to="/finance">Finance</NavLink>
+        </div>
+        <div className="launguge_dev">
+          {" "}
+          <NavLink to="/finance/Book/Keeping">Book Keeping</NavLink>
+        </div>
+        <div className="launguge_dev">
+          <NavLink to="/finance/Compliance"> Compliance </NavLink>
+        </div>
+        <div className="launguge_dev">
+          {" "}
+          <NavLink to="/finance/Economics">Economics </NavLink>
+        </div>
+       
+       
       </div>
 
       <div className="popul_head_two">

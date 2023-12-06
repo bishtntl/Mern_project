@@ -67,7 +67,28 @@ import Math from "../Component/Teaching/Math";
 import Science from "../Component/Teaching/Science";
 import Training from "../Component/Teaching/Training";
 import TechOn from "../Component/Techon";
+import SearchBar from "../Component/Search";
+import { useState } from "react";
 function Display() {
+
+
+
+  const [query, setQuery] = useState("");
+  const [results, setResults] = useState([]);
+  const handleInputChange = (event) => {
+    
+    setQuery(event.target.value);
+    console.log(query)
+  };
+
+  const handleSubmit = async () => {
+    const response = await fetch(`https://mern-backend-o0hb.onrender.com/search/${query}`);
+    const data = await response.json();
+
+    setResults(data);
+    console.log(results)
+  };
+
   const Navi = useNavigate();
   const auth = localStorage.getItem("token");
 
@@ -75,6 +96,7 @@ function Display() {
     localStorage.clear();
     Navi("/register");
   };
+
 
   return (
     <>
@@ -365,12 +387,33 @@ function Display() {
             </li>
           </ul>
         </div>
-
-        <input
+   <div>
+   <input
           type="text"
+          value={query}
           placeholder="enter here"
-          className="searchbar"
+          // className="searchbar"
+          onChange={handleInputChange}
         ></input>
+     <NavLink state={results}><button  onClick={handleSubmit} >
+            Search
+          </button></NavLink>     
+   </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <div className="tooltip">
           <ul className="teachonudemy">
@@ -481,6 +524,7 @@ function Display() {
         <Route path="/teaching/Science" element={<Science />}></Route>
         <Route path="/teaching/Teacher/Training" element={<Training />}></Route>
         <Route path="techon/udemy" element={<TechOn />}></Route>
+        <Route path="/search" element={<SearchBar/>}></Route>
       </Routes>
     </>
   );

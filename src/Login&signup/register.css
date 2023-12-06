@@ -103,6 +103,10 @@ form {
     margin: auto;
     flex-direction: column;
   }
+  .btnone {
+    border: 5px solid black;
+    display: none;
+  }
 
   .under_div {
     height: 100%;
@@ -121,6 +125,7 @@ form {
     font-size: larger;
     font-weight: bold;
     border-radius: 5px;
+    /* display: none; */
   }
 }
 

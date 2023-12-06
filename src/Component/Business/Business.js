@@ -1,11 +1,14 @@
 import { useEffect, useState } from "react";
 import BusinessRoute from "./Businessrou";
+import { NavLink } from "react-router-dom";
 
 function Buniess() {
   const [data, setData] = useState([]);
   useEffect(() => {
     async function fetchapi() {
-      const ffdata = await fetch("https://mern-backend-o0hb.onrender.com/api/getdata");
+      const ffdata = await fetch(
+        "https://mern-backend-o0hb.onrender.com/api/getdata"
+      );
       const res = await ffdata.json();
       setData(res);
       // console.log(res);
@@ -44,7 +47,7 @@ function Buniess() {
                           />
                         </div>
                         <div
-                          className="  .details_div_devlop {
+                          className="details_div_devlop {
 "
                         >
                           <b>{item.heading}</b>
@@ -296,16 +299,25 @@ function Buniess() {
         <h1>Popular Topic</h1>
       </div>
       <div className="popular_dev_container">
-        <div className="launguge_dev">Python</div>
-        <div className="launguge_dev">Data Science</div>
-        <div className="launguge_dev">React Js</div>
-        <div className="launguge_dev">Java</div>
-        <div className="launguge_dev">C#(Programing language)</div>
-        <div className="launguge_dev">Web Developement</div>
-        <div className="launguge_dev">Java Script</div>
-        <div className="launguge_dev">Unreal Engine</div>
-        <div className="launguge_dev">Machine Learning</div>
-        <div className="launguge_dev">Deep Learning</div>
+        <div className="launguge_dev">
+          {" "}
+          <NavLink to="/business/communication">Commun..</NavLink>
+        </div>
+        <div className="launguge_dev">
+          {" "}
+          <NavLink to="/business/management"> Management </NavLink>
+        </div>
+        <div className="launguge_dev">
+          <NavLink to="/business/Stetegy"> Business Stetegy </NavLink>
+        </div>
+        <div className="launguge_dev">
+          {" "}
+          <NavLink to="/business/Oprations"> Oprations</NavLink>
+        </div>
+        <div className="launguge_dev">
+          {" "}
+          <NavLink to="/business/Human/Resources"> Human Resources</NavLink>
+        </div>
       </div>
 
       <div className="popul_head_two">

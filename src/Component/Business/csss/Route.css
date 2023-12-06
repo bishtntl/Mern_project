@@ -1,8 +1,17 @@
 .developmentNav {
-    display: flex;
+  display: flex;
+  height: 5vh;
+  align-items: center;
+  box-shadow: 1px 1px 2px black;
+  justify-content: space-around;
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  .developmentNav {
+    display: none;
     height: 5vh;
     align-items: center;
     box-shadow: 1px 1px 2px black;
     justify-content: space-around;
   }
-  
+}

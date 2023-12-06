@@ -25,24 +25,24 @@ function Footer() {
               skills.
             </h2>
             <img
-              src="https://s.udemycdn.com/partner-logos/v4/nasdaq-light.svg"
+              src="https://s.udemycdn.com/partner-logos/v4/nasdaq-light.svg" className="img_footer_pre"
               alt="Not Found"
             />
             <img
               src="https://s.udemycdn.com/partner-logos/v4/volkswagen-light.svg"
-              alt="Not Found"
+              className="img_footer_pre" alt="Not Found"
             />
             <img
               src="https://s.udemycdn.com/partner-logos/v4/box-light.svg"
-              alt="Not Found"
+              className="img_footer_pre"  alt="Not Found"
             />
             <img
               src="https://s.udemycdn.com/partner-logos/v4/netapp-light.svg"
-              alt="Not Found"
+              className="img_footer_pre"  alt="Not Found"
             />
             <img
               src="https://s.udemycdn.com/partner-logos/v4/eventbrite-light.svg"
-              alt="Not Found"
+              className="img_footer_pre"   alt="Not Found"
             />
           </div>
           <hr />

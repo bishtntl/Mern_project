@@ -66,7 +66,7 @@ form {
   border-radius: 5px;
 }
 
-@media screen and (min-width: 300px) and (max-width: 500px) {
+@media screen and (min-width: 300px) and (max-width: 600px) {
   .login {
     height: 100vh;
     width: 90vw;
@@ -101,6 +101,7 @@ form {
     background-color: #1ad1ff;
     font-size: larger;
     font-weight: bold;
+    display: none;
     border-radius: 5px;
   }
 }
@@ -127,7 +128,7 @@ form {
 
   .loginbtn {
     height: 5vh;
-    width: 40vw;
+    width: 20vw;
     background-color: #1ad1ff;
     font-size: larger;
     font-weight: bold;

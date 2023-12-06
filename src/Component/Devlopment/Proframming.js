@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import DevelopmentRoute from "./Devrou";
+import { NavLink } from "react-router-dom";
 function Programming() {
   const [data, setData] = useState([]);
   useEffect(() => {
@@ -38,7 +39,7 @@ function Programming() {
                           <img className="imageflexone_dev" src={item.img} alt="Not Found"/>
                         </div>
                         <div
-                          className="  .details_div_devlop {
+                          className="details_div_devlop {
 "
                         >
                           <b>{item.heading}</b>
@@ -278,16 +279,21 @@ function Programming() {
         <h1>Popular Topic</h1>
       </div>
       <div className="popular_dev_container">
-        <div className="launguge_dev">Python</div>
-        <div className="launguge_dev">Data Science</div>
-        <div className="launguge_dev">React Js</div>
-        <div className="launguge_dev">Java</div>
-        <div className="launguge_dev">C#(Programing language)</div>
-        <div className="launguge_dev">Web Developement</div>
-        <div className="launguge_dev">Java Script</div>
-        <div className="launguge_dev">Unreal Engine</div>
-        <div className="launguge_dev">Machine Learning</div>
-        <div className="launguge_dev">Deep Learning</div>
+      <div className="launguge_dev">
+          <NavLink to="/design/fashion/design"> Fashion Design</NavLink>{" "}
+        </div>
+        <div className="launguge_dev">
+          {" "}
+          <NavLink to="/design/animation"> 3D & Animation</NavLink>
+        </div>
+        <div className="launguge_dev">
+          <NavLink to="/design/gamedesign"> Game Design</NavLink>
+        </div>
+        <div className="launguge_dev">
+          {" "}
+          <NavLink to="/design/webdesign">web Design</NavLink>
+        </div>
+       
       </div>
 
       <div className="popul_head_two">
