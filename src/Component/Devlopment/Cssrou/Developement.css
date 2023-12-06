@@ -625,9 +625,7 @@
     border: 2px solid black;
     width: 50%;
   }
-  * {
-    border: 2px solid black;
-  }
+ 
   .details_div_devlop {
     display: flex;
     flex-direction: column;
