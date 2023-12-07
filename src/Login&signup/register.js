@@ -41,7 +41,7 @@ function RegisterButton() {
       Navi("/register");
     }  else {
       axios
-        .post("http://localhost:4500/api/register", data)
+        .post("https://mern-backend-o0hb.onrender.com/api/register", data)
         .then((res) => {
           alert(res.data.msg);
           setData(res.data);
@@ -67,13 +67,7 @@ function RegisterButton() {
 
   return (
     <div className="register">
-      {/* <div className="under_register">
-        <h1 className="heading">Register Account</h1>
-        <h2 style={{ color: "gray" }}>Hello Friends</h2>
-        <h3 style={{ color: "gray" }}>
-          Enter your personal details and start journey with us
-        </h3>
-      </div> */}
+  
       <div className="under">
         <h1 className="create_acc" style={{ color: "gray" }}>
           Sign up and start learning
@@ -122,19 +116,6 @@ function RegisterButton() {
             className="passwordinput"
           />
           <br />
-          {/* <label htmlFor="numregister" className="numregister">
-            Number
-          </label>
-          <input
-            type="number"
-            name="phone"
-            placeholder="Enter your number"
-            id="numregister"
-            value={data.phone}
-            autoComplete="off"
-            onChange={changeHandle}
-            className="phoneinput"
-          /> */}
           <br />
 
           <button type="submit" className="submitbtn">

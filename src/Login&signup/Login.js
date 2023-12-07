@@ -18,7 +18,7 @@ function LoginButton() {
   const handle = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:4500/api/login", user, {
+      .post("https://mern-backend-o0hb.onrender.com/api/login", user, {
         headers: { authorization: `Bearer${token}` },
       })
       .then((res) => {
@@ -36,13 +36,7 @@ function LoginButton() {
 
   return (
     <div className="login">
-      {/* <div className="under_login">
-        <h1 className="headingtwo">Login Page</h1>
-        <h2 style={{ color: "gray" }}>Hello Friends</h2>
-        <h3 style={{ color: "gray" }}>
-          Enter your personal details and start journey with us
-        </h3>
-      </div> */}
+ 
       <div className="under_div_login">
         <h1 className="create_accc" style={{ color: "gray" }}>
           Log in to your Udemy account
