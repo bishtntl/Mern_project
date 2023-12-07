@@ -16,7 +16,7 @@ function LearCart() {
         <h1>{item.name}</h1>
         <h1>{item.rating}</h1>
         <h1>{item.heading}</h1>
-        <img src={item.img}/>
+        <img src={item.img} alt="Not Found"/>
         </>
     )
   })}
