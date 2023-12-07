@@ -2,8 +2,10 @@ import DevelopmentRoute from "./Devrou";
 import "./Cssrou/Developement.css";
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import axios from "axios";
 function Development() {
   const [data, setData] = useState([]);
+  const [cart, setCart] = useState([]);
   useEffect(() => {
     async function fetchapi() {
       const ffdata = await fetch(
@@ -15,6 +17,25 @@ function Development() {
     }
     fetchapi();
   });
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:4500/api/addgetcart")
+      .then((res) => setCart(res.data))
+      .catch((err) => console.log(err));
+  }, [cart]);
+  // console.log(cart)
+  const handleClick = async (item) => {
+    const FindItem = cart && cart.find((items) => items.id === item.id);
+    console.log(FindItem);
+    if (FindItem) {
+      alert("go to cart ");
+    } else {
+      console.log(item.id);
+      await axios.post("http://localhost:4500/api/addcart", item);
+      alert("Item has successfully added in your cart");
+    }
+  };
   return (
     <>
       <DevelopmentRoute />
@@ -522,7 +543,10 @@ function Development() {
                             <p className="subtitle">✅{item.predata}</p>
                             <p className="subtitle">✅{item.pre}</p>
                             <div className="addbtn">
-                              <button className="addtocart_dev_column">
+                              <button
+                                className="addtocart_dev_column"
+                                onClick={() => handleClick(item)}
+                              >
                                 go to cart
                               </button>
                               <span className="love">
@@ -588,7 +612,7 @@ function Development() {
                           alt="Not Found"
                         />
                       </div>
-                      <div className="details_div_dev_column">
+                      <div className="details_div_dev_column_two">
                         <b className="heading_back">{item.heading}</b>
                         <span>{item.name}</span>
                         <p>{item.rating}</p>

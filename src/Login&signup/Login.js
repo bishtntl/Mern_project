@@ -25,7 +25,7 @@ function LoginButton() {
         console.log(res);
         alert(res.data.msg);
         localStorage.setItem("token", res.data.token);
-        navigate("/udemy");
+        navigate("/");
       });
 
     setUser({

@@ -1,0 +1,62 @@
+.search_container {
+  display: flex;
+  gap: 4vw;
+  width: 98vw;
+  margin: auto;
+  /* border-bottom: 1px solid gray; */
+  align-items: flex-start;
+  position: relative;
+}
+.search_images {
+  width: 40vw;
+  height: 50vh;
+}
+.search_hrline {
+  width: 100%;
+}
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  .search_container {
+    /* border: 2px solid black; */
+    display: flex;
+    gap: 4vw;
+
+    align-items: flex-start;
+    position: relative;
+  }
+  .search_images {
+    width: 40vw;
+    height: 40vh;
+    border-bottom: 1px solid gray;
+  }
+  .search_dtl {
+    /* border: 2px solid black; */
+    width: 60%;
+    height: 38vh;
+    overflow: hidden;
+  }
+  
+}
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .search_container {
+    /* border: 2px solid black; */
+    display: flex;
+    gap: 4vw;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    position: relative;
+  }
+  .search_images {
+    width: 40vw;
+    height: 40vh;
+    border-bottom: 1px solid gray;
+  }
+  .search_dtl {
+    /* border: 2px solid black; */
+    width: 60%;
+    height: 38vh;
+    font-size: 1.2em;
+    overflow: hidden;
+  }
+ 
+}

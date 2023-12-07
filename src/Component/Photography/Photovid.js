@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import PhotographyRouter from "./Phorou"
+import { NavLink } from "react-router-dom";
 
 function PhotoVideo(){
     const [data, setData] = useState([]);
@@ -279,16 +280,10 @@ function PhotoVideo(){
         <h1>Popular Topic</h1>
       </div>
       <div className="popular_dev_container">
-        <div className="launguge_dev">Python</div>
-        <div className="launguge_dev">Data Science</div>
-        <div className="launguge_dev">React Js</div>
-        <div className="launguge_dev">Java</div>
-        <div className="launguge_dev">C#(Programing language)</div>
-        <div className="launguge_dev">Web Developement</div>
-        <div className="launguge_dev">Java Script</div>
-        <div className="launguge_dev">Unreal Engine</div>
-        <div className="launguge_dev">Machine Learning</div>
-        <div className="launguge_dev">Deep Learning</div>
+      <div className="launguge_dev">  <NavLink to="/photography">Photography</NavLink>{" "}</div>
+        <div className="launguge_dev"> <NavLink to="/photography/Digital">Digital Photography</NavLink></div>
+        <div className="launguge_dev"> <NavLink to="/photography/video/design"> Video Design</NavLink></div>
+        <div className="launguge_dev">    <NavLink to="/photography/Commercial">  Commercial Photography</NavLink></div>
       </div>
 
       <div className="popul_head_two">

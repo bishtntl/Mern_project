@@ -109,3 +109,317 @@
   color: blue;
   text-decoration: underline;
 }
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  .tech_container {
+    position: relative;
+    /* border: 2px solid black; */
+    height: 50vh;
+  }
+  .tech_top_img {
+    width: 100%;
+    height: 50vh;
+  }
+  .tech_second_div {
+    position: absolute;
+    width: 52%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    top: 5%;
+    left: 0;
+    /* border: 2px solid black; */
+  }
+
+  .startbtn {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    height: 5vh;
+  }
+
+  .many_div_heading {
+    width: 80vw;
+    text-align: center;
+    /* border: 2px solid black; */
+  }
+  .tech_multi_img_container {
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 2px solid black; */
+  }
+  .title_sub {
+    width: 80%;
+    position: relative;
+    left: 2.5vw;
+  }
+  .data {
+    /* border: 2px solid black; */
+    width: 30%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .para {
+    width: 25%;
+  }
+  .blue_container {
+    display: flex;
+    justify-content: space-around;
+    /* background-color: rgb(62, 62, 200); */
+    color: white;
+    margin-top: 5vh;
+    width: 40%;
+    display: none;
+    background-color: white;
+    border: 2px solid black;
+  }
+  .middle_container {
+    margin-top: 5vh;
+    /* border: 2px solid black; */
+  }
+  .heading_middle {
+    text-align: center;
+  }
+  .how_to_begin {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    /* border: 2px solid black; */
+  }
+  .head_route {
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    gap: 5vw;
+    /* border: 2px solid black; */
+    justify-content: space-between;
+  }
+  .hrline_tech {
+    color: black;
+    width: 100%;
+    height: 0.2vh;
+    background-color: black;
+  }
+  .imgtech_lasr {
+    /* border: 2px solid black; */
+    /* margin: auto; */
+    width: 90vw;
+  }
+  .img_lasr_img {
+    width: 100%;
+  }
+
+  .lat_upper_div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .lat_upper_div_under_first {
+    /* border: 2px solid black; */
+    width: 90%;
+  }
+  .last_one_tech {
+    display: flex;
+    gap: 2vw;
+    background-color: aliceblue;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid black; */
+  }
+  .last_one_tech_image {
+    width: 80vw;
+  }
+  .last_one_tech_dtl {
+    width: 87%;
+    text-align: center;
+    font-size: 1.5em;
+    /* border: 2px solid black; */
+  }
+  .last_tech {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid black; */
+  }
+  .last_tech_details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    text-align: center;
+    /* border: 2px solid black; */
+  }
+  .dtl_dtl {
+    font-size: 1.5em;
+  }
+  .need_data {
+    color: blue;
+    text-decoration: underline;
+  }
+  .last_tech_img {
+    /* border: 2px solid black; */
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .tech_container {
+    position: relative;
+    /* border: 2px solid black; */
+    height: 50vh;
+  }
+  .tech_top_img {
+    width: 100%;
+    height: 50vh;
+  }
+  .tech_second_div {
+    position: absolute;
+    width: 52%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    top: 5%;
+    left: 0;
+    /* border: 2px solid black; */
+  }
+
+  .startbtn {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    height: 5vh;
+  }
+
+  .many_div_heading {
+    width: 80vw;
+    text-align: center;
+    /* border: 2px solid black; */
+  }
+  .tech_multi_img_container {
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 2px solid black; */
+  }
+  .title_sub {
+    width: 80%;
+    position: relative;
+    left: 2.5vw;
+  }
+  .data {
+    /* border: 2px solid black; */
+    width: 30%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .para {
+    width: 25%;
+  }
+  .blue_container {
+    display: flex;
+    justify-content: space-around;
+    /* background-color: rgb(62, 62, 200); */
+    color: white;
+    margin-top: 5vh;
+    width: 40%;
+    display: none;
+    background-color: white;
+    border: 2px solid black;
+  }
+  .middle_container {
+    margin-top: 5vh;
+    /* border: 2px solid black; */
+  }
+  .heading_middle {
+    text-align: center;
+  }
+  .how_to_begin {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    /* border: 2px solid black; */
+  }
+  .head_route {
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    gap: 5vw;
+    /* border: 2px solid black; */
+    justify-content: space-between;
+  }
+  .hrline_tech {
+    color: black;
+    width: 100%;
+    height: 0.2vh;
+    background-color: black;
+  }
+  .imgtech_lasr {
+    /* border: 2px solid black; */
+    /* margin: auto; */
+    width: 90vw;
+  }
+  .img_lasr_img {
+    width: 100%;
+  }
+
+  .lat_upper_div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .lat_upper_div_under_first {
+    /* border: 2px solid black; */
+    width: 90%;
+  }
+  .last_one_tech {
+    display: flex;
+    gap: 2vw;
+    background-color: aliceblue;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid black; */
+  }
+  .last_one_tech_image {
+    width: 80vw;
+  }
+  .last_one_tech_dtl {
+    width: 87%;
+    text-align: center;
+    font-size: 1.5em;
+    /* border: 2px solid black; */
+  }
+  .last_tech {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid black; */
+  }
+  .last_tech_details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    text-align: center;
+    /* border: 2px solid black; */
+  }
+  .dtl_dtl {
+    font-size: 1.5em;
+  }
+  .need_data {
+    color: blue;
+    text-decoration: underline;
+  }
+  .last_tech_img {
+    /* border: 2px solid black; */
+    width: 90%;
+  }
+}

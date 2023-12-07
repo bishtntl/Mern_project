@@ -1,24 +1,57 @@
 import { useEffect, useState } from "react";
-import Marketingrouter from "./Marketingrou"
+import Marketingrouter from "./Marketingrou";
+import { NavLink } from "react-router-dom";
+import axios from "axios";
 
+function Digital() {
+  const [data, setData] = useState([]);
+  const [datatwo, setDatatwo] = useState();
 
-function Digital(){
-    const [data, setData] = useState([]);
-    useEffect(() => {
-      async function fetchapi() {
-        const ffdata = await fetch("https://mern-backend-o0hb.onrender.com/api/getdata");
-        const res = await ffdata.json();
-        setData(res);
-        // console.log(res);
-      }
-      fetchapi();
-    });
-    return(
-        <>
-        <Marketingrouter/>
-        <div className="one_container">
+  useEffect(() => {
+    axios
+      .get("https://mern-backend-o0hb.onrender.com/api/getdata")
+      .then((res) => setData(res.data))
+      .catch((err) => console.log(err, "error"));
+  });
+
+  // useEffect(() => {
+  //   async function fetchapi() {
+  //     const ffdata = await fetch(
+  //       "https://mern-backend-o0hb.onrender.com/api/getdata"
+  //     );
+  //     const res = await ffdata.json();
+  //     setData(res);
+  //     // console.log(res);
+  //   }
+  //   fetchapi();
+  // });
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:4500/api/addgetcart")
+      .then((res) => setDatatwo(res.data))
+      .catch((err) => console.log(err));
+  }, []);
+
+  // console.log(datatwo)
+  const addcartfunc = async (item) => {
+    console.log(item.id);
+    console.log(datatwo);
+    const dataall = datatwo && datatwo.find((e) => e.id === item.id);
+    console.log(dataall);
+    if (dataall) {
+      alert("you are taken this course");
+    } else {
+      await axios.post("http://localhost:4500/api/addcart", item);
+    }
+  };
+
+  return (
+    <>
+      <Marketingrouter />
+      <div className="one_container">
         <div className="developement_Top_container">
-          <h1 style={{ height: "8vh" }}>Digital Marketing Courses</h1>
+          <h2 style={{ height: "8vh" }}>Digital Marketing Courses</h2>
           <h2>Courses to get you started</h2>
 
           <div className="second_container_developement">
@@ -37,10 +70,14 @@ function Digital(){
                     return (
                       <div key={index} className="underflex_two_dev">
                         <div className="image_flex_div">
-                          <img className="imageflexone_dev" src={item.img} alt="Not Found"/>
+                          <img
+                            className="imageflexone_dev"
+                            src={item.img}
+                            alt="Not Found"
+                          />
                         </div>
                         <div
-                          className="  .details_div_devlop {
+                          className="details_div_devlop {
 "
                         >
                           <b>{item.heading}</b>
@@ -90,7 +127,11 @@ function Digital(){
                     return (
                       <div key={index} className="underflex_two_dev">
                         <div className="image_flex_div_dev">
-                          <img className="imageflexone_dev" src={item.img} alt="Not Found" />
+                          <img
+                            className="imageflexone_dev"
+                            src={item.img}
+                            alt="Not Found"
+                          />
                         </div>
                         <div className="details_div_devlop">
                           <b>{item.heading}</b>
@@ -140,7 +181,11 @@ function Digital(){
                     return (
                       <div key={index} className="underflex_two_dev">
                         <div className="image_flex_div_dev">
-                          <img className="imageflexone_dev" src={item.img} alt="Not Found"/>
+                          <img
+                            className="imageflexone_dev"
+                            src={item.img}
+                            alt="Not Found"
+                          />
                         </div>
                         <div className="details_div_devlop">
                           <b>{item.heading}</b>
@@ -190,7 +235,11 @@ function Digital(){
                     return (
                       <div key={index} className="underflex_two_dev">
                         <div className="image_flex_div_dev">
-                          <img className="imageflexone_dev" src={item.img} alt="Not Found"/>
+                          <img
+                            className="imageflexone_dev"
+                            src={item.img}
+                            alt="Not Found"
+                          />
                         </div>
                         <div className="details_div_devlop">
                           <b>{item.heading}</b>
@@ -280,16 +329,22 @@ function Digital(){
         <h1>Popular Topic</h1>
       </div>
       <div className="popular_dev_container">
-        <div className="launguge_dev">Python</div>
-        <div className="launguge_dev">Data Science</div>
-        <div className="launguge_dev">React Js</div>
-        <div className="launguge_dev">Java</div>
-        <div className="launguge_dev">C#(Programing language)</div>
-        <div className="launguge_dev">Web Developement</div>
-        <div className="launguge_dev">Java Script</div>
-        <div className="launguge_dev">Unreal Engine</div>
-        <div className="launguge_dev">Machine Learning</div>
-        <div className="launguge_dev">Deep Learning</div>
+        <div className="launguge_dev">
+          {" "}
+          <NavLink to="/marketing">Marketing</NavLink>{" "}
+        </div>
+        <div className="launguge_dev">
+          {" "}
+          <NavLink to="/marketing/digital">Digital Market..</NavLink>
+        </div>
+        <div className="launguge_dev">
+          {" "}
+          <NavLink to="/marketing/content">Content Market.. </NavLink>
+        </div>
+        <div className="launguge_dev">
+          {" "}
+          <NavLink to="/marketing/social"> Social Market..</NavLink>
+        </div>
       </div>
 
       <div className="popul_head_two">
@@ -466,7 +521,11 @@ function Digital(){
                   <>
                     <div key={index} className="underflex_two_rating">
                       <div className="image_flex_div_column">
-                        <img className="imageflexone_column" src={item.img} alt="Not Found"/>
+                        <img
+                          className="imageflexone_column"
+                          src={item.img}
+                          alt="Not Found"
+                        />
                       </div>
                       <div className="details_div_dev_column">
                         <b>{item.heading}</b>
@@ -496,7 +555,10 @@ function Digital(){
                             <p className="subtitle">✅{item.predata}</p>
                             <p className="subtitle">✅{item.pre}</p>
                             <div className="addbtn">
-                              <button className="addtocart_dev_column">
+                              <button
+                                className="addtocart_dev_column"
+                                onClick={() => addcartfunc(item)}
+                              >
                                 go to cart
                               </button>
                               <span className="love">
@@ -556,7 +618,11 @@ function Digital(){
                   <>
                     <div key={index} className="underflex_two_rating">
                       <div className="image_flex_div_column">
-                        <img className="imageflexone_column" src={item.img} alt="Not Found"/>
+                        <img
+                          className="imageflexone_column"
+                          src={item.img}
+                          alt="Not Found"
+                        />
                       </div>
                       <div className="details_div_dev_column">
                         <b>{item.heading}</b>
@@ -597,7 +663,7 @@ function Digital(){
           </div>
         </div>
       </div>
-        </>
-    )
+    </>
+  );
 }
-export default Digital
+export default Digital;

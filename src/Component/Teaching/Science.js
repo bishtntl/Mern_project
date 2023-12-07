@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import TeachRouter from "./Teachrou";
+import { NavLink } from "react-router-dom";
 
 function Science() {
   const [data, setData] = useState([]);
@@ -277,16 +278,10 @@ function Science() {
         <h1>Popular Topic</h1>
       </div>
       <div className="popular_dev_container">
-        <div className="launguge_dev">Python</div>
-        <div className="launguge_dev">Data Science</div>
-        <div className="launguge_dev">React Js</div>
-        <div className="launguge_dev">Java</div>
-        <div className="launguge_dev">C#(Programing language)</div>
-        <div className="launguge_dev">Web Developement</div>
-        <div className="launguge_dev">Java Script</div>
-        <div className="launguge_dev">Unreal Engine</div>
-        <div className="launguge_dev">Machine Learning</div>
-        <div className="launguge_dev">Deep Learning</div>
+      <div className="launguge_dev"><NavLink to="/teaching/Engneering">Engneering</NavLink></div>
+        <div className="launguge_dev"> <NavLink to="/teaching/social/science">Socail Science</NavLink></div>
+        <div className="launguge_dev"><NavLink to="/teaching/Math">Math</NavLink></div>
+        <div className="launguge_dev"><NavLink to="/teaching/Science"> Science</NavLink></div>
       </div>
       <div className="popul_head_two">
         {" "}

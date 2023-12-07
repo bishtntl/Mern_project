@@ -1,81 +1,36 @@
-// // import React, { useState } from "react";
-// // import { NavLink, useLocation, useNavigate } from "react-router-dom";
-// // import "../Css/Search.css";
-// // import { useDispatch } from "react-redux";
-// // import { addtoCart } from "../Redux/Slice";
-// // function SearchBar() {
-// //   const [query, setQuery] = useState("");
-// //   const [resultsall, setResults] = useState([]);
-// //   const Navi = useNavigate();
-// //   const dispatch = useDispatch();
-// //  const results=useLocation()
-// //   const handleInputChange = (event) => {
-// //     setQuery(event.target.value);
-// //   };
+import { useLocation } from "react-router-dom";
+import "../Css/Search.css";
 
-// //   const handleSubmit = async () => {
-// //     const response = await fetch(`https://eccommorce-backend.onrender.com/search/${query}`);
-// //     const data = await response.json();
+function SearchBar() {
+  const results = useLocation();
+  const getdata = results.state;
+  console.log(getdata);
+  return (
+    <>
+      {getdata.map((item, index) => {
+        return (
+          <div className="main">
+            <div className="search_container">
+              <div className="search_images_container">
+                <img src={item.img} alt="Not Found" className="search_images" />
+              </div>
 
-// //     setResults(data);
-// //   };
+              <div className="search_dtl">
+                <h2 className="search_dtl_heading">{item.heading}</h2>
+                <h5>{item.name}</h5>
+                <h3>{item.headinghover}</h3>
+                <p>{item.totalhour}</p>
 
-// //   console.log(results)
-//   // return (
-//     <>
-//       {/* <div className="search_data"> */}
-//         {/* <div className="under_input_data"> */}
-//           {/* <button onClick={() => Navi(-1)} className="goback_input">
-//             Go Back
-//           </button> */}
-//           {/* <input
-//             type="text"
-//             value={query}
-//             onChange={handleInputChange}
-//             placeholder="search  for product,brands or more"
-//             className="input_feild"
-//           />
-//           <button onClick={handleSubmit} className="goback_input">
-//             Search
-//           </button> */}
-//         {/* </div>
-//       </div> */}
-
-//       {/* <div className="all_data">
-//         {results.map((item, index) => { */}
-//                {/* //     id = item.id,
-//         //     name = item.name,
-//         //     image = item.image,
-//         //     price = parseInt(item.price),
-//         //   } = item;
-
-//           // return (
-//           //   <>
-//           //     <div className="underdiv_data" key={index}>
-//           //       <div>
-//           //         <img src={item.image} className="image_data"  alt="Not Found"/>
-//           //       </div>
-//           //       <div className="details_data">
-//           //         <h1>{item.name}</h1>
-//           //         <h1>₹:{item.price}.00</h1> */}
-//                   {/* <NavLink to={`/addcard/${item.id}`}> */}
-//                     {/* <button
-//                       onClick={() =>
-//                         dispatch(addtoCart({ id, price, image, name }))
-//                       }
-//                       className="btnaddcard_fashion"
-//                     >
-//                       add to card
-//                     </button> */}
-//                   {/* </NavLink> */}
-// {/* //                 </div> */}
-// {/* //               </div> */}
-//             {/* </> */}
-// {/* //           );
-// //         })}
-// //       </div> */}
-// {/* //     </> */}
-//   {/* );
-//  }
-
-// export default SearchBar;  */}
+                <p>{item.rating}</p>
+                <p>{item.about}</p>
+                <p>{item.id}</p>
+              </div>
+            </div>
+            <hr className="search_hrline" />
+          </div>
+        );
+      })}
+    </>
+  );
+}
+export default SearchBar;

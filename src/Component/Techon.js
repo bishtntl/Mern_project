@@ -5,7 +5,8 @@ function TechOn() {
       <div className="tech_container">
         <img
           className="tech_top_img"
-          src="https://s.udemycdn.com/teaching/billboard-desktop-v4.jpg" alt="Not Found"
+          src="https://s.udemycdn.com/teaching/billboard-desktop-v4.jpg"
+          alt="Not Found"
         />
         <div className="tech_second_div">
           <h1>Come teach with us</h1>
@@ -19,15 +20,21 @@ function TechOn() {
         </div>
         <div className="tech_multi_img_container">
           <div className="data">
-            <img src="https://s.udemycdn.com/teaching/value-prop-teach-v3.jpg" alt="Not Found"/>
-            <h2>Teach your way</h2>
+            <img
+              src="https://s.udemycdn.com/teaching/value-prop-teach-v3.jpg"
+              alt="Not Found"
+            />
+            <h2 className="heading_middle">Teach your way</h2>
             <p className="title_sub">
               Publish the course you want, in the way you want, and always have
               control of your own content.
             </p>
           </div>
           <div className="data">
-            <img src="https://s.udemycdn.com/teaching/value-prop-inspire-v3.jpg" alt="Not Found"/>
+            <img
+              src="https://s.udemycdn.com/teaching/value-prop-inspire-v3.jpg"
+              alt="Not Found"
+            />
             <h2>Inspire learners</h2>
             <p className="title_sub">
               Teach what you know and help learners explore their interests,
@@ -35,7 +42,10 @@ function TechOn() {
             </p>
           </div>
           <div className="data">
-            <img src="https://s.udemycdn.com/teaching/value-prop-get-rewarded-v3.jpg" alt="Not Found"/>
+            <img
+              src="https://s.udemycdn.com/teaching/value-prop-get-rewarded-v3.jpg"
+              alt="Not Found"
+            />
             <h2>Get rewarded</h2>
             <p className="title_sub">
               Expand your professional network, build your expertise, and earn
@@ -61,7 +71,7 @@ function TechOn() {
           <h1>180+</h1>
           <p>Countries</p>
         </div>
-        <div>
+        <div className="para">
           <h1>15,000+</h1>
           <p>Enterprise customers</p>
         </div>
@@ -94,14 +104,22 @@ function TechOn() {
               organized.{" "}
             </p>
           </div>
-          <div>
-            <img src="https://s.udemycdn.com/teaching/plan-your-curriculum-v3.jpg" alt="Not Found"/>
+          <div className="imgtech_lasr">
+            <img
+              className="img_lasr_img"
+              src="https://s.udemycdn.com/teaching/plan-your-curriculum-v3.jpg"
+              alt="Not Found"
+            />
           </div>
         </div>
       </div>
       <div className="last_one_tech">
         <div>
-          <img src="https://s.udemycdn.com/teaching/instructors/en/frank-1x-v2.jpg" alt="Not Found"/>
+          <img
+            className="last_one_tech_image"
+            src="https://s.udemycdn.com/teaching/instructors/en/frank-1x-v2.jpg"
+            alt="Not Found"
+          />
         </div>
         <div className="last_one_tech_dtl">
           <p>
@@ -116,20 +134,30 @@ function TechOn() {
       </div>
       <div className="last_tech">
         <div>
-          <img src="https://s.udemycdn.com/teaching/support-1-v3.jpg" alt="Not Found" />
+          <img
+            className="last_tech_img"
+            src="https://s.udemycdn.com/teaching/support-1-v3.jpg"
+            alt="Not Found"
+          />
         </div>
         <div className="last_tech_details">
           <h1>You won’t have to do it alone</h1>
-          <p className="dtl_dtl"> 
+          <p className="dtl_dtl">
             Our Instructor Support Team is here to answer your questions and
             review your test video, while our Teaching Center gives you plenty
             of resources to help you through the process. Plus, get the support
             of experienced instructors in our online community.
           </p>
-          <p className="need_data">Need more details before you start ? Learn more</p>
+          <p className="need_data">
+            Need more details before you start ? Learn more
+          </p>
         </div>
         <div>
-          <img src="https://s.udemycdn.com/teaching/support-2-v3.jpg" alt="Not Found"/>
+          <img
+            className="last_tech_img"
+            src="https://s.udemycdn.com/teaching/support-2-v3.jpg"
+            alt="Not Found"
+          />
         </div>
       </div>
     </>

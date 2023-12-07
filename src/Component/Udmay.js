@@ -6,7 +6,9 @@ function Udemy() {
 
   useEffect(() => {
     async function fetchapi() {
-      const ffdata = await fetch("https://mern-backend-o0hb.onrender.com/api/getdata");
+      const ffdata = await fetch(
+        "https://mern-backend-o0hb.onrender.com/api/getdata"
+      );
       const res = await ffdata.json();
       setData(res);
       // console.log(typeof res[0].id);
@@ -53,7 +55,7 @@ function Udemy() {
                     key={index}
                     src={item.img}
                     alt="Not Found"
-                    className="middleimages" 
+                    className="middleimages"
                   />
                 </>
               );
@@ -144,7 +146,11 @@ function Udemy() {
                 return (
                   <div key={index} className="underflex_two">
                     <div className="image_flex_div">
-                      <img className="imageflexone" src={item.img} alt="Not Found"/>
+                      <img
+                        className="imageflexone"
+                        src={item.img}
+                        alt="Not Found"
+                      />
                     </div>
                     <div className="details_div">
                       <b>{item.heading}</b>
@@ -166,8 +172,8 @@ function Udemy() {
                         <p className="subtitle">✅{item.para}</p>
                         <p className="subtitle">✅{item.predata}</p>
                         <p className="subtitle">✅{item.pre}</p>
-                        <div className="addbtn">
-                          <button className="addtocart">go to cart</button>
+                        <div className="addbtntwo">
+                          <button className="addtocarttwo">go to cart</button>
                           <span className="love">
                             <i class="fa-regular fa-heart"></i>
                           </span>
@@ -186,7 +192,11 @@ function Udemy() {
                 return (
                   <div key={index} className="underflex_two">
                     <div className="image_flex_div">
-                      <img className="imageflexone" src={item.img} alt="Not Found"/>
+                      <img
+                        className="imageflexone"
+                        src={item.img}
+                        alt="Not Found"
+                      />
                     </div>
                     <div className="details_div">
                       <b>{item.heading}</b>
@@ -208,8 +218,10 @@ function Udemy() {
                         <p className="subtitle">✅{item.para}</p>
                         <p className="subtitle">✅{item.predata}</p>
                         <p className="subtitle">✅{item.pre}</p>
-                        <div className="addbtn">
-                          <button className="addtocart">go to cart</button>
+                        <div className="addbtn_three">
+                          <button className="addtocart_three">
+                            go to cart
+                          </button>
                           <span className="love">
                             <i class="fa-regular fa-heart"></i>
                           </span>
@@ -228,7 +240,11 @@ function Udemy() {
                 return (
                   <div key={index} className="underflex_two">
                     <div className="image_flex_div">
-                      <img className="imageflexone" src={item.img} alt="Not Found"/>
+                      <img
+                        className="imageflexone"
+                        src={item.img}
+                        alt="Not Found"
+                      />
                     </div>
                     <div className="details_div">
                       <b>{item.heading}</b>
@@ -250,8 +266,8 @@ function Udemy() {
                         <p className="subtitle">✅{item.para}</p>
                         <p className="subtitle">✅{item.predata}</p>
                         <p className="subtitle">✅{item.pre}</p>
-                        <div className="addbtn">
-                          <button className="addtocart">go to cart</button>
+                        <div className="addbtn_four">
+                          <button className="addtocart_four">go to cart</button>
                           <span className="love">
                             <i class="fa-regular fa-heart"></i>
                           </span>
@@ -370,7 +386,11 @@ function Udemy() {
                 return (
                   <div key={index} className="underflex_two">
                     <div className="image_flex_div">
-                      <img className="imageflexone" src={item.img} alt="Not Found"/>
+                      <img
+                        className="imageflexone"
+                        src={item.img}
+                        alt="Not Found"
+                      />
                     </div>
                     <div className="details_div">
                       <b>{item.heading}</b>
@@ -392,8 +412,8 @@ function Udemy() {
                         <p className="subtitle">✅{item.para}</p>
                         <p className="subtitle">✅{item.predata}</p>
                         <p className="subtitle">✅{item.pre}</p>
-                        <div className="addbtn">
-                          <button className="addtocart">go to cart</button>
+                        <div className="addbtn_five">
+                          <button className="addtocartfive">go to cart</button>
                           <span className="love">
                             <i class="fa-regular fa-heart"></i>
                           </span>
@@ -412,7 +432,11 @@ function Udemy() {
                 return (
                   <div key={index} className="underflex_two">
                     <div className="image_flex_div">
-                      <img className="imageflexone" src={item.img} alt="Not Found"/>
+                      <img
+                        className="imageflexone"
+                        src={item.img}
+                        alt="Not Found"
+                      />
                     </div>
                     <div className="details_div">
                       <b>{item.heading}</b>
@@ -434,9 +458,9 @@ function Udemy() {
                         <p className="subtitle">✅{item.para}</p>
                         <p className="subtitle">✅{item.predata}</p>
                         <p className="subtitle">✅{item.pre}</p>
-                        <div className="addbtn">
-                          <button className="addtocart">go to cart</button>
-                          <span className="love">
+                        <div className="addbtn_six">
+                          <button className="addtocartsix">go to cart</button>
+                          <span className="love_six">
                             <i class="fa-regular fa-heart"></i>
                           </span>
                         </div>
@@ -454,7 +478,11 @@ function Udemy() {
                 return (
                   <div key={index} className="underflex_two">
                     <div className="image_flex_div">
-                      <img className="imageflexone" src={item.img} alt="Not Found"/>
+                      <img
+                        className="imageflexone"
+                        src={item.img}
+                        alt="Not Found"
+                      />
                     </div>
                     <div className="details_div">
                       <b>{item.heading}</b>
@@ -476,8 +504,8 @@ function Udemy() {
                         <p className="subtitle">✅{item.para}</p>
                         <p className="subtitle">✅{item.predata}</p>
                         <p className="subtitle">✅{item.pre}</p>
-                        <div className="addbtn">
-                          <button className="addtocart">go to cart</button>
+                        <div className="addbtn_seven">
+                          <button className="addtocartseven">go to cart</button>
                           <span className="love">
                             <i class="fa-regular fa-heart"></i>
                           </span>
@@ -496,7 +524,11 @@ function Udemy() {
                 return (
                   <div key={index} className="underflex_two">
                     <div className="image_flex_div">
-                      <img className="imageflexone" src={item.img} alt="Not Found"/>
+                      <img
+                        className="imageflexone"
+                        src={item.img}
+                        alt="Not Found"
+                      />
                     </div>
                     <div className="details_div">
                       <b>{item.heading}</b>
@@ -542,7 +574,11 @@ function Udemy() {
               <>
                 <div className="cartoon_underdiv">
                   <div className="hovercartoon_div">
-                    <img className="cartoon_image" src={item.img}  alt="Not Found" />
+                    <img
+                      className="cartoon_image"
+                      src={item.img}
+                      alt="Not Found"
+                    />
                   </div>
 
                   <h4>{item.name}</h4>
@@ -555,13 +591,15 @@ function Udemy() {
       <div className="tabledata">
         <table className="table">
           <tr>
-            <th style={{ fontSize: "1.5em" }}>Development</th>
+            <th style={{ fontSize: "1.5em" }}>
+              Development
+            </th>
             <th style={{ fontSize: "1.5em" }}>Business</th>
             <th style={{ fontSize: "1.5em" }}>IT and Software</th>
             <th style={{ fontSize: "1.5em" }}>Design</th>
           </tr>
           <tr>
-            <th className="language">Python</th>
+            <th className="language firstrow">Python</th>
 
             <th className="language">Financial Analysis</th>
 
@@ -671,7 +709,7 @@ function Udemy() {
           <div>
             <img
               src="https://s.udemycdn.com/home/non-student-cta/instructor-1x-v3.jpg"
-              alt="Not Found"
+              alt="Not Found" className="last_last_img"
             />
           </div>
           <div className="lastone_details">

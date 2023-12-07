@@ -602,7 +602,7 @@ function Human() {
                       </div>
 
                       <div className="hover_container_column">
-                        <div key={index} className="hover_details_dev_column">
+                        <div key={index} className="hover_details_dev_column_two">
                           <div className="middle_one">
                             <h4 className="heading_hover_dev_column">
                               {item.headinghover}
@@ -614,7 +614,7 @@ function Human() {
                             <p className="subtitle">✅{item.predata}</p>
                             <p className="subtitle">✅{item.pre}</p>
                             <div className="addbtn">
-                              <button className="addtocart_dev_column">
+                              <button className="addtocart_dev_column_two">
                                 go to cart
                               </button>
                               <span className="love">
