@@ -114,6 +114,7 @@
   .tech_container {
     position: relative;
     /* border: 2px solid black; */
+  
     height: 50vh;
   }
   .tech_top_img {

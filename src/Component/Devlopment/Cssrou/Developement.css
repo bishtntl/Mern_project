@@ -679,7 +679,7 @@
     left: 20vw;
     /* border: 2px solid black; */
     width: 75vw;
-    height: 80vh;
+    height: 85vh;
     z-index: 99;
     line-height: 2vh;
     /* overflow: hidden; */
@@ -703,7 +703,7 @@
   .hover_details_dev {
     border: 2px solid white;
     /* height: 33.5vh; */
-    height: 70vw;
+    height: 75vw;
     width: 100%;
     display: flex;
     margin: auto;
@@ -1272,16 +1272,16 @@
     display: none;
     position: absolute;
     box-shadow: 1px 1px 10px black;
-    left: 30vw;
+    left: 28vw;
     /* border: 2px solid black; */
     width: 65vw;
-    height: 50vh;
+    height: 55vh;
     z-index: 99;
     background-color: white;
   }
   .hover_details_dev {
     /* border: 2px solid white; */
-    height: 50vh;
+    height: 55vh;
     width: 60vw;
     display: flex;
     margin: auto;

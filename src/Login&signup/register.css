@@ -7,8 +7,7 @@
   justify-content: center;
   display: flex;
   margin-top: 5px;
-  /* gap: px; */
-  /* border: 5px solid black; */
+
 }
 .register {
   display: flex;
@@ -24,16 +23,15 @@
   line-height: 8vh;
   height: 100%;
   width: 50vh;
-  /* background-image: linear-gradient(to bottom, #ccffff, #e6ffff); */
-  /* border: 2px solid black; */
+  
 }
 
 .name {
   display: block;
   font-size: 1.5em;
 }
-.under {
-  /* background-color: #e6faff; */
+.under_div_reg {
+
   height: 100%;
   width: 30%;
   display: flex;
@@ -44,8 +42,6 @@
   height: 6vh;
   width: 80%;
   border-radius: 5px;
-  /* background-color: rgba(128, 128, 128, 0.184); */
-  /* text-transform: capitalize; */
   text-align: center;
 }
 .emailregister {
@@ -59,8 +55,6 @@ form {
   height: 6vh;
   width: 80%;
   border-radius: 5px;
-  /* background-color: rgba(128, 128, 128, 0.186); */
-  /* text-transform: capitalize; */
   text-align: center;
 }
 .passwordregiter {
@@ -71,8 +65,6 @@ form {
   height: 6vh;
   width: 80%;
   border-radius: 5px;
-  /* background-color: rgba(128, 128, 128, 0.186); */
-  /* text-transform: capitalize; */
   text-align: center;
 }
 .numregister {
@@ -84,7 +76,6 @@ form {
   width: 80%;
   border-radius: 5px;
   background-color: rgba(128, 128, 128, 0.186);
-  /* text-transform: capitalize; */
   text-align: center;
 }
 .submitbtn {
@@ -98,7 +89,7 @@ form {
 
 @media screen and (min-width: 300px) and (max-width: 500px) {
   .register {
-    height: 120vh;
+    /* height: 120vh; */
     width: 90vw;
     margin: auto;
     flex-direction: column;
@@ -108,11 +99,12 @@ form {
     display: none;
   }
 
-  .under_div {
+  .under_div_reg {
     height: 100%;
     width: 90vw;
     flex-wrap: wrap;
     display: flex;
+    /* border: 5px solid black; */
   }
   .under_register {
     height: 100%;
@@ -131,22 +123,25 @@ form {
 
 @media screen and (min-width: 500px) and (max-width: 1000px) {
   .register {
-    height: 120vh;
+    /* height: 120vh; */
     width: 90vw;
     margin: auto;
-    /* flex-wrap: wrap; */
     flex-direction: column;
   }
+  .btnone {
+    border: 5px solid black;
+    display: none;
+  }
 
-  .under_div {
+  .under_div_reg {
     height: 100%;
-    width: 90vw;
+    width: 70vw;
     flex-wrap: wrap;
     display: flex;
+    margin: auto;
   }
   .under_register {
     height: 100%;
-    width: 100%;
   }
 
   .submitbtn {
@@ -156,5 +151,6 @@ form {
     font-size: larger;
     font-weight: bold;
     border-radius: 5px;
+    /* display: none; */
   }
 }

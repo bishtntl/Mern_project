@@ -3,6 +3,8 @@ import { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import "./login.css";
 const token = localStorage.getItem("token");
+// const name=localStorage.getItem("name")
+// const email=localStorage.getItem("email")
 function LoginButton() {
   const navigate = useNavigate();
 
@@ -25,6 +27,10 @@ function LoginButton() {
         console.log(res);
         alert(res.data.msg);
         localStorage.setItem("token", res.data.token);
+        localStorage.setItem("name", res.data.name);
+        localStorage.setItem("email", res.data.email);
+        console.log(res.data.name);
+        console.log(res.data.email);
         navigate("/");
       });
 
@@ -36,7 +42,6 @@ function LoginButton() {
 
   return (
     <div className="login">
- 
       <div className="under_div_login">
         <h1 className="create_accc" style={{ color: "gray" }}>
           Log in to your Udemy account

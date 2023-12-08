@@ -71,12 +71,15 @@ import SearchBar from "../Component/Search";
 import axios from "axios";
 import Cart from "../Component/Cart";
 import LearCart from "../Component/LearCart";
+import PrivateCompo from "../Component/Private";
 function Display() {
   const Navi = useNavigate();
   const auth = localStorage.getItem("token");
-
+  const name = localStorage.getItem("name");
+  const email = localStorage.getItem("email");
   const [query, setQuery] = useState("");
   const [results, setResults] = useState([]);
+  const [count, setCount] = useState(false);
   const handleInputChange = (event) => {
     setQuery(event.target.value);
     console.log(query);
@@ -94,19 +97,17 @@ function Display() {
       });
   }, [query]);
 
-  // const handleSubmit = () => {
-    // <NavLink to="/search"  state= {results }></NavLink>;
-
-  // };
-
   const logoutfunc = () => {
     localStorage.clear();
-    Navi("/register");
+    Navi("/login");
   };
 
   return (
     <>
       <div className="container">
+        <div onClick={() => setCount(!count)} className="display">
+          <i className={`fa-solid ${count ? "fa-close" : "fa-bars menu"}`}></i>
+        </div>
         {/* <div> */}
         <NavLink to="/">
           <img
@@ -123,7 +124,7 @@ function Display() {
               <div className="parent_list_div">Categories</div>
 
               <ul className="sub_container">
-                <div className="sub_container_two">
+                {/* <div className="sub_container_two">
                   <li className="developement">
                     <NavLink to="/design"> Design</NavLink>
                     <ul className="development_subroute">
@@ -156,7 +157,7 @@ function Display() {
                       </div>
                     </ul>
                   </li>
-                </div>
+                </div> */}
 
                 <div>
                   <li className="business">
@@ -340,6 +341,40 @@ function Display() {
                     </div>
                   </ul>
                 </li>
+                <div className="sub_container_two">
+                  <li className="developement">
+                    <NavLink to="/design"> Design</NavLink>
+                    <ul className="development_subroute">
+                      <div className="under_div">
+                        <li className="web_development_container">
+                          <NavLink to="/design/webdesign"> Web Design</NavLink>
+                        </li>
+                        <li className="data_science_container">
+                          <NavLink to="/design/gamedesign">
+                            {" "}
+                            Game Design
+                          </NavLink>
+                        </li>
+                        <li className="mobile_development_container">
+                          <NavLink to="/design/animation">
+                            3D & Animation
+                          </NavLink>
+                        </li>
+                        <li className="programing_development_container">
+                          <NavLink to="/design/fashion/design">
+                            Fashion Design{" "}
+                          </NavLink>
+                        </li>
+                        <li className="game_development_container">
+                          <NavLink to="/design/other/design">
+                            {" "}
+                            Other Design
+                          </NavLink>
+                        </li>
+                      </div>
+                    </ul>
+                  </li>
+                </div>
                 <li className="Fitness">
                   <NavLink to="/health"> Health & Fitness</NavLink>
                   <ul className="subroute_Fitness">
@@ -393,16 +428,20 @@ function Display() {
             </li>
           </ul>
         </div>
-        <div>
+        <div className="search_con">
           <input
             type="text"
+            className="search_im"
             value={query}
             placeholder="enter here"
             onChange={handleInputChange}
           ></input>
           {/* <NavLink state={results}> */}
-          <NavLink to="/search"  state= {results }> <button>Search</button></NavLink>
-          
+          <NavLink to="/search" state={results}>
+            {" "}
+            <button className="search_btn">Search</button>
+          </NavLink>
+
           {/* </NavLink> */}
         </div>
 
@@ -416,36 +455,54 @@ function Display() {
           </ul>
         </div>
 
-     <span> <NavLink to="/addcart">🛒  </NavLink></span>
+        <span className="addcard_icon">
+          {" "}
+          <NavLink to="/addcart">🛒 </NavLink>
+        </span>
 
-     <div>
-      <NavLink to="/mylearning">My learn</NavLink>
-     </div>
+        <div>
+          {auth ? (
+            <div className="hover_container_mylearn">
+              <div className="hover_container_mylearn_underdiv">
+                <div> My learn</div>
 
-        {auth ? (
-          <NavLink to="/login">
-            <button onClick={logoutfunc} className="btnone lgtbtn">
-              Logout
-            </button>
-          </NavLink>
-        ) : (
-          //  <NavLink  to="/register"  onClick={logoutfunc} >Logout</NavLink> :
-          //
-          <span>
-            <NavLink to="/login">
-              <button className="btnone loginbtn">login</button>
-            </NavLink>
-            <NavLink to="/register">
-              <button className="btnone">register</button>
-            </NavLink>
-          </span>
-        )}
+                <div className="circle_top">{name.slice(0, 1)}</div>
+              </div>
+
+              <div className="hover_container_mylearn_child">
+                <div className="fetch_mail_name">
+                  <div className="circle_top_under">{name.slice(0, 1)}</div>
+
+                  <div className="fetch_mail">
+                    <p>{name}</p>
+                    <p>{email}</p>
+                  </div>
+                </div>
+                <p onClick={() => Navi("/mylearning")}>my learning</p>
+                <p onClick={() => Navi("/addcart")}>Add to cart</p>
+                <p onClick={logoutfunc}>log out</p>
+              </div>
+            </div>
+          ) : (
+            <span className="loginorregister">
+              <NavLink to="/login">
+                <button className="btnone loginbtn">login</button>
+              </NavLink>
+              <NavLink to="/register">
+                <button className="btnone">register</button>
+              </NavLink>
+            </span>
+          )}
+        </div>
       </div>
+  
 
+  
       <Routes>
         <Route path="/" element={<Udemy />}></Route>
-        <Route path="/login" element={<LoginButton />}></Route>
-        <Route path="/register" element={<RegisterButton />}></Route>
+
+        <Route element={<PrivateCompo/>}>
+ 
         <Route path="/devroute" element={<DevelopmentRoute />}></Route>
         <Route path="/design" element={<Development />}></Route>
         <Route path="/design/webdesign" element={<WebDevelopment />}></Route>
@@ -453,7 +510,7 @@ function Display() {
         <Route path="/design/animation" element={<Programming />}></Route>
         <Route path="/design/fashion/design" element={<Game />}></Route>
         <Route path="/design/other/design" element={<Mobile />}></Route>
-        <Route path="business" element={<Buniess />}></Route>
+        <Route path="/business" element={<Buniess />}></Route>
         <Route
           path="/business/communication"
           element={<Communication />}
@@ -520,9 +577,338 @@ function Display() {
         <Route path="/teaching/Teacher/Training" element={<Training />}></Route>
         <Route path="techon/udemy" element={<TechOn />}></Route>
         <Route path="/search" element={<SearchBar />}></Route>
-        <Route path="/addcart" element={<Cart/>}></Route>
-        <Route path="/mylearning" element={<LearCart/>}></Route>
+        <Route path="/addcart" element={<Cart />}></Route>
+        <Route path="/mylearning" element={<LearCart />}></Route>
+        </Route>
+        <Route path="/login" element={<LoginButton />}></Route>
+        <Route path="/register" element={<RegisterButton />}></Route>
       </Routes>
+
+      {/* **************************************************************************************************************************************************************************************************************************************************************** */}
+
+      {/* *************************************************************** */}
+
+      <div className={count ? "hambergerlinksShows" : "hambergerlinksHide"}>
+        <ul className="navbar-listResponsive">
+          <li className="listres">
+            {auth ? (
+              <NavLink
+                onClick={() => {
+                  setCount(!count);
+                  logoutfunc();
+                }}
+                to="/register"
+                className="navlinkRes"
+                style={({ isActive }) => ({
+                  color: isActive ? "aqua" : "Navy",
+                })}
+              >
+                Logout
+              </NavLink>
+            ) : (
+              <>
+                <NavLink
+                  onClick={() => setCount(!count)}
+                  to="/login"
+                  className="navlinkRes"
+                  style={({ isActive }) => ({
+                    color: isActive ? "aqua" : "Navy",
+                  })}
+                >
+                  Login
+                </NavLink>
+
+                <div>
+                  <NavLink
+                    onClick={() => setCount(!count)}
+                    to="/register"
+                    className="navlinkRes"
+                    style={({ isActive }) => ({
+                      color: isActive ? "aqua" : "Navy",
+                    })}
+                  >
+                    Sign Up
+                  </NavLink>
+                </div>
+              </>
+            )}
+          </li>
+
+          <li className="business_res">
+            <NavLink to="/business">Bussiness</NavLink>
+            <div className="bussiness_cover_res">
+              <ul className="business_subroute_res">
+                <li className="bussiness_sub">
+                  <NavLink to="/business">Bussiness</NavLink>
+                </li>
+                <li className="communication_science_container">
+                  <NavLink to="/business/communication" className="nav">
+                    Communication{" "}
+                  </NavLink>
+                </li>
+                <li className="management_development_container">
+                  <NavLink to="/business/management" className="nav">
+                    Management
+                  </NavLink>
+                </li>
+
+                <li className="Stetegy_container">
+                  <NavLink to="/business/Stetegy" className="nav">
+                    Bussiness Strategy
+                  </NavLink>
+                </li>
+                <li className="Oprations_container">
+                  <NavLink to="/business/Oprations" className="nav">
+                    Operations
+                  </NavLink>
+                </li>
+
+                <li className="Law_container">
+                  <NavLink to="/business/Human/Resources" className="nav">
+                    Human Resources
+                  </NavLink>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li className="finance_res">
+            <NavLink to="/finance">Finance & Accounting</NavLink>
+            <div className="finance_cover_res">
+              <ul className="subroute_finance_res">
+                <li>
+                  <NavLink to="/finance">Finance & Accounting</NavLink>
+                </li>
+                <li className=" Accounting_finance_container">
+                  <NavLink to="/finance/Book/Keeping" className="nav">
+                    Accounting & Book Keeping
+                  </NavLink>
+                </li>
+
+                <li className="Compliance_container">
+                  <NavLink to="/finance/Compliance" className="nav">
+                    Compilance
+                  </NavLink>
+                </li>
+
+                <li className="Economics_container">
+                  <NavLink to="/finance/Economics" className="nav">
+                    Economic
+                  </NavLink>
+                </li>
+                <li className="Finance_container">
+                  <NavLink to="/finance/Finance" className="nav">
+                    Finance
+                  </NavLink>
+                </li>
+                <li className=" Cert_container">
+                  <NavLink to="/finance/taxes" className="nav">
+                    Taxes
+                  </NavLink>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li className="it_software_res">
+            <NavLink to="/it/software">IT & Software</NavLink>
+            <div className="it_cover_res">
+              <ul className="subroute_It_res">
+                <div className="It_under_div_res">
+                  <li>
+                    <NavLink to="/it/software">IT & Software</NavLink>
+                  </li>
+                  <li className=" Certification_container">
+                    <NavLink to="/it/certificate" className="nav">
+                      It Certification
+                    </NavLink>
+                  </li>
+                  <li className="Network_container">
+                    <NavLink to="/it/Network" className="nav">
+                      {" "}
+                      Network & Security
+                    </NavLink>
+                  </li>
+                  <li className="Hardware_container">
+                    <NavLink to="/it/hardware" className="nav">
+                      Hardware
+                    </NavLink>
+                  </li>
+                  <li className="Operating_container">
+                    <NavLink to="/it/oprating/system" className="nav">
+                      Operating System & Server
+                    </NavLink>
+                  </li>
+                  <li className="Otherit_container">
+                    <NavLink to="/it/other" className="nav">
+                      Other It & Software
+                    </NavLink>
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </li>
+
+          <li className="Marketing_res">
+            <NavLink to="/marketing">Marketing</NavLink>
+            <div className="Marketing_cover_res">
+              <ul className="subroute_Marketing_res">
+                <div className="Marketing_under_div_res">
+                  <li>
+                    <NavLink to="/marketing">Marketing</NavLink>
+                  </li>
+                  <li className="Digital_container">
+                    <NavLink to="/marketing/digital" className="nav">
+                      Digital Marketing
+                    </NavLink>
+                  </li>
+                  <li className="Illustration_container">
+                    <NavLink to="/marketing/content" className="nav">
+                      Content Marketing
+                    </NavLink>
+                  </li>
+                  <li className="tooldesign_container">
+                    <NavLink to="/marketing/social" className="nav">
+                      Social Media Marketing
+                    </NavLink>
+                  </li>
+                  <li className=" User_container">
+                    <NavLink to="/marketing/product" className="nav">
+                      Product Marketing
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/marketing/public" className="nav">
+                      Public Marketing
+                    </NavLink>
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </li>
+          <li className="LifeStyle_res">
+            <NavLink to="/life">LifeStyle</NavLink>
+            <div className="LifeStyle_cover_res">
+              <ul className="subroute_LifeStyle_res">
+                <div className="LifeStyle_under_div_res">
+                  <li>
+                    <NavLink to="/life">LifeStyle</NavLink>
+                  </li>
+                  <li className="Arts_container">
+                    <NavLink to="/life/art/craft" className="nav">
+                      Arts & Crafts
+                    </NavLink>
+                  </li>
+                  <li className="Makeup_container">
+                    <NavLink to="/life/beauty" className="nav">
+                      Beauty & Makeup
+                    </NavLink>
+                  </li>
+                  <li className="Esoteric_container">
+                    <NavLink to="/life/travel" className="nav">
+                      Travel
+                    </NavLink>
+                  </li>
+                  <li className="Bevrage_container">
+                    <NavLink to="/life/food/bevrage" className="nav">
+                      {" "}
+                      Food & Beverage
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/life/pet/craft" className="nav">
+                      Pet care & Training
+                    </NavLink>
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </li>
+          <li className="Video_res">
+            <NavLink to="/photography">Photography & Video</NavLink>
+
+            <div className="Video_cover_res">
+              <ul className="subroute_Video_res">
+                <div className="Video_under_div_res">
+                  <li>
+                    <NavLink to="/photography">Photography & Video</NavLink>
+                  </li>
+                  <li className="Digital_container">
+                    <NavLink to="/photography/Digital" className="nav">
+                      Digital Photography
+                    </NavLink>
+                  </li>
+                  <li className=" Photographysecond_container">
+                    <NavLink to="/photography/photography" className="nav">
+                      Photography
+                    </NavLink>
+                  </li>
+                  <li className="Portrait_container">
+                    <NavLink to="/photography/Commercial" className="nav">
+                      Commercial Photography
+                    </NavLink>
+                  </li>
+                  <li className="Toolsphoto_container">
+                    <NavLink to="/photography/tools" className="nav">
+                      Photography Tools
+                    </NavLink>
+                  </li>
+                  <li className="">
+                    <NavLink to="/photography/video/design" className="nav">
+                      Video Design
+                    </NavLink>
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </li>
+
+         
+          <li className="Teaching_res">
+            <NavLink to="/teaching">Teaching & Academics</NavLink>
+            <div className="Teaching_cover_res">
+              <ul className="subroute_Teaching_res">
+                <div className="Teaching_under_div_res">
+                  <li>
+                    <NavLink to="/teaching">Teaching & Academics</NavLink>
+                  </li>
+                  <li className="Engneering_container">
+                    <NavLink to="/teaching/Engneering" className="nav">
+                      Engneering{" "}
+                    </NavLink>
+                  </li>
+                  <li className="Humanities_container">
+                    <NavLink to="/teaching/social/science" className="nav">
+                      Social Science
+                    </NavLink>
+                  </li>
+                  <li className="Math_container">
+                    <NavLink to="/teaching/Math" className="nav">
+                      {" "}
+                      Math{" "}
+                    </NavLink>
+                  </li>
+                  <li className="Science_container">
+                    <NavLink to="/teaching/Science" className="nav">
+                      Science
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/teaching/Teacher/Training" className="nav">
+                      Teacher Training
+                    </NavLink>
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </li>
+          <li
+            onClick={() => Navi("/mylearning")}
+            className="mylearn_font" 
+          >
+            My Learning Cart
+          </li>
+        </ul>
+      </div>
     </>
   );
 }

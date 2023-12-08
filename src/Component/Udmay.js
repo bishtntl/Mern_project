@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import "../Css/Udmey.css";
+import axios from "axios";
 
 function Udemy() {
   const [data, setData] = useState([]);
+  const [cart, setCart] = useState([]);
 
   useEffect(() => {
     async function fetchapi() {
@@ -15,6 +17,24 @@ function Udemy() {
     }
     fetchapi();
   });
+  useEffect(() => {
+    axios
+      .get("https://mern-backend-o0hb.onrender.com/api/addgetcart")
+      .then((res) => setCart(res.data))
+      .catch((err) => console.log(err));
+  }, [cart]);
+  // console.log(cart)
+  const handleClick = async (item) => {
+    const FindItem = cart && cart.find((items) => items.id === item.id);
+    console.log(FindItem);
+    if (FindItem) {
+      alert("go to cart ");
+    } else {
+      console.log(item.id);
+      await axios.post("https://mern-backend-o0hb.onrender.com/api/addcart", item);
+      alert("Item has successfully added in your cart");
+    }
+  };
 
   return (
     <>
@@ -127,7 +147,7 @@ function Udemy() {
                         <p className="subtitle">✅{item.predata}</p>
                         <p className="subtitle">✅{item.pre}</p>
                         <div className="addbtn">
-                          <button className="addtocart">go to cart</button>
+                          <button className="addtocart" onClick={() => handleClick(item)}>go to cart</button>
                           <span className="love">
                             <i class="fa-regular fa-heart"></i>
                           </span>
@@ -173,7 +193,7 @@ function Udemy() {
                         <p className="subtitle">✅{item.predata}</p>
                         <p className="subtitle">✅{item.pre}</p>
                         <div className="addbtntwo">
-                          <button className="addtocarttwo">go to cart</button>
+                          <button className="addtocarttwo" onClick={() => handleClick(item)}>go to cart</button>
                           <span className="love">
                             <i class="fa-regular fa-heart"></i>
                           </span>
@@ -219,7 +239,7 @@ function Udemy() {
                         <p className="subtitle">✅{item.predata}</p>
                         <p className="subtitle">✅{item.pre}</p>
                         <div className="addbtn_three">
-                          <button className="addtocart_three">
+                          <button className="addtocart_three" onClick={() => handleClick(item)}>
                             go to cart
                           </button>
                           <span className="love">
@@ -267,7 +287,7 @@ function Udemy() {
                         <p className="subtitle">✅{item.predata}</p>
                         <p className="subtitle">✅{item.pre}</p>
                         <div className="addbtn_four">
-                          <button className="addtocart_four">go to cart</button>
+                          <button className="addtocart_four" onClick={() => handleClick(item)}>go to cart</button>
                           <span className="love">
                             <i class="fa-regular fa-heart"></i>
                           </span>
@@ -413,7 +433,7 @@ function Udemy() {
                         <p className="subtitle">✅{item.predata}</p>
                         <p className="subtitle">✅{item.pre}</p>
                         <div className="addbtn_five">
-                          <button className="addtocartfive">go to cart</button>
+                          <button className="addtocartfive" onClick={() => handleClick(item)}>go to cart</button>
                           <span className="love">
                             <i class="fa-regular fa-heart"></i>
                           </span>
@@ -459,7 +479,7 @@ function Udemy() {
                         <p className="subtitle">✅{item.predata}</p>
                         <p className="subtitle">✅{item.pre}</p>
                         <div className="addbtn_six">
-                          <button className="addtocartsix">go to cart</button>
+                          <button className="addtocartsix" onClick={() => handleClick(item)}>go to cart</button>
                           <span className="love_six">
                             <i class="fa-regular fa-heart"></i>
                           </span>
@@ -505,7 +525,7 @@ function Udemy() {
                         <p className="subtitle">✅{item.predata}</p>
                         <p className="subtitle">✅{item.pre}</p>
                         <div className="addbtn_seven">
-                          <button className="addtocartseven">go to cart</button>
+                          <button className="addtocartseven" onClick={() => handleClick(item)}>go to cart</button>
                           <span className="love">
                             <i class="fa-regular fa-heart"></i>
                           </span>
@@ -551,7 +571,7 @@ function Udemy() {
                         <p className="subtitle">✅{item.predata}</p>
                         <p className="subtitle">✅{item.pre}</p>
                         <div className="addbtn">
-                          <button className="addtocart">go to cart</button>
+                          <button className="addtocart" onClick={() => handleClick(item)}>go to cart</button>
                           <span className="love">
                             <i class="fa-regular fa-heart"></i>
                           </span>

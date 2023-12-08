@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import BusinessRoute from "./Businessrou";
 import { NavLink } from "react-router-dom";
+import axios from "axios";
 
 function Buniess() {
   const [data, setData] = useState([]);
+  const [cart, setCart] = useState([]);
   useEffect(() => {
     async function fetchapi() {
       const ffdata = await fetch(
@@ -15,6 +17,35 @@ function Buniess() {
     }
     fetchapi();
   });
+  useEffect(() => {
+    async function fetchapi() {
+      const ffdata = await fetch(
+        "https://mern-backend-o0hb.onrender.com/api/getdata"
+      );
+      const res = await ffdata.json();
+      setData(res);
+      // console.log(res);
+    }
+    fetchapi();
+  });
+  useEffect(() => {
+    axios
+      .get("https://mern-backend-o0hb.onrender.com/api/addgetcart")
+      .then((res) => setCart(res.data))
+      .catch((err) => console.log(err));
+  }, [cart]);
+  // console.log(cart)
+  const handleClick = async (item) => {
+    const FindItem = cart && cart.find((items) => items.id === item.id);
+    console.log(FindItem);
+    if (FindItem) {
+      alert("go to cart ");
+    } else {
+      console.log(item.id);
+      await axios.post("https://mern-backend-o0hb.onrender.com/api/addcart", item);
+      alert("Item has successfully added in your cart");
+    }
+  };
 
   return (
     <>
@@ -47,8 +78,7 @@ function Buniess() {
                           />
                         </div>
                         <div
-                          className="details_div_devlop {
-"
+                          className="details_div_devlop"
                         >
                           <b>{item.heading}</b>
                           <span>{item.name}</span>
@@ -76,7 +106,7 @@ function Buniess() {
                             <p className="subtitle_dev">✅{item.predata}</p>
                             <p className="subtitle_dev">✅{item.pre}</p>
                             <div className="addbtn_dev">
-                              <button className="addtocart_dev">
+                              <button className="addtocart_dev" onClick={() => handleClick(item)}>
                                 go to cart
                               </button>
                               <span className="love_dev">
@@ -130,7 +160,7 @@ function Buniess() {
                             <p className="subtitle_dev">✅{item.predata}</p>
                             <p className="subtitle_dev">✅{item.pre}</p>
                             <div className="addbtn_dev">
-                              <button className="addtocart_dev">
+                              <button className="addtocart_dev" onClick={() => handleClick(item)}>
                                 go to cart
                               </button>
                               <span className="love_dev">
@@ -184,7 +214,7 @@ function Buniess() {
                             <p className="subtitle_dev">✅{item.predata}</p>
                             <p className="subtitle_dev">✅{item.pre}</p>
                             <div className="addbtn_dev">
-                              <button className="addtocart_dev">
+                              <button className="addtocart_dev" onClick={() => handleClick(item)}>
                                 go to cart
                               </button>
                               <span className="love_dev">
@@ -238,7 +268,7 @@ function Buniess() {
                             <p className="subtitle_dev">✅{item.predata}</p>
                             <p className="subtitle_dev">✅{item.pre}</p>
                             <div className="addbtn_dev">
-                              <button className="addtocart_dev">
+                              <button className="addtocart_dev" onClick={() => handleClick(item)}>
                                 go to cart
                               </button>
                               <span className="love_dev">
@@ -528,7 +558,7 @@ function Buniess() {
                             <p className="subtitle">✅{item.predata}</p>
                             <p className="subtitle">✅{item.pre}</p>
                             <div className="addbtn">
-                              <button className="addtocart_dev_column">
+                              <button className="addtocart_dev_column" onClick={() => handleClick(item)}>
                                 go to cart
                               </button>
                               <span className="love">
@@ -615,7 +645,7 @@ function Buniess() {
                             <p className="subtitle">✅{item.predata}</p>
                             <p className="subtitle">✅{item.pre}</p>
                             <div className="addbtn">
-                              <button className="addtocart_dev_column_two">
+                              <button className="addtocart_dev_column_two" onClick={() => handleClick(item)}>
                                 go to cart
                               </button>
                               <span className="love">

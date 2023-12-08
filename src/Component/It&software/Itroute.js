@@ -1,9 +1,6 @@
 import { NavLink } from "react-router-dom";
 import React from "react";
-// import axios from "axios";
 import "./css/Itrou.css";
-// import "./Webdevelop.css"
-// import "./Development.css"
 const Itrouter = () => {
   return (
     <>

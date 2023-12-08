@@ -22,7 +22,7 @@ form {
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
-  /* background-color: white; */
+  background-color: white;
 }
 .under_login {
   line-height: 5vh;
@@ -81,18 +81,17 @@ form {
     width: 100%;
     flex-wrap: wrap;
     display: flex;
+    line-height: 4vh;
     justify-content: center;
     align-items: center;
-    /* margin-left: 30px; */
-    background-color: #e6faff;
+    background-color: white;
+    border: 1px solid gray;
   }
   .under_login {
     line-height: 5vh;
     height: 100%;
     width: 90vw;
     margin: auto;
-    background-image: linear-gradient(to bottom, #ccffff, #e6ffff);
-    /* border: 2px solid black; */
   }
 
   .loginbtn {
@@ -102,6 +101,14 @@ form {
     font-size: larger;
     font-weight: bold;
     display: none;
+    border-radius: 5px;
+  }
+  .loginbtn_main {
+    height: 5vh;
+    width: 30vw;
+    background-color: #1ad1ff;
+    font-size: larger;
+    font-weight: bold;
     border-radius: 5px;
   }
 }
@@ -123,7 +130,7 @@ form {
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
-    background-color: #e6faff;
+    background-color: white;
   }
 
   .loginbtn {
@@ -138,6 +145,5 @@ form {
     line-height: 5vh;
     height: 100%;
     width: 67vh;
-    background-image: linear-gradient(to bottom, #ccffff, #e6ffff);
   }
 }

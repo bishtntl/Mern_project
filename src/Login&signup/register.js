@@ -33,19 +33,20 @@ function RegisterButton() {
     if (data.name.length === 0) {
       alert("Name field must have max 10 characters long");
       Navi("/register");
-    } else if (data.email.length === 0 || data.email.length > 25) {
+    } else if (data.email.length === 0 || data.email.length > 50) {
       alert("email field must have min 6 and max 15 characters long");
       Navi("/register");
-    } else if (data.password.length === 0 || data.password.length > 15) {
+    } else if (data.password.length === 0 || data.password.length > 25) {
       alert("password field must have min 6 and max 10 characters long");
       Navi("/register");
-    }  else {
+    } else {
       axios
         .post("https://mern-backend-o0hb.onrender.com/api/register", data)
         .then((res) => {
           alert(res.data.msg);
           setData(res.data);
           localStorage.setItem("token", res.data.token);
+          localStorage.setItem("email", res.data.email);
           console.log(res.data.token);
           if (res.data.msg === "user already registered with this email") {
             Navi("/register");
@@ -67,8 +68,7 @@ function RegisterButton() {
 
   return (
     <div className="register">
-  
-      <div className="under">
+      <div className="under_div_reg">
         <h1 className="create_acc" style={{ color: "gray" }}>
           Sign up and start learning
         </h1>

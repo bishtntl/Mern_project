@@ -1,9 +1,6 @@
 import { NavLink } from "react-router-dom";
 import React from "react";
-// import axios from "axios";
 import "./Cssrou/Route.css";
-// import "./Webdevelop.css"
-// import "./Development.css"
 const DevelopmentRoute = () => {
   return (
     <>

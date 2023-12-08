@@ -20,7 +20,7 @@ function Development() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4500/api/addgetcart")
+      .get("https://mern-backend-o0hb.onrender.com/api/addgetcart")
       .then((res) => setCart(res.data))
       .catch((err) => console.log(err));
   }, [cart]);
@@ -32,7 +32,7 @@ function Development() {
       alert("go to cart ");
     } else {
       console.log(item.id);
-      await axios.post("http://localhost:4500/api/addcart", item);
+      await axios.post("https://mern-backend-o0hb.onrender.com/api/addcart", item);
       alert("Item has successfully added in your cart");
     }
   };
@@ -67,8 +67,7 @@ function Development() {
                           />
                         </div>
                         <div
-                          className="details_div_devlop {
-"
+                          className="details_div_devlop"
                         >
                           <b>{item.heading}</b>
                           <span>{item.name}</span>
@@ -96,7 +95,7 @@ function Development() {
                             <p className="subtitle_dev">✅{item.predata}</p>
                             <p className="subtitle_dev">✅{item.pre}</p>
                             <div className="addbtn_dev">
-                              <button className="addtocart_dev">
+                              <button className="addtocart_dev"   onClick={() => handleClick(item)}>
                                 go to cart
                               </button>
                               <span className="love_dev">
@@ -150,7 +149,7 @@ function Development() {
                             <p className="subtitle_dev">✅{item.predata}</p>
                             <p className="subtitle_dev">✅{item.pre}</p>
                             <div className="addbtn_dev">
-                              <button className="addtocart_dev">
+                              <button className="addtocart_dev"   onClick={() => handleClick(item)}>
                                 go to cart
                               </button>
                               <span className="love_dev">
@@ -204,7 +203,7 @@ function Development() {
                             <p className="subtitle_dev">✅{item.predata}</p>
                             <p className="subtitle_dev">✅{item.pre}</p>
                             <div className="addbtn_dev">
-                              <button className="addtocart_dev">
+                              <button className="addtocart_dev"   onClick={() => handleClick(item)}>
                                 go to cart
                               </button>
                               <span className="love_dev">
@@ -258,7 +257,7 @@ function Development() {
                             <p className="subtitle_dev">✅{item.predata}</p>
                             <p className="subtitle_dev">✅{item.pre}</p>
                             <div className="addbtn_dev">
-                              <button className="addtocart_dev">
+                              <button className="addtocart_dev"   onClick={() => handleClick(item)}>
                                 go to cart
                               </button>
                               <span className="love_dev">
@@ -633,7 +632,7 @@ function Development() {
                             <p className="subtitle">✅{item.predata}</p>
                             <p className="subtitle">✅{item.pre}</p>
                             <div className="addbtn">
-                              <button className="addtocart_dev_column">
+                              <button className="addtocart_dev_column"   onClick={() => handleClick(item)}>
                                 go to cart
                               </button>
                               <span className="love">

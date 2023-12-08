@@ -9,6 +9,15 @@
 a {
   text-decoration: none;
 }
+.loginorregister {
+  display: flex;
+  gap: 3vw;
+
+  background-color: white;
+}
+.btnone {
+  width: 8vw;
+}
 .tooltip {
   position: relative;
   cursor: pointer;
@@ -95,6 +104,16 @@ span {
   border: 1px solid gray;
   background-color: rgb(243, 248, 248);
 }
+.fetch_mail_name {
+  display: flex;
+  width: 12vw;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  height: 10vh;
+  /* border: 2px solid black; */
+}
+
 .software_development_cover {
   position: absolute;
   left: 12vw;
@@ -596,9 +615,7 @@ span {
 .parent {
   position: relative;
   text-align: center;
-
   width: 20%;
-  /* border: 2px solid black; */
   height: 5vh;
 }
 .parent_list_div {
@@ -623,7 +640,6 @@ span {
   z-index: 999;
   left: 0%;
   line-height: 5vh;
-
   min-height: 50%;
   /* background-color: rgb(243, 248, 248); */
   /* width: 50vw; */
@@ -632,9 +648,7 @@ span {
   list-style: none;
   z-index: 99;
 }
-/* .l {
-  border: 1px solid grey;
-} */
+
 .sub_container {
   list-style: none;
   display: none;
@@ -644,10 +658,7 @@ span {
   line-height: 5vh;
   top: 5vh;
   z-index: 9999;
-  /* border: 5px solid red; */
   background-color: rgb(243, 248, 248);
-  /* width: 5vw; */
-  /* border: 2px solid black; */
 }
 .parent_menu:hover .sub_container {
   display: block;
@@ -661,7 +672,7 @@ span {
   height: 45vh;
   width: 15vw;
   /* border: 5px solid black; */
-  top: -1%;
+  top: -30.1vh;
   background-color: rgb(243, 248, 248);
 }
 
@@ -678,9 +689,6 @@ span {
 
 .developement {
   position: relative;
-  /* left: -10%; */
-  /* border: 2px solid black; */
-  /* width: 14vw; */
 }
 .developement:hover {
   color: blue;
@@ -890,14 +898,12 @@ span {
   height: 10vh;
   display: none;
   list-style: none;
-
-  /* border: 2px solid black; */
 }
 .under_div_business {
   border: 1px solid gray;
   position: relative;
   left: -23%;
-  top: -1.1vh;
+  top: 3.9vh;
   line-height: 5vh;
   background-color: rgb(243, 248, 248);
   width: 15vw;
@@ -912,8 +918,6 @@ span {
   border: 1px solid grey;
   position: relative;
   left: 0%;
-
-  /* width: 50vw; */
 }
 .entrepneurship_development_container:hover
   .entrepneurship_development_subroutes {
@@ -996,7 +1000,7 @@ span {
   left: -12%;
   line-height: 5vh;
   width: 15vw;
-  top: -2.6vh;
+  top: 2.4vh;
   height: 45vh;
   background-color: rgb(243, 248, 248);
 }
@@ -1238,11 +1242,20 @@ span {
   display: block;
 }
 
-.subroute_Fitness,
+.subroute_Fitness {
+  position: absolute;
+  left: 13vw;
+  width: 20vw;
+  top: 0vh;
+  height: 10vh;
+  display: none;
+  list-style: none;
+  /* border: 1px solid black; */
+}
 .subroute_music,
 .subroute_Teaching {
   position: absolute;
-  left: 13vw;
+  left: 13.5vw;
   width: 20vw;
   top: 0vh;
   height: 10vh;
@@ -1326,12 +1339,527 @@ span {
 .Science_container:hover .Science_subroute {
   display: block;
 }
+.hover_container_mylearn_child {
+  display: none;
+}
+.hover_container_mylearn:hover .hover_container_mylearn_child {
+  display: block;
+}
+.hover_container_mylearn {
+  position: relative;
+  height: 8vh;
+  /* border: 2px solid black; */
+}
+
+.hover_container_mylearn_child {
+  position: absolute;
+  top: 8vh;
+  background-color: aliceblue;
+  width: 14vw;
+  text-align: center;
+  z-index: 99;
+  right: 0vw;
+  /* border: 2px solid black; */
+}
+.circle_top {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  background-color: #000;
+}
+
+.circle_top_under {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  background-color: #000;
+}
+.hover_container_mylearn_underdiv {
+  display: flex;
+  gap: 2vw;
+  align-items: center;
+}
+.resicondiv {
+  display: none;
+}
+.responvivesearchbar {
+  display: none;
+}
+.iconsParent {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 2vw;
+  /* border: 2px solid blue; */
+}
+.login_logout {
+  display: flex;
+}
+li i {
+  font-size: 20px;
+}
+
+.navlinkres {
+  display: block;
+  width: 100%;
+}
+.listres {
+  display: block;
+
+  /* border-bottom: 4px solid lightcyan; */
+  text-align: center;
+  /* background-color: rgb(139, 157, 163) */
+}
+.listres .navlinkRes {
+  /* background-color: rgb(139, 157, 163); */
+  color: white;
+}
+/* Style for the mobile menu icon */
+.display {
+  cursor: pointer;
+  display: none;
+  /* align-items: center; */
+}
+.navbar-listResponsive {
+  display: none;
+}
 
 @media screen and (min-width: 300px) and (max-width: 600px) {
-  .container {
-    /* display: none; */
+  .logo {
+    position: absolute;
+    top: 25%;
+    width: 15vw;
+    left: 12vw;
+    font-size: 2em;
+    /* border: 2px solid black; */
   }
-  /* * {
+
+  .search_im {
+    width: 30vw;
+  }
+  .search_con {
+    position: relative;
+    left: 5vw;
+  }
+  .tooltip {
+    display: none;
+  }
+  .hover_container_mylearn {
+    display: none;
+  }
+  .parent {
+    display: none;
+  }
+  .navbar-listResponsive {
+    display: block;
+    position: absolute;
+    top: 7.8vh; /* Adjust as needed */
+    left: 0;
+    z-index: 1;
+    padding: 10px;
+    height: auto;
+    cursor: pointer;
+    display: block;
+    bottom: 1px solid rgb(10, 9, 9);
+    background-color: white;
+    width: 60%;
+    height: 60vh;
+    line-height: 6vh;
+    /* font-size: 2em; */
+  }
+  .business_res,
+  .finance_res,
+  .it_software_res,
+  .Design_res,
+  .Marketing_res,
+  .LifeStyle_res,
+  .Video_res,
+  .music_res,
+  .Teaching_res {
+    border-bottom: 2px solid lightgray;
+  }
+  .display {
+    display: block;
+    /* background-color: gray; */
+  }
+  .hambergerlinksShows {
+    display: block;
+    cursor: pointer;
+    text-align: center;
+  }
+  .hambergerlinksHide {
+    display: none;
+  }
+
+  .listres {
+    display: block;
+  }
+
+  .navlinkRes {
+    color: black;
+    /* background-color:rgb(192, 41, 41);  */
+    text-decoration: none;
+    font-size: 22px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    z-index: 3;
+  }
+
+  /* menu icon */
+  .display {
+    cursor: pointer;
+    height: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    width: 10%;
+    font-size: 2em;
+    position: relative;
+    left: -3vw;
+    justify-content: center;
+    align-items: center;
+  }
+  .listhide {
+    display: none;
+  }
+  .listshow {
+    display: block;
+  }
+
+  .under_div_business {
+    position: absolute;
+    left: 15vw;
+    width: 10vw;
+    top: 0vh;
+    height: 80vh;
+    display: none;
+    list-style: none;
+    z-index: 3;
+    border: 2px solid red;
+  }
+
+  .business_res,
+  .finance_res,
+  .it_software_res,
+  .Design_res,
+  .Marketing_res,
+  .LifeStyle_res,
+  .Video_res,
+  .music_res,
+  .Teaching_res {
+    /* border: 2px solid black; */
+    list-style-type: none;
+  }
+  .business_subroute_res li,
+  .subroute_finance_res li,
+  .subroute_It_res li,
+  .subroute_Design_res,
+  .subroute_Marketing_res li,
+  .subroute_LifeStyle_res li,
+  .subroute_Video_res li,
+  .subroute_music_res li,
+  .subroute_Teaching_res li {
+    /* border: 2px solid red; */
+    width: 100%;
+    list-style-type: none;
+    background-color: white;
+    line-height: 10vh;
+    border-bottom: 1px solid rgb(10, 9, 9);
+  }
+  .business_subroute_res,
+  .subroute_finance_res,
+  .subroute_It_res,
+  .subroute_Design_res,
+  .subroute_Marketing_res,
+  .subroute_LifeStyle_res,
+  .subroute_Video_res,
+  .subroute_music_res,
+  .subroute_Teaching_res {
+    height: 70vh;
+  }
+  .business_res:hover .bussiness_cover_res,
+  .finance_res:hover .finance_cover_res,
+  .it_software_res:hover .it_cover_res,
+  .Design_res:hover,
+  .Marketing_res:hover .Marketing_cover_res,
+  .LifeStyle_res:hover .LifeStyle_cover_res,
+  .Video_res:hover .Video_cover_res,
+  .music_res:hover .music_cover_res,
+  .Teaching_res:hover .Teaching_cover_res {
+    position: absolute;
+    left: -10vw;
+    width: 75vw;
+    top: 0vh;
+    height: 80vh;
+    display: block;
+    list-style: none;
+    z-index: 3;
+    /* border: 2px solid black; */
+    list-style: none;
+    z-index: 2;
+  }
+
+  .design_cover_res {
+    position: absolute;
+    left: -8vw;
+    width: 70vw;
+    top: 0vh;
+    height: 60vh;
+    display: block;
+    list-style: none;
+    z-index: 999;
     border: 2px solid black;
-  } */
+    list-style: none;
+  }
+  .bussiness_cover_res,
+  .finance_cover_res,
+  .design_cover_res,
+  .LifeStyle_cover_res,
+  .Video_cover_res,
+  .music_cover_res,
+  .Teaching_cover_res {
+    display: none;
+    height: 70vh;
+  }
+  .it_cover_res,
+  .Marketing_cover_res {
+    display: none;
+    height: 70vh;
+  }
+  .mylearn_font {
+    color: Navy;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .logo {
+    position: absolute;
+    top: 25%;
+    width: 18vw;
+    left: 12vw;
+    font-size: 2em;
+    /* border: 2px solid black; */
+  }
+  .btnone {
+    display: none;
+  }
+  .search_btn {
+    height: 4vh;
+  }
+  .mylearn_font {
+    color: Navy;
+    font-size: 2em;
+  }
+  .search_im {
+    width: 40vw;
+    /* border: 1px solid gray; */
+    font-size: 2em;
+    /* height: 4vh; */
+  }
+  .addcard_icon {
+    font-size: 3em;
+  }
+  .search_con {
+    position: relative;
+    left: 5vw;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+  }
+  .tooltip {
+    display: none;
+  }
+  .hover_container_mylearn {
+    display: none;
+  }
+  .parent {
+    display: none;
+  }
+  .navbar-listResponsive {
+    display: block;
+    position: absolute;
+    top: 9vh; /* Adjust as needed */
+    left: 0;
+    z-index: 1;
+    padding: 10px;
+    height: auto;
+    cursor: pointer;
+    display: block;
+    bottom: 1px solid rgb(10, 9, 9);
+    background-color: aliceblue;
+    width: 60%;
+    height: 62vh;
+    line-height: 6vh;
+  }
+  .business_res,
+  .finance_res,
+  .it_software_res,
+  .Design_res,
+  .Marketing_res,
+  .LifeStyle_res,
+  .Video_res,
+  .music_res,
+  .Teaching_res {
+    border-bottom: 2px solid lightgray;
+    font-size: 2em;
+    background-color: aliceblue;
+  }
+  .display {
+    display: block;
+    /* background-color: gray; */
+  }
+  .hambergerlinksShows {
+    display: block;
+    cursor: pointer;
+    text-align: center;
+  }
+  .hambergerlinksHide {
+    display: none;
+  }
+
+  .listres {
+    display: block;
+  }
+
+  .navlinkRes {
+    color: black;
+    /* background-color:rgb(192, 41, 41);  */
+    text-decoration: none;
+    font-size: 2em;
+    font-family: Georgia, "Times New Roman", Times, serif;
+
+    z-index: 3;
+  }
+
+  /* menu icon */
+  .display {
+    cursor: pointer;
+    height: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    width: 10%;
+    font-size: 4em;
+    position: relative;
+    left: -5vw;
+    justify-content: center;
+    align-items: center;
+  }
+  .listhide {
+    display: none;
+  }
+  .listshow {
+    display: block;
+  }
+
+  .under_div_business {
+    position: absolute;
+    left: 15vw;
+    width: 10vw;
+    top: 0vh;
+    height: 80vh;
+    display: none;
+    list-style: none;
+    z-index: 3;
+    border: 2px solid red;
+  }
+
+  .business_res,
+  .finance_res,
+  .it_software_res,
+  .Design_res,
+  .Marketing_res,
+  .LifeStyle_res,
+  .Video_res,
+  .music_res,
+  .Teaching_res {
+    /* border: 2px solid black; */
+    list-style-type: none;
+  }
+  .business_subroute_res li,
+  .subroute_finance_res li,
+  .subroute_It_res li,
+  .subroute_Design_res,
+  .subroute_Marketing_res li,
+  .subroute_LifeStyle_res li,
+  .subroute_Video_res li,
+  .subroute_music_res li,
+  .subroute_Teaching_res li {
+    /* border: 2px solid red; */
+    width: 100%;
+    list-style-type: none;
+    background-color: white;
+    line-height: 11vh;
+    border-bottom: 1px solid rgb(10, 9, 9);
+  }
+  .business_subroute_res,
+  .subroute_finance_res,
+  .subroute_It_res,
+  .subroute_Design_res,
+  .subroute_Marketing_res,
+  .subroute_LifeStyle_res,
+  .subroute_Video_res,
+  .subroute_music_res,
+  .subroute_Teaching_res {
+    height: 70vh;
+  }
+  .business_res:hover .bussiness_cover_res,
+  .finance_res:hover .finance_cover_res,
+  .it_software_res:hover .it_cover_res,
+  .Design_res:hover,
+  .Marketing_res:hover .Marketing_cover_res,
+  .LifeStyle_res:hover .LifeStyle_cover_res,
+  .Video_res:hover .Video_cover_res,
+  .music_res:hover .music_cover_res,
+  .Teaching_res:hover .Teaching_cover_res {
+    position: absolute;
+    left: -10vw;
+    width: 75vw;
+    top: 0vh;
+    height: 84vh;
+    display: block;
+    list-style: none;
+    z-index: 3;
+    /* font-size: 2em; */
+    /* border: 2px solid black; */
+    list-style: none;
+    z-index: 2;
+  }
+
+  .design_cover_res {
+    position: absolute;
+    left: -8vw;
+    width: 70vw;
+    top: 0vh;
+    height: 60vh;
+    display: block;
+    list-style: none;
+    z-index: 999;
+    border: 2px solid black;
+    list-style: none;
+  }
+  .bussiness_cover_res,
+  .finance_cover_res,
+  .design_cover_res,
+  .LifeStyle_cover_res,
+  .Video_cover_res,
+  .music_cover_res,
+  .Teaching_cover_res {
+    display: none;
+  }
+  .it_cover_res,
+  .Marketing_cover_res {
+    display: none;
+    height: 70vh;
+  }
 }
