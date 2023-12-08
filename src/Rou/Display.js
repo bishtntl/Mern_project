@@ -466,12 +466,12 @@ function Display() {
               <div className="hover_container_mylearn_underdiv">
                 <div> My learn</div>
 
-                <div className="circle_top">{name.slice(0, 1)}</div>
+                <div className="circle_top">{name}</div>
               </div>
 
               <div className="hover_container_mylearn_child">
                 <div className="fetch_mail_name">
-                  <div className="circle_top_under">{name.slice(0, 1)}</div>
+                  <div className="circle_top_under">{name}</div>
 
                   <div className="fetch_mail">
                     <p>{name}</p>
