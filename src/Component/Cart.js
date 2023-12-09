@@ -19,7 +19,7 @@ const Cart = () => {
   }, []);
   useEffect(() => {
     let pricetotal = 0;
-      paymetcart.map((item) => pricetotal += item.price);
+    paymetcart.map((item) => (pricetotal += item.price));
     setTotal(pricetotal);
     // console.log(total);
   }, [paymetcart]);
@@ -41,7 +41,10 @@ const Cart = () => {
         body: JSON.stringify(body),
       }
     );
-    await axios.post("https://mern-backend-o0hb.onrender.com/api/addlearn", paymetcart);
+    await axios.post(
+      "https://mern-backend-o0hb.onrender.com/api/addlearn",
+      paymetcart
+    );
     await axios.delete("https://mern-backend-o0hb.onrender.com/api/deletecart");
     const session = await response.json();
     const result = stripe.redirectToCheckout({
@@ -51,8 +54,8 @@ const Cart = () => {
       console.log(result.error);
     }
   };
-  const removehandle = async () => {
-    await axios.delete("https://mern-backend-o0hb.onrender.com/api/deletecart");
+  const removehandle = async (itemid) => {
+    await axios.post("http://localhost:4500/api/deletecart", { id: itemid });
     Nvigate(-1);
     alert("your cart has been removed");
   };
@@ -69,7 +72,10 @@ const Cart = () => {
               <h3>{item.name}</h3>
               <h4>Price:₹{item.price}.00</h4>
               <h4>Rating:{item.rating}</h4>
-              <button className="remove_addcart" onClick={removehandle}>
+              <button
+                className="remove_addcart"
+                onClick={() => removehandle(item.id)}
+              >
                 Remove button
               </button>
             </div>
