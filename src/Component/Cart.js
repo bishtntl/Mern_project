@@ -55,7 +55,7 @@ const Cart = () => {
     }
   };
   const removehandle = async (itemid) => {
-    await axios.post("http://localhost:4500/api/deletecart", { id: itemid });
+    await axios.post("https://mern-backend-o0hb.onrender.com/api/deletecart", { id: itemid });
     Nvigate(-1);
     alert("your cart has been removed");
   };
