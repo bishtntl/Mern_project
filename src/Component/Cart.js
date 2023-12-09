@@ -45,7 +45,7 @@ const Cart = () => {
       "https://mern-backend-o0hb.onrender.com/api/addlearn",
       paymetcart
     );
-    await axios.delete("https://mern-backend-o0hb.onrender.com/api/deletecart");
+    await axios.delete("https://mern-backend-o0hb.onrender.com/api/delete");
     const session = await response.json();
     const result = stripe.redirectToCheckout({
       sessionId: session.id,
