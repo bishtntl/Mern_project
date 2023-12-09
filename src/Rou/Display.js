@@ -87,7 +87,7 @@ function Display() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:4500/search/${query}`)
+      .get(`https://mern-backend-o0hb.onrender.com/search/${query}`)
       .then((res) => {
         setResults(res.data);
         console.log("hii");

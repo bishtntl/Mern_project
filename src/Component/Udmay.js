@@ -13,7 +13,7 @@ function Udemy() {
       );
       const res = await ffdata.json();
       setData(res);
-      // console.log(typeof res[0].id);
+    
     }
     fetchapi();
   });

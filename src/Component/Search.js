@@ -9,7 +9,7 @@ function SearchBar() {
     <>
       {getdata.map((item, index) => {
         return (
-          <div className="main">
+          <div className="main" key={index}>
             <div className="search_container">
               <div className="search_images_container">
                 <img src={item.img} alt="Not Found" className="search_images" />

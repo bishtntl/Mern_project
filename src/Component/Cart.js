@@ -19,9 +19,7 @@ const Cart = () => {
   }, []);
   useEffect(() => {
     let pricetotal = 0;
-    
       paymetcart.map((item) => pricetotal += item.price);
-    
     setTotal(pricetotal);
     // console.log(total);
   }, [paymetcart]);
