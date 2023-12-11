@@ -48,11 +48,8 @@ function RegisterButton() {
           localStorage.setItem("token", res.data.token);
           localStorage.setItem("email", res.data.email);
           console.log(res.data.token);
-          if (res.data.msg === "user already registered with this email") {
-            Navi("/register");
-          } else if (res.data.token) {
-            Navi("/login");
-          }
+          Navi("/login");
+         
         })
         .catch((err) => console.log(err, "axios error"));
     }
