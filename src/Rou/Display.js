@@ -252,7 +252,7 @@ function Display() {
                   <ul className="subroute_LifeStyle">
                     <div className="LifeStyle_under_div">
                       <li className="Arts_container">
-                        <NavLink to="/life/art/craft">Arts Crafts</NavLink>
+                        <NavLink to="/life/art/craft">Art & Craft</NavLink>
                       </li>
                       <li className="Makeup_container">
                         <NavLink to="/life/beauty">Beauty & Makeup</NavLink>
