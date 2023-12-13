@@ -132,7 +132,7 @@ function Display() {
                         <li className="  communication_science_container">
                           <NavLink to="/business/communication">
                             {" "}
-                            communication
+                            Communication
                           </NavLink>
                         </li>
                         <li className="management_development_container">
@@ -143,7 +143,7 @@ function Display() {
 
                         <li className="Stetegy_container">
                           <NavLink to="/business/Stetegy">
-                            Business Stetegy
+                            Business Strategy
                           </NavLink>
                         </li>
                         <li className="Oprations_container">
@@ -174,7 +174,7 @@ function Display() {
                         </li>
 
                         <li className="Economics_container">
-                          <NavLink to="/finance/Economics">Economics</NavLink>
+                          <NavLink to="/finance/Economics">Economic</NavLink>
                         </li>
                         <li className="Finance_container">
                           <NavLink to="/finance/Finance">Finance</NavLink>
@@ -265,7 +265,7 @@ function Display() {
                       </li>
                       <li className="Bevrage_container">
                         <NavLink to="/life/food/bevrage">
-                          Food & Bevrage
+                        Food & Beverage
                         </NavLink>
                       </li>
                       <li className="Bevrage_container">
