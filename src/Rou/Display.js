@@ -73,7 +73,6 @@ import Cart from "../Component/Cart";
 import LearCart from "../Component/LearCart";
 import PrivateCompo from "../Component/Private";
 function Display() {
-  
   const Navi = useNavigate();
   const auth = localStorage.getItem("token");
   const name = localStorage.getItem("name");
@@ -102,8 +101,6 @@ function Display() {
     localStorage.clear();
     Navi("/login");
   };
-
- 
 
   return (
     <>

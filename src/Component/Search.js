@@ -21,11 +21,11 @@ function SearchBar() {
               <div className="search_dtl">
                 {/* <h2 className="search_dtl_heading">{item.heading}</h2> */}
                 <h5>{item.name}</h5>
-                <h3>{item.headinghover}</h3>
+                <h3 className="heading_search">{item.headinghover}</h3>
                 {/* <p>{item.totalhour}</p> */}
 
                 <p>{item.rating}</p>
-                <p>{item.about}</p>
+                <p className="abouttext">{item.about}</p>
                 {/* <p>{item.id}</p> */}
               </div>
             </div>

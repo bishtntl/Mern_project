@@ -3,18 +3,25 @@
   gap: 4vw;
   width: 95vw;
   margin: auto;
+  /* border: 2px solid black; */
   /* border-bottom: 1px solid gray; */
-  align-items: flex-start;
+  /* align-items: flex-start; */
+  /* justify-content: center; */
   position: relative;
 }
 .search_images {
-  width: 40vw;
-  height: 50vh;
+  width: 25vw;
+  height: 30vh;
 }
 .search_hrline {
   width: 95%;
 }
-
+.abouttext {
+  font-size: 1.2em;
+}
+.heading_search {
+  font-size: 1.5em;
+}
 @media screen and (min-width: 300px) and (max-width: 600px) {
   .search_container {
     /* border: 2px solid black; */
@@ -42,6 +49,12 @@
     width: 60%;
     /* height: 38vh; */
     overflow: hidden;
+  }
+  .abouttext {
+    font-size: 1em;
+  }
+  .heading_search {
+    font-size: 1em;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 1000px) {
