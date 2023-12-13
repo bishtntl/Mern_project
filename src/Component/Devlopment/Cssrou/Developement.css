@@ -727,6 +727,7 @@
     width: 35vw;
     height: 5vh;
     position: relative;
+    background-color: purple;
     /* bottom: 60vh; */
   }
   .addbtn_dev {

@@ -78,8 +78,8 @@ const Cart = () => {
       {paymetcart.length === 0 ? (
           <div className="dataemptytwo">
           {" "}
-          <img src="https://codehap.com/images/empty_cart.jpeg" />
-          <img src="http://www.carezips.com/images/empty_cart.png"/>
+          <img src="https://codehap.com/images/empty_cart.jpeg"  alt="Not Found"/>
+          <img src="http://www.carezips.com/images/empty_cart.png"  alt="Not Found"/>
         </div>
       ) : (
         <>
