@@ -6,6 +6,10 @@
   left: 2%;
   /* border: 2px solid black; */
 }
+.loginbtn {
+  background-color: white;
+  color: black;
+}
 a {
   text-decoration: none;
 }
@@ -68,6 +72,10 @@ span {
   left: 100%;
   background-color: rgb(243, 248, 248);
 }
+.search_btn {
+  height: 6.5vh;
+  border-radius: 0px 20px 20px 0px;
+}
 .mobile_development_cover {
   position: absolute;
   left: 12vw;
@@ -114,6 +122,20 @@ span {
   /* border: 2px solid black; */
 }
 
+.search_im {
+  width: 40vw;
+  height: 6vh;
+  border: 20px;
+  border-radius: 20px 0px 0px 20px;
+  border: 1px solid gray;
+}
+.search_con {
+  width: 40vw;
+  display: flex;
+  justify-content: space-between;
+  /* border: 2px solid black; */
+  height: 5vh;
+}
 .software_development_cover {
   position: absolute;
   left: 12vw;
@@ -622,7 +644,9 @@ span {
   /* position: relative; */
   position: absolute;
   top: 0;
+  left: 6vw;
   cursor: pointer;
+  /* border: 2px solid black; */
   /* text-align: center; */
 }
 
@@ -656,7 +680,8 @@ span {
   text-align: left;
   position: relative;
   line-height: 5vh;
-  top: 5vh;
+  top: 4.6vh;
+  left: 5vw;
   z-index: 9999;
   background-color: rgb(243, 248, 248);
 }
@@ -679,7 +704,7 @@ span {
 .development_subroute {
   /* border: 2px solid black; */
   position: absolute;
-  left: 15vw;
+  left: 14.8vw;
   width: 10vw;
   top: 0vh;
   height: 10vh;
@@ -892,17 +917,18 @@ span {
 }
 .business_subroute {
   position: absolute;
-  left: 13vw;
+  left: 11.8vw;
   width: 10vw;
   top: -4vh;
   height: 10vh;
   display: none;
   list-style: none;
+  /* border: 2pc solid black; */
 }
 .under_div_business {
   border: 1px solid gray;
   position: relative;
-  left: -23%;
+  left: -20%;
   top: 3.9vh;
   line-height: 5vh;
   background-color: rgb(243, 248, 248);
@@ -961,7 +987,7 @@ span {
 }
 .subroute_finance {
   position: absolute;
-  left: 13vw;
+  left: 12.2vw;
   width: 20vw;
   top: -7.5vh;
   height: 10vh;
@@ -999,14 +1025,14 @@ span {
   position: relative;
   left: -12%;
   line-height: 5vh;
-  width: 15vw;
+  width: 18vw;
   top: 2.4vh;
   height: 45vh;
   background-color: rgb(243, 248, 248);
 }
 .subroute_It {
   position: absolute;
-  left: 13vw;
+  left: 12.7vw;
   width: 20vw;
   top: 0vh;
   height: 10vh;
@@ -1169,7 +1195,7 @@ span {
 .subroute_LifeStyle,
 .subroute_Video {
   position: absolute;
-  left: 13vw;
+  left: 12.7vw;
   width: 20vw;
   top: 0vh;
   height: 10vh;
@@ -1244,7 +1270,7 @@ span {
 
 .subroute_Fitness {
   position: absolute;
-  left: 13vw;
+  left: 12.7vw;
   width: 20vw;
   top: 0vh;
   height: 10vh;
@@ -1255,7 +1281,7 @@ span {
 .subroute_music,
 .subroute_Teaching {
   position: absolute;
-  left: 13.5vw;
+  left: 13.1vw;
   width: 20vw;
   top: 0vh;
   height: 10vh;
@@ -1353,9 +1379,9 @@ span {
 
 .hover_container_mylearn_child {
   position: absolute;
-  top: 8vh;
+  top: 9vh;
   background-color: aliceblue;
-  width: 14vw;
+  width: 16vw;
   text-align: center;
   z-index: 99;
   right: 0vw;
@@ -1438,6 +1464,9 @@ li i {
 }
 
 @media screen and (min-width: 300px) and (max-width: 600px) {
+  /* .nav_hide{
+    display: none;
+  } */
   .logo {
     position: absolute;
     top: 25%;
@@ -1446,10 +1475,21 @@ li i {
     font-size: 2em;
     /* border: 2px solid black; */
   }
-
-  .search_im {
-    width: 30vw;
+  .addcard_icon {
+    position: relative;
+    left: 8vw;
+    font-size: 2em;
+    /* border: 2px solid black; */
   }
+  /* 
+  
+  .fa-bars{
+    display: block;
+  } */
+  .fa-close {
+    display: block;
+  }
+
   .search_con {
     position: relative;
     left: 5vw;
@@ -1655,7 +1695,10 @@ li i {
     display: none;
   }
   .search_btn {
-    height: 4vh;
+    height: 6.5vh;
+    width: 4vw;
+
+    border-radius: 0px 20px 20px 0px;
   }
   .mylearn_font {
     color: Navy;
@@ -1672,9 +1715,10 @@ li i {
   }
   .search_con {
     position: relative;
-    left: 5vw;
-    border: 2px solid black;
+    left: 7vw;
+    /* border: 2px solid black; */
     display: flex;
+
     align-items: center;
   }
   .tooltip {
@@ -1771,7 +1815,7 @@ li i {
     display: none;
     list-style: none;
     z-index: 3;
-    border: 2px solid red;
+    /* border: 2px solid red; */
   }
 
   .business_res,
@@ -1861,5 +1905,11 @@ li i {
   .Marketing_cover_res {
     display: none;
     height: 70vh;
+  }
+  .addcard_icon {
+    position: relative;
+    left: 8vw;
+    font-size: 2em;
+    /* border: 2px solid black; */
   }
 }

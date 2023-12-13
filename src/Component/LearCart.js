@@ -4,17 +4,36 @@ import React, { useEffect, useState } from "react";
 
 function LearCart() {
   const [Learn, setLearn] = useState([]);
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     axios
       .get("https://mern-backend-o0hb.onrender.com/api/getlearn")
-      .then((res) => setLearn(res.data))
-      .catch((err) => console.log(err, "error"));
+      .then((res) => {
+        setLearn(res.data);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.log(err, "error");
+        setLoading(false);
+      });
   }, []);
   return (
     <div className="learn_container">
-      {Learn.map((item) => {
-        return (
-          < div className="learn_container_under_div">
+      {loading ? (
+        <div>
+          <p>Loading...</p>
+        </div>
+      ) : Learn.length === 0 ? (
+        <>
+          <div className="dataempty">
+            {" "}
+            <img src="https://codehap.com/images/empty_cart.jpeg" />
+            <img src="http://www.carezips.com/images/empty_cart.png"/>
+          </div>
+        </>
+      ) : (
+        Learn.map((item) => (
+          <div className="learn_container_under_div" key={item.id}>
             <div className="learn_container_image_container">
               <img
                 className="learn_container_image"
@@ -29,14 +48,10 @@ function LearCart() {
               <p>{item.time}</p>
               <p>{item.totalhour}</p>
             </div>
-            
-          </ div>
-        );
-      })}
-     
+          </div>
+        ))
+      )}
     </div>
-    
-
   );
 }
 

@@ -5,6 +5,9 @@ function SearchBar() {
   const results = useLocation();
   const getdata = results.state;
   console.log(getdata);
+
+  // const getdata = results.state;
+  // console.log(results);
   return (
     <>
       {getdata.map((item, index) => {
@@ -16,14 +19,14 @@ function SearchBar() {
               </div>
 
               <div className="search_dtl">
-                <h2 className="search_dtl_heading">{item.heading}</h2>
+                {/* <h2 className="search_dtl_heading">{item.heading}</h2> */}
                 <h5>{item.name}</h5>
                 <h3>{item.headinghover}</h3>
-                <p>{item.totalhour}</p>
+                {/* <p>{item.totalhour}</p> */}
 
                 <p>{item.rating}</p>
                 <p>{item.about}</p>
-                <p>{item.id}</p>
+                {/* <p>{item.id}</p> */}
               </div>
             </div>
             <hr className="search_hrline" />

@@ -28,7 +28,7 @@
   position: relative;
   right: 2vw;
   font-weight: bold;
-  border: 2px solid white;
+  /* border: 2px solid white; */
   color: white;
 }
 .tech_footer {
@@ -134,7 +134,7 @@
     position: relative;
     right: 5vw;
     font-weight: bold;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     color: white;
     text-align: center;
   }

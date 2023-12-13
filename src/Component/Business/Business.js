@@ -42,7 +42,10 @@ function Buniess() {
       alert("go to cart ");
     } else {
       console.log(item.id);
-      await axios.post("https://mern-backend-o0hb.onrender.com/api/addcart", item);
+      await axios.post(
+        "https://mern-backend-o0hb.onrender.com/api/addcart",
+        item
+      );
       alert("Item has successfully added in your cart");
     }
   };
@@ -77,9 +80,7 @@ function Buniess() {
                             alt="Not Found"
                           />
                         </div>
-                        <div
-                          className="details_div_devlop"
-                        >
+                        <div className="details_div_devlop">
                           <b>{item.heading}</b>
                           <span>{item.name}</span>
                           <p>{item.rating}</p>
@@ -106,7 +107,10 @@ function Buniess() {
                             <p className="subtitle_dev">✅{item.predata}</p>
                             <p className="subtitle_dev">✅{item.pre}</p>
                             <div className="addbtn_dev">
-                              <button className="addtocart_dev" onClick={() => handleClick(item)}>
+                              <button
+                                className="addtocart_dev"
+                                onClick={() => handleClick(item)}
+                              >
                                 go to cart
                               </button>
                               <span className="love_dev">
@@ -160,7 +164,10 @@ function Buniess() {
                             <p className="subtitle_dev">✅{item.predata}</p>
                             <p className="subtitle_dev">✅{item.pre}</p>
                             <div className="addbtn_dev">
-                              <button className="addtocart_dev" onClick={() => handleClick(item)}>
+                              <button
+                                className="addtocart_dev"
+                                onClick={() => handleClick(item)}
+                              >
                                 go to cart
                               </button>
                               <span className="love_dev">
@@ -214,7 +221,10 @@ function Buniess() {
                             <p className="subtitle_dev">✅{item.predata}</p>
                             <p className="subtitle_dev">✅{item.pre}</p>
                             <div className="addbtn_dev">
-                              <button className="addtocart_dev" onClick={() => handleClick(item)}>
+                              <button
+                                className="addtocart_dev"
+                                onClick={() => handleClick(item)}
+                              >
                                 go to cart
                               </button>
                               <span className="love_dev">
@@ -268,7 +278,10 @@ function Buniess() {
                             <p className="subtitle_dev">✅{item.predata}</p>
                             <p className="subtitle_dev">✅{item.pre}</p>
                             <div className="addbtn_dev">
-                              <button className="addtocart_dev" onClick={() => handleClick(item)}>
+                              <button
+                                className="addtocart_dev"
+                                onClick={() => handleClick(item)}
+                              >
                                 go to cart
                               </button>
                               <span className="love_dev">
@@ -331,7 +344,7 @@ function Buniess() {
       <div className="popular_dev_container">
         <div className="launguge_dev">
           {" "}
-          <NavLink to="/business/communication">Commun..</NavLink>
+          <NavLink to="/business/communication">Communication</NavLink>
         </div>
         <div className="launguge_dev">
           {" "}
@@ -343,10 +356,6 @@ function Buniess() {
         <div className="launguge_dev">
           {" "}
           <NavLink to="/business/Oprations"> Oprations</NavLink>
-        </div>
-        <div className="launguge_dev">
-          {" "}
-          <NavLink to="/business/Human/Resources"> Human Resources</NavLink>
         </div>
       </div>
 
@@ -558,7 +567,10 @@ function Buniess() {
                             <p className="subtitle">✅{item.predata}</p>
                             <p className="subtitle">✅{item.pre}</p>
                             <div className="addbtn">
-                              <button className="addtocart_dev_column" onClick={() => handleClick(item)}>
+                              <button
+                                className="addtocart_dev_column"
+                                onClick={() => handleClick(item)}
+                              >
                                 go to cart
                               </button>
                               <span className="love">
@@ -633,7 +645,10 @@ function Buniess() {
                       </div>
 
                       <div className="hover_container_column">
-                        <div key={index} className="hover_details_dev_column_two">
+                        <div
+                          key={index}
+                          className="hover_details_dev_column_two"
+                        >
                           <div className="middle_one">
                             <h4 className="heading_hover_dev_column">
                               {item.headinghover}
@@ -645,7 +660,10 @@ function Buniess() {
                             <p className="subtitle">✅{item.predata}</p>
                             <p className="subtitle">✅{item.pre}</p>
                             <div className="addbtn">
-                              <button className="addtocart_dev_column_two" onClick={() => handleClick(item)}>
+                              <button
+                                className="addtocart_dev_column_two"
+                                onClick={() => handleClick(item)}
+                              >
                                 go to cart
                               </button>
                               <span className="love">

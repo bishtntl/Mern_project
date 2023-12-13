@@ -8,6 +8,11 @@
 }
 .create_accc {
   height: 5vh;
+  width: 22vw;
+  position: relative;
+  top: 2vh;
+  text-align: left;
+  /* border: 2px solid black; */
 }
 
 form {
@@ -36,7 +41,7 @@ form {
 }
 #emaillogin {
   height: 6vh;
-  width: 80%;
+  width: 90%;
   border-radius: 5px;
   /* background-color: rgba(128, 128, 128, 0.186); */
   text-align: center;
@@ -49,7 +54,7 @@ form {
 }
 #passwordlogin {
   height: 6vh;
-  width: 80%;
+  width: 90%;
   border-radius: 5px;
   /* background-color: rgba(128, 128, 128, 0.186); */
   text-align: center;
@@ -59,8 +64,8 @@ form {
 
 .loginbtn_main {
   height: 5vh;
-  width: 15vw;
-  background-color: #1ad1ff;
+  width: 22.5vw;
+  background-color: blueviolet;
   font-size: larger;
   font-weight: bold;
   border-radius: 5px;
@@ -76,6 +81,16 @@ form {
     justify-content: center;
     display: flex;
   }
+  .create_accc {
+    height: 5vh;
+    width: 80vw;
+    position: relative;
+    top: -1vh;
+
+    /* top: 2vh; */
+    text-align: center;
+    /* border: 2px solid black; */
+  }
 
   .under_div_login {
     width: 100%;
@@ -85,7 +100,7 @@ form {
     justify-content: center;
     align-items: center;
     background-color: white;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
   }
   .under_login {
     line-height: 5vh;
@@ -105,45 +120,70 @@ form {
   }
   .loginbtn_main {
     height: 5vh;
-    width: 30vw;
-    background-color: #1ad1ff;
+    width: 75vw;
+    background-color: blueviolet;
     font-size: larger;
     font-weight: bold;
     border-radius: 5px;
   }
 }
 
-@media screen and (min-width: 500px) and (max-width: 1000px) {
+@media screen and (min-width: 600px) and (max-width: 1000px) {
   .login {
-    height: 100vh;
+    height: 80vh;
     width: 90vw;
     margin: auto;
     flex-direction: column;
-    text-align: center;
+    /* text-align: center; */
     justify-content: center;
     display: flex;
+    /* border: 2px solid black; */
+  }
+  .create_accc {
+    height: 5vh;
+    width: 55vw;
+    position: relative;
+    top: -1vh;
+    font-size: 1.5em;
+    /* top: 2vh; */
+    text-align: left;
+    /* border: 2px solid black; */
   }
 
   .under_div_login {
-    width: 99%;
-
+    width: 100%;
     flex-wrap: wrap;
     display: flex;
-    justify-content: center;
+    position: relative;
+    top: -10vh;
+    /* line-height: 4vh; */
+    /* justify-content: center; */
+    /* align-items: center; */
     background-color: white;
-  }
-
-  .loginbtn {
-    height: 5vh;
-    width: 20vw;
-    background-color: #1ad1ff;
-    font-size: larger;
-    font-weight: bold;
-    border-radius: 5px;
+    /* border: 1px solid gray; */
   }
   .under_login {
     line-height: 5vh;
     height: 100%;
-    width: 67vh;
+    width: 90vw;
+    margin: auto;
+  }
+
+  .loginbtn {
+    height: 5vh;
+    width: 40vw;
+    background-color: #1ad1ff;
+    font-size: larger;
+    font-weight: bold;
+    display: none;
+    border-radius: 5px;
+  }
+  .loginbtn_main {
+    height: 5vh;
+    width: 56vw;
+    background-color: blueviolet;
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 5px;
   }
 }

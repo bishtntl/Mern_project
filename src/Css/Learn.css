@@ -16,11 +16,16 @@
   gap: 3vw;
 }
 
+.dataempty {
+  display: flex;
+  align-items: center;
 
+  margin: auto;
+}
 @media screen and (min-width: 300px) and (max-width: 600px) {
   .learn_container {
     display: flex;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     gap: 2vw;
     justify-content: space-around;
     align-items: center;
@@ -41,6 +46,16 @@
     flex-direction: column;
     align-items: center;
     gap: 3vw;
+  }
+  .dataempty {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+  }
+  .dataempty img {
+    /* height: 60vh; */
+    width: 100vw;
   }
 }
 
@@ -71,5 +86,15 @@
     width: 90%;
     font-size: 1.5em;
     /* border: 2px solid black; */
+  }
+  .dataempty {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+  }
+  .dataempty img {
+    /* height: 60vh; */
+    width: 100vw;
   }
 }

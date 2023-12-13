@@ -43,13 +43,9 @@ function LoginButton() {
   return (
     <div className="login">
       <div className="under_div_login">
-        <h1 className="create_accc" style={{ color: "gray" }}>
-          Log in to your Udemy account
-        </h1>
+        <h3 className="create_accc">Log in to your Udemy account</h3>
         <form>
-          <label htmlFor="emaillogin" className="emaillogin">
-            Email
-          </label>
+          <label htmlFor="emaillogin" className="emaillogin"></label>
           <input
             type="email"
             className="emailloginid"
@@ -60,9 +56,8 @@ function LoginButton() {
             onChange={changeme}
           />
           <br />
-          <label htmlFor="passwordlogin" className="passwordlogin">
-            Password
-          </label>
+          <br />
+          <label htmlFor="passwordlogin" className="passwordlogin"></label>
           <input
             type="password"
             id="passwordlogin"
@@ -80,7 +75,9 @@ function LoginButton() {
           </button>
           <br />
 
-          <NavLink to="/register">go to register page</NavLink>
+          <NavLink to="/register">
+            Don't have an account? Sign up Log in with your organization
+          </NavLink>
         </form>
       </div>
     </div>

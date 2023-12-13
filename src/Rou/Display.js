@@ -73,6 +73,7 @@ import Cart from "../Component/Cart";
 import LearCart from "../Component/LearCart";
 import PrivateCompo from "../Component/Private";
 function Display() {
+  
   const Navi = useNavigate();
   const auth = localStorage.getItem("token");
   const name = localStorage.getItem("name");
@@ -102,6 +103,8 @@ function Display() {
     Navi("/login");
   };
 
+ 
+
   return (
     <>
       <div className="container">
@@ -124,41 +127,6 @@ function Display() {
               <div className="parent_list_div">Categories</div>
 
               <ul className="sub_container">
-                {/* <div className="sub_container_two">
-                  <li className="developement">
-                    <NavLink to="/design"> Design</NavLink>
-                    <ul className="development_subroute">
-                      <div className="under_div">
-                        <li className="web_development_container">
-                          <NavLink to="/design/webdesign"> Web Design</NavLink>
-                        </li>
-                        <li className="data_science_container">
-                          <NavLink to="/design/gamedesign">
-                            {" "}
-                            Game Design
-                          </NavLink>
-                        </li>
-                        <li className="mobile_development_container">
-                          <NavLink to="/design/animation">
-                            3D & Animation
-                          </NavLink>
-                        </li>
-                        <li className="programing_development_container">
-                          <NavLink to="/design/fashion/design">
-                            Fashion Design{" "}
-                          </NavLink>
-                        </li>
-                        <li className="game_development_container">
-                          <NavLink to="/design/other/design">
-                            {" "}
-                            Other Design
-                          </NavLink>
-                        </li>
-                      </div>
-                    </ul>
-                  </li>
-                </div> */}
-
                 <div>
                   <li className="business">
                     <NavLink to="/business"> Business</NavLink>
@@ -433,13 +401,15 @@ function Display() {
             type="text"
             className="search_im"
             value={query}
-            placeholder="enter here"
+            placeholder="search for anything"
             onChange={handleInputChange}
           ></input>
           {/* <NavLink state={results}> */}
           <NavLink to="/search" state={results}>
             {" "}
-            <button className="search_btn">Search</button>
+            <button className="search_btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
           </NavLink>
 
           {/* </NavLink> */}
@@ -495,90 +465,93 @@ function Display() {
           )}
         </div>
       </div>
-  
 
-  
       <Routes>
         <Route path="/" element={<Udemy />}></Route>
 
-        <Route element={<PrivateCompo/>}>
- 
-        <Route path="/devroute" element={<DevelopmentRoute />}></Route>
-        <Route path="/design" element={<Development />}></Route>
-        <Route path="/design/webdesign" element={<WebDevelopment />}></Route>
-        <Route path="/design/gamedesign" element={<DataScience />}></Route>
-        <Route path="/design/animation" element={<Programming />}></Route>
-        <Route path="/design/fashion/design" element={<Game />}></Route>
-        <Route path="/design/other/design" element={<Mobile />}></Route>
-        <Route path="/business" element={<Buniess />}></Route>
-        <Route
-          path="/business/communication"
-          element={<Communication />}
-        ></Route>
-        <Route path="/business/management" element={<Management />}></Route>
-        <Route path="/business/Stetegy" element={<BuniessStretegy />}></Route>
-        <Route path="/business/Oprations" element={<Oprations />}></Route>
-        <Route path="/business/Human/Resources" element={<Human />}></Route>
-        <Route path="business/route" element={<BusinessRoute />}></Route>
-        <Route path="/finance" element={<FinanceAccounting />}></Route>
-        <Route path="/finance/Book/Keeping" element={<Accounting />}></Route>
-        <Route path="/finance/Compliance" element={<Compliance />}></Route>
-        <Route path="/finance/Economics" element={<Economics />}></Route>
-        <Route path="/finance/Finance" element={<Finance />}></Route>
-        <Route path="/finance/taxes" element={<Taxes />}></Route>
-        <Route path="/itroute" element={<Itrouter />}></Route>
-        <Route path="/it/software" element={<ItSoftware />}></Route>
-        <Route path="/it/certificate" element={<Certificate />}></Route>
-        <Route path="/it/Network" element={<Security />}></Route>
-        <Route path="/it/hardware" element={<Hardware />}></Route>
-        <Route path="/it/oprating/system" element={<Oprating />}></Route>
-        <Route path="/it/other" element={<OtherIt />}></Route>
-        <Route path="/marketing" element={<Marketing />}></Route>
-        <Route path="/marketing/digital" element={<Digital />}></Route>
-        <Route path="/marketing/content" element={<Content />}></Route>
-        <Route path="/marketing/social" element={<Social />}></Route>
-        <Route path="/marketing/public" element={<Public />}></Route>
-        <Route path="/marketing/product" element={<Product />}></Route>
-        <Route path="/marketingroute" element={<Marketingrouter />}></Route>
-        <Route path="/life" element={<LifeStyle />}></Route>
-        <Route path="/life/art/craft" element={<Art />}></Route>
-        <Route path="/life/beauty" element={<Beauty />}></Route>
-        <Route path="/life/pet/craft" element={<PetCare />}></Route>
-        <Route path="/life/food/bevrage" element={<Food />}></Route>
-        <Route path="/life/travel" element={<Travel />}></Route>
-        <Route path="liferoute" element={<LifeRouter />}></Route>
-        <Route path="/photoroute" element={<PhotographyRouter />}></Route>
-        <Route path="/photography/Digital" element={<DigitalPhoto />}></Route>
-        <Route path="/photography/photography" element={<Photography />}>
-          {" "}
-        </Route>
-        <Route path="/photography/video/design" element={<Video />}>
-          {" "}
-        </Route>
-        <Route path="/photography/tools" element={<Tools />}></Route>
-        <Route path="/photography/Commercial" element={<Commercial />}></Route>
-        <Route path="/photography" element={<PhotoVideo />}></Route>
-        <Route path="/health" element={<Health />}></Route>
-        <Route path="/health/fitness" element={<Fitness />}></Route>
-        <Route path="/health/yoga" element={<Yoga />}></Route>
-        <Route path="/health/sport" element={<Sport />}></Route>
-        <Route path="/health/mental" element={<Mental />}></Route>
-        <Route path="/health/dance" element={<Dance />}></Route>
-        <Route path="/healthroute" element={<HealthRouter />}></Route>
-        <Route path="teachroute" element={<TeachRouter />}></Route>
-        <Route path="/teaching" element={<Teaching />}></Route>
-        <Route path="/teaching/Engneering" element={<Engneering />}></Route>
-        <Route
-          path="/teaching/social/science"
-          element={<SocailScience />}
-        ></Route>
-        <Route path="/teaching/Math" element={<Math />}></Route>
-        <Route path="/teaching/Science" element={<Science />}></Route>
-        <Route path="/teaching/Teacher/Training" element={<Training />}></Route>
-        <Route path="techon/udemy" element={<TechOn />}></Route>
-        <Route path="/search" element={<SearchBar />}></Route>
-        <Route path="/addcart" element={<Cart />}></Route>
-        <Route path="/mylearning" element={<LearCart />}></Route>
+        <Route element={<PrivateCompo />}>
+          <Route path="/devroute" element={<DevelopmentRoute />}></Route>
+          <Route path="/design" element={<Development />}></Route>
+          <Route path="/design/webdesign" element={<WebDevelopment />}></Route>
+          <Route path="/design/gamedesign" element={<DataScience />}></Route>
+          <Route path="/design/animation" element={<Programming />}></Route>
+          <Route path="/design/fashion/design" element={<Game />}></Route>
+          <Route path="/design/other/design" element={<Mobile />}></Route>
+          <Route path="/business" element={<Buniess />}></Route>
+          <Route
+            path="/business/communication"
+            element={<Communication />}
+          ></Route>
+          <Route path="/business/management" element={<Management />}></Route>
+          <Route path="/business/Stetegy" element={<BuniessStretegy />}></Route>
+          <Route path="/business/Oprations" element={<Oprations />}></Route>
+          <Route path="/business/Human/Resources" element={<Human />}></Route>
+          <Route path="business/route" element={<BusinessRoute />}></Route>
+          <Route path="/finance" element={<FinanceAccounting />}></Route>
+          <Route path="/finance/Book/Keeping" element={<Accounting />}></Route>
+          <Route path="/finance/Compliance" element={<Compliance />}></Route>
+          <Route path="/finance/Economics" element={<Economics />}></Route>
+          <Route path="/finance/Finance" element={<Finance />}></Route>
+          <Route path="/finance/taxes" element={<Taxes />}></Route>
+          <Route path="/itroute" element={<Itrouter />}></Route>
+          <Route path="/it/software" element={<ItSoftware />}></Route>
+          <Route path="/it/certificate" element={<Certificate />}></Route>
+          <Route path="/it/Network" element={<Security />}></Route>
+          <Route path="/it/hardware" element={<Hardware />}></Route>
+          <Route path="/it/oprating/system" element={<Oprating />}></Route>
+          <Route path="/it/other" element={<OtherIt />}></Route>
+          <Route path="/marketing" element={<Marketing />}></Route>
+          <Route path="/marketing/digital" element={<Digital />}></Route>
+          <Route path="/marketing/content" element={<Content />}></Route>
+          <Route path="/marketing/social" element={<Social />}></Route>
+          <Route path="/marketing/public" element={<Public />}></Route>
+          <Route path="/marketing/product" element={<Product />}></Route>
+          <Route path="/marketingroute" element={<Marketingrouter />}></Route>
+          <Route path="/life" element={<LifeStyle />}></Route>
+          <Route path="/life/art/craft" element={<Art />}></Route>
+          <Route path="/life/beauty" element={<Beauty />}></Route>
+          <Route path="/life/pet/craft" element={<PetCare />}></Route>
+          <Route path="/life/food/bevrage" element={<Food />}></Route>
+          <Route path="/life/travel" element={<Travel />}></Route>
+          <Route path="liferoute" element={<LifeRouter />}></Route>
+          <Route path="/photoroute" element={<PhotographyRouter />}></Route>
+          <Route path="/photography/Digital" element={<DigitalPhoto />}></Route>
+          <Route path="/photography/photography" element={<Photography />}>
+            {" "}
+          </Route>
+          <Route path="/photography/video/design" element={<Video />}>
+            {" "}
+          </Route>
+          <Route path="/photography/tools" element={<Tools />}></Route>
+          <Route
+            path="/photography/Commercial"
+            element={<Commercial />}
+          ></Route>
+          <Route path="/photography" element={<PhotoVideo />}></Route>
+          <Route path="/health" element={<Health />}></Route>
+          <Route path="/health/fitness" element={<Fitness />}></Route>
+          <Route path="/health/yoga" element={<Yoga />}></Route>
+          <Route path="/health/sport" element={<Sport />}></Route>
+          <Route path="/health/mental" element={<Mental />}></Route>
+          <Route path="/health/dance" element={<Dance />}></Route>
+          <Route path="/healthroute" element={<HealthRouter />}></Route>
+          <Route path="teachroute" element={<TeachRouter />}></Route>
+          <Route path="/teaching" element={<Teaching />}></Route>
+          <Route path="/teaching/Engneering" element={<Engneering />}></Route>
+          <Route
+            path="/teaching/social/science"
+            element={<SocailScience />}
+          ></Route>
+          <Route path="/teaching/Math" element={<Math />}></Route>
+          <Route path="/teaching/Science" element={<Science />}></Route>
+          <Route
+            path="/teaching/Teacher/Training"
+            element={<Training />}
+          ></Route>
+          <Route path="techon/udemy" element={<TechOn />}></Route>
+          <Route path="/search" element={<SearchBar />}></Route>
+          <Route path="/addcart" element={<Cart />}></Route>
+          <Route path="/mylearning" element={<LearCart />}></Route>
         </Route>
         <Route path="/login" element={<LoginButton />}></Route>
         <Route path="/register" element={<RegisterButton />}></Route>
@@ -617,10 +590,12 @@ function Display() {
                 >
                   Login
                 </NavLink>
-
+                {/* onClick={() => setIsOpen(!open)} */}
                 <div>
                   <NavLink
-                    onClick={() => setCount(!count)}
+                    onClick={() => {
+                      setCount(!count);
+                    }}
                     to="/register"
                     className="navlinkRes"
                     style={({ isActive }) => ({
@@ -862,7 +837,6 @@ function Display() {
             </div>
           </li>
 
-         
           <li className="Teaching_res">
             <NavLink to="/teaching">Teaching & Academics</NavLink>
             <div className="Teaching_cover_res">
@@ -901,10 +875,7 @@ function Display() {
               </ul>
             </div>
           </li>
-          <li
-            onClick={() => Navi("/mylearning")}
-            className="mylearn_font" 
-          >
+          <li onClick={() => Navi("/mylearning")} className="mylearn_font">
             My Learning Cart
           </li>
         </ul>

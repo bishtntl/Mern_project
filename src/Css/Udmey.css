@@ -527,6 +527,9 @@
     border-radius: 5px;
   }
 
+  .change {
+    display: none;
+  }
   .top_image_div {
     display: flex;
     height: 100%;

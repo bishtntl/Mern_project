@@ -49,7 +49,6 @@ function RegisterButton() {
           localStorage.setItem("email", res.data.email);
           console.log(res.data.token);
           Navi("/login");
-         
         })
         .catch((err) => console.log(err, "axios error"));
     }
@@ -66,13 +65,14 @@ function RegisterButton() {
   return (
     <div className="register">
       <div className="under_div_reg">
-        <h1 className="create_acc" style={{ color: "gray" }}>
-          Sign up and start learning
-        </h1>
-        <form action="/" method="POST" onSubmit={handleSubmit}>
-          <label htmlFor="name" className="name">
-            Name
-          </label>
+        <h2 className="create_acc">Sign up and start learning</h2>
+        <form
+          action="/"
+          method="POST"
+          onSubmit={handleSubmit}
+          className="formdata"
+        >
+          <label htmlFor="name">{/* Name */}</label>
           <input
             type="text"
             id="name"
@@ -84,9 +84,10 @@ function RegisterButton() {
             className="nameinput"
           />
           <br />
+          <br />
 
           <label htmlFor="emailregister" className="emailregister">
-            Email
+            {/* Email */}
           </label>
           <input
             type="email"
@@ -99,8 +100,9 @@ function RegisterButton() {
             className="emailinput"
           />
           <br />
+          <br />
           <label htmlFor="passwordregiter" className="passwordregiter">
-            Password
+            {/* Password */}
           </label>
           <input
             type="password"
@@ -119,7 +121,8 @@ function RegisterButton() {
             Register
           </button>
           <br />
-          <NavLink to="/login">go to login page</NavLink>
+          <NavLink to="/login">Already have an account? Log in
+</NavLink>
         </form>
       </div>
     </div>

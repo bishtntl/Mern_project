@@ -80,6 +80,7 @@
   width: 15vw;
   display: flex;
   font-weight: bold;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   border: 1px solid gray;
@@ -108,6 +109,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   /* border: 2px solid black; */
 }
 .imageflexone_dev {
@@ -600,12 +602,12 @@
 
   .launguge_dev {
     height: 10vh;
-    width: 19vw;
+    width: 40%;
     display: flex;
     font-weight: bold;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     text-align: center;
     border: 1px solid gray;
   }
@@ -635,6 +637,7 @@
   .underflex_two_dev {
     display: flex;
     width: 90vw;
+    gap: 2vw;
     flex-direction: row;
     /* margin: auto; */
     /* align-items: ; */
@@ -648,7 +651,7 @@
     /* border: 2px solid black; */
   }
   .details_div_devlop_first {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: 50%;
   }
 
@@ -776,11 +779,15 @@
     width: 80vw;
     position: relative;
     left: 3vw;
+    margin-top: 18vh;
+    /* top: 8vh; */
+    /* display: none; */
   }
   .fourth_container {
     display: flex;
-    /* border: 2px solid black; */
+    /* border: 10px solid black; */
     width: 95%;
+
     margin: auto;
     justify-content: space-between;
   }

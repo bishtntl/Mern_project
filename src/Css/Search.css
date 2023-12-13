@@ -14,6 +14,7 @@
 .search_hrline {
   width: 95%;
 }
+
 @media screen and (min-width: 300px) and (max-width: 600px) {
   .search_container {
     /* border: 2px solid black; */
@@ -23,15 +24,23 @@
     align-items: flex-start;
     position: relative;
   }
+  .search_dtl_heading {
+    font-size: 1em;
+  }
   .search_images {
     width: 40vw;
-    height: 40vh;
+    height: 30vh;
     border-bottom: 1px solid gray;
+  }
+  .search_images_container {
+    /* border: 2px solid black; */
+    height: 38vh;
+    margin-top: 5%;
   }
   .search_dtl {
     /* border: 2px solid black; */
     width: 60%;
-    height: 38vh;
+    /* height: 38vh; */
     overflow: hidden;
   }
 }
