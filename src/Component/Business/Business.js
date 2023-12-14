@@ -39,7 +39,7 @@ function Buniess() {
     const FindItem = cart && cart.find((items) => items.id === item.id);
     console.log(FindItem);
     if (FindItem) {
-      alert("go to cart ");
+      alert("Add to cart ");
     } else {
       console.log(item.id);
       await axios.post(
@@ -92,7 +92,7 @@ function Buniess() {
                               ₹{item.prevprice}.00
                             </span>
                           </span>
-                          <span>Best Saaller</span>
+                          <span>Best Seller</span>
                         </div>
 
                         <div className="hover_container_dev">
@@ -111,7 +111,7 @@ function Buniess() {
                                 className="addtocart_dev"
                                 onClick={() => handleClick(item)}
                               >
-                                go to cart
+                                Add to cart
                               </button>
                               <span className="love_dev">
                                 <i class="fa-regular fa-heart"></i>
@@ -149,7 +149,7 @@ function Buniess() {
                               ₹{item.prevprice}.00
                             </span>
                           </span>
-                          <span>Best Saaller</span>
+                          <span>Best Seller</span>
                         </div>
 
                         <div className="hover_container_dev">
@@ -168,7 +168,7 @@ function Buniess() {
                                 className="addtocart_dev"
                                 onClick={() => handleClick(item)}
                               >
-                                go to cart
+                                Add to cart
                               </button>
                               <span className="love_dev">
                                 <i class="fa-regular fa-heart"></i>
@@ -206,7 +206,7 @@ function Buniess() {
                               ₹{item.prevprice}.00
                             </span>
                           </span>
-                          <span>Best Saaller</span>
+                          <span>Best Seller</span>
                         </div>
 
                         <div className="hover_container_right_two_dev">
@@ -225,7 +225,7 @@ function Buniess() {
                                 className="addtocart_dev"
                                 onClick={() => handleClick(item)}
                               >
-                                go to cart
+                                Add to cart
                               </button>
                               <span className="love_dev">
                                 <i class="fa-regular fa-heart"></i>
@@ -263,7 +263,7 @@ function Buniess() {
                               ₹{item.prevprice}.00
                             </span>
                           </span>
-                          <span>Best Saaller</span>
+                          <span>Best Seller</span>
                         </div>
 
                         <div className="hover_container_right_dev">
@@ -282,7 +282,7 @@ function Buniess() {
                                 className="addtocart_dev"
                                 onClick={() => handleClick(item)}
                               >
-                                go to cart
+                                Add to cart
                               </button>
                               <span className="love_dev">
                                 <i class="fa-regular fa-heart"></i>
@@ -551,7 +551,7 @@ function Buniess() {
                             ₹{item.prevprice}.00
                           </span>
                         </span>
-                        <span>Best Saaller</span>
+                        <span>Best Seller</span>
                       </div>
 
                       <div className="hover_container_column">
@@ -571,7 +571,7 @@ function Buniess() {
                                 className="addtocart_dev_column"
                                 onClick={() => handleClick(item)}
                               >
-                                go to cart
+                                Add to cart
                               </button>
                               <span className="love">
                                 <i class="fa-regular fa-heart"></i>
@@ -641,7 +641,7 @@ function Buniess() {
                         <span>{item.name}</span>
                         <p>{item.rating}</p>
 
-                        <span>Best Saaller</span>
+                        <span>Best Seller</span>
                       </div>
 
                       <div className="hover_container_column">
@@ -664,7 +664,7 @@ function Buniess() {
                                 className="addtocart_dev_column_two"
                                 onClick={() => handleClick(item)}
                               >
-                                go to cart
+                                Add to cart
                               </button>
                               <span className="love">
                                 <i class="fa-regular fa-heart"></i>

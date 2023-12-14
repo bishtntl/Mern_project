@@ -1,42 +1,47 @@
 import { useEffect, useState } from "react";
-import HealthRouter from "./Healthrou"
+import HealthRouter from "./Healthrou";
 import { NavLink } from "react-router-dom";
 import axios from "axios";
 
-function Mental(){
-    const [data, setData] = useState([]);
-    const [cart, setCart] = useState([]);
-    useEffect(() => {
-      async function fetchapi() {
-        const ffdata = await fetch("https://mern-backend-o0hb.onrender.com/api/getdata");
-        const res = await ffdata.json();
-        setData(res);
-        // console.log(res);
-      }
-      fetchapi();
-    });
-    useEffect(() => {
-      axios
-        .get("https://mern-backend-o0hb.onrender.com/api/addgetcart")
-        .then((res) => setCart(res.data))
-        .catch((err) => console.log(err));
-    }, [cart]);
-    // console.log(cart)
-    const handleClick = async (item) => {
-      const FindItem = cart && cart.find((items) => items.id === item.id);
-      console.log(FindItem);
-      if (FindItem) {
-        alert("go to cart ");
-      } else {
-        console.log(item.id);
-        await axios.post("https://mern-backend-o0hb.onrender.com/api/addcart", item);
-        alert("Item has successfully added in your cart");
-      }
-    };
-    return(
-        <>
-        <HealthRouter/>
-        <div className="one_container">
+function Mental() {
+  const [data, setData] = useState([]);
+  const [cart, setCart] = useState([]);
+  useEffect(() => {
+    async function fetchapi() {
+      const ffdata = await fetch(
+        "https://mern-backend-o0hb.onrender.com/api/getdata"
+      );
+      const res = await ffdata.json();
+      setData(res);
+      // console.log(res);
+    }
+    fetchapi();
+  });
+  useEffect(() => {
+    axios
+      .get("https://mern-backend-o0hb.onrender.com/api/addgetcart")
+      .then((res) => setCart(res.data))
+      .catch((err) => console.log(err));
+  }, [cart]);
+  // console.log(cart)
+  const handleClick = async (item) => {
+    const FindItem = cart && cart.find((items) => items.id === item.id);
+    console.log(FindItem);
+    if (FindItem) {
+      alert("Add to cart ");
+    } else {
+      console.log(item.id);
+      await axios.post(
+        "https://mern-backend-o0hb.onrender.com/api/addcart",
+        item
+      );
+      alert("Item has successfully added in your cart");
+    }
+  };
+  return (
+    <>
+      <HealthRouter />
+      <div className="one_container">
         <div className="developement_Top_container">
           <h1 style={{ height: "8vh" }}>Mental Health Courses</h1>
           <h2>Courses to get you started</h2>
@@ -57,7 +62,11 @@ function Mental(){
                     return (
                       <div key={index} className="underflex_two_dev">
                         <div className="image_flex_div">
-                          <img className="imageflexone_dev" src={item.img} alt="Not Found"/>
+                          <img
+                            className="imageflexone_dev"
+                            src={item.img}
+                            alt="Not Found"
+                          />
                         </div>
                         <div
                           className="details_div_devlop {
@@ -74,7 +83,7 @@ function Mental(){
                               ₹{item.prevprice}.00
                             </span>
                           </span>
-                          <span>Best Saaller</span>
+                          <span>Best Seller</span>
                         </div>
 
                         <div className="hover_container_dev">
@@ -89,8 +98,11 @@ function Mental(){
                             <p className="subtitle_dev">✅{item.predata}</p>
                             <p className="subtitle_dev">✅{item.pre}</p>
                             <div className="addbtn_dev">
-                              <button className="addtocart_dev" onClick={() => handleClick(item)}>
-                                go to cart
+                              <button
+                                className="addtocart_dev"
+                                onClick={() => handleClick(item)}
+                              >
+                                Add to cart
                               </button>
                               <span className="love_dev">
                                 <i class="fa-regular fa-heart"></i>
@@ -110,7 +122,11 @@ function Mental(){
                     return (
                       <div key={index} className="underflex_two_dev">
                         <div className="image_flex_div_dev">
-                          <img className="imageflexone_dev" src={item.img} alt="Not Found"/>
+                          <img
+                            className="imageflexone_dev"
+                            src={item.img}
+                            alt="Not Found"
+                          />
                         </div>
                         <div className="details_div_devlop">
                           <b>{item.heading}</b>
@@ -124,7 +140,7 @@ function Mental(){
                               ₹{item.prevprice}.00
                             </span>
                           </span>
-                          <span>Best Saaller</span>
+                          <span>Best Seller</span>
                         </div>
 
                         <div className="hover_container_dev">
@@ -139,8 +155,11 @@ function Mental(){
                             <p className="subtitle_dev">✅{item.predata}</p>
                             <p className="subtitle_dev">✅{item.pre}</p>
                             <div className="addbtn_dev">
-                              <button className="addtocart_dev" onClick={() => handleClick(item)}>
-                                go to cart
+                              <button
+                                className="addtocart_dev"
+                                onClick={() => handleClick(item)}
+                              >
+                                Add to cart
                               </button>
                               <span className="love_dev">
                                 <i class="fa-regular fa-heart"></i>
@@ -160,7 +179,11 @@ function Mental(){
                     return (
                       <div key={index} className="underflex_two_dev">
                         <div className="image_flex_div_dev">
-                          <img className="imageflexone_dev" src={item.img} alt="Not Found"/>
+                          <img
+                            className="imageflexone_dev"
+                            src={item.img}
+                            alt="Not Found"
+                          />
                         </div>
                         <div className="details_div_devlop">
                           <b>{item.heading}</b>
@@ -174,7 +197,7 @@ function Mental(){
                               ₹{item.prevprice}.00
                             </span>
                           </span>
-                          <span>Best Saaller</span>
+                          <span>Best Seller</span>
                         </div>
 
                         <div className="hover_container_right_two_dev">
@@ -189,8 +212,11 @@ function Mental(){
                             <p className="subtitle_dev">✅{item.predata}</p>
                             <p className="subtitle_dev">✅{item.pre}</p>
                             <div className="addbtn_dev">
-                              <button className="addtocart_dev" onClick={() => handleClick(item)}>
-                                go to cart
+                              <button
+                                className="addtocart_dev"
+                                onClick={() => handleClick(item)}
+                              >
+                                Add to cart
                               </button>
                               <span className="love_dev">
                                 <i class="fa-regular fa-heart"></i>
@@ -210,7 +236,11 @@ function Mental(){
                     return (
                       <div key={index} className="underflex_two_dev">
                         <div className="image_flex_div_dev">
-                          <img className="imageflexone_dev" src={item.img} alt="Not Found"/>
+                          <img
+                            className="imageflexone_dev"
+                            src={item.img}
+                            alt="Not Found"
+                          />
                         </div>
                         <div className="details_div_devlop">
                           <b>{item.heading}</b>
@@ -224,7 +254,7 @@ function Mental(){
                               ₹{item.prevprice}.00
                             </span>
                           </span>
-                          <span>Best Saaller</span>
+                          <span>Best Seller</span>
                         </div>
 
                         <div className="hover_container_right_dev">
@@ -239,8 +269,11 @@ function Mental(){
                             <p className="subtitle_dev">✅{item.predata}</p>
                             <p className="subtitle_dev">✅{item.pre}</p>
                             <div className="addbtn_dev">
-                              <button className="addtocart_dev " onClick={() => handleClick(item)}>
-                                go to cart
+                              <button
+                                className="addtocart_dev "
+                                onClick={() => handleClick(item)}
+                              >
+                                Add to cart
                               </button>
                               <span className="love_dev">
                                 <i class="fa-regular fa-heart"></i>
@@ -300,10 +333,20 @@ function Mental(){
         <h1>Popular Topic</h1>
       </div>
       <div className="popular_dev_container">
-      <div className="launguge_dev"><NavLink to="/health">Health & Fitness</NavLink></div>
-        <div className="launguge_dev">   <NavLink to="/health/fitness">Fitness</NavLink></div>
-        <div className="launguge_dev"> <NavLink to="/health/yoga">Yoga</NavLink></div>
-        <div className="launguge_dev"><NavLink to="/health/sport">Sport</NavLink></div>
+        <div className="launguge_dev">
+          <NavLink to="/health">Health & Fitness</NavLink>
+        </div>
+        <div className="launguge_dev">
+          {" "}
+          <NavLink to="/health/fitness">Fitness</NavLink>
+        </div>
+        <div className="launguge_dev">
+          {" "}
+          <NavLink to="/health/yoga">Yoga</NavLink>
+        </div>
+        <div className="launguge_dev">
+          <NavLink to="/health/sport">Sport</NavLink>
+        </div>
       </div>
 
       <div className="popul_head_two">
@@ -480,7 +523,11 @@ function Mental(){
                   <>
                     <div key={index} className="underflex_two_rating">
                       <div className="image_flex_div_column">
-                        <img className="imageflexone_column" src={item.img} alt="Not Found"/>
+                        <img
+                          className="imageflexone_column"
+                          src={item.img}
+                          alt="Not Found"
+                        />
                       </div>
                       <div className="details_div_dev_column">
                         <b>{item.heading}</b>
@@ -494,7 +541,7 @@ function Mental(){
                             ₹{item.prevprice}.00
                           </span>
                         </span>
-                        <span>Best Saaller</span>
+                        <span>Best Seller</span>
                       </div>
 
                       <div className="hover_container_column">
@@ -510,8 +557,11 @@ function Mental(){
                             <p className="subtitle">✅{item.predata}</p>
                             <p className="subtitle">✅{item.pre}</p>
                             <div className="addbtn">
-                              <button className="addtocart_dev_column" onClick={() => handleClick(item)}>
-                                go to cart
+                              <button
+                                className="addtocart_dev_column"
+                                onClick={() => handleClick(item)}
+                              >
+                                Add to cart
                               </button>
                               <span className="love">
                                 <i class="fa-regular fa-heart"></i>
@@ -570,14 +620,18 @@ function Mental(){
                   <>
                     <div key={index} className="underflex_two_rating">
                       <div className="image_flex_div_column">
-                        <img className="imageflexone_column" src={item.img} alt="Not Found"/>
+                        <img
+                          className="imageflexone_column"
+                          src={item.img}
+                          alt="Not Found"
+                        />
                       </div>
                       <div className="details_div_dev_column">
                         <b>{item.heading}</b>
                         <span>{item.name}</span>
                         <p>{item.rating}</p>
 
-                        <span>Best Saaller</span>
+                        <span>Best Seller</span>
                       </div>
 
                       <div className="hover_container_column">
@@ -593,8 +647,11 @@ function Mental(){
                             <p className="subtitle">✅{item.predata}</p>
                             <p className="subtitle">✅{item.pre}</p>
                             <div className="addbtn">
-                              <button className="addtocart_dev_column" onClick={() => handleClick(item)}>
-                                go to cart
+                              <button
+                                className="addtocart_dev_column"
+                                onClick={() => handleClick(item)}
+                              >
+                                Add to cart
                               </button>
                               <span className="love">
                                 <i class="fa-regular fa-heart"></i>
@@ -611,7 +668,7 @@ function Mental(){
           </div>
         </div>
       </div>
-        </>
-    )
+    </>
+  );
 }
-export default Mental
+export default Mental;

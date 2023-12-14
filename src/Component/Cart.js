@@ -76,10 +76,12 @@ const Cart = () => {
   return (
     <div>
       {paymetcart.length === 0 ? (
-          <div className="dataemptytwo">
+        <div>
           {" "}
-          <img src="https://codehap.com/images/empty_cart.jpeg"  alt="Not Found"/>
-          <img src="http://www.carezips.com/images/empty_cart.png"  alt="Not Found"/>
+          {/* <img src="https://codehap.com/images/empty_cart.jpeg"  alt="Not Found"/>
+          <img src="http://www.carezips.com/images/empty_cart.png"  alt="Not Found"/> */}
+          <img  className="dataemptytwo" src="https://i.pinimg.com/originals/f8/56/7d/f8567d822bf5ec11f9bff3efbbac4c32.gif
+" />
         </div>
       ) : (
         <>

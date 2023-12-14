@@ -9,7 +9,7 @@ const BusinessRoute = () => {
     <>
       <div className="developmentNav">
         <span className="developroute">
-          <NavLink to="/business">Buniess</NavLink>{" "}
+          <NavLink to="/business">Business</NavLink>{" "}
           <i class="fa-solid fa-chevron-right"></i>
         </span>
         <span>
@@ -20,7 +20,7 @@ const BusinessRoute = () => {
         </span>
         <span>
           {" "}
-          <NavLink to="/business/Stetegy"> Business Stetegy </NavLink>
+          <NavLink to="/business/Stetegy"> Business Strategy </NavLink>
         </span>
         <span>
           {" "}

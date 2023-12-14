@@ -1,10 +1,12 @@
 .logo {
   height: 5vh;
-  width: 5vw;
+  width: 6vw;
   position: absolute;
   top: 20%;
   left: 2%;
+
   /* border: 2px solid black; */
+  /* cursor: pointer; */
 }
 .loginbtn {
   background-color: white;
@@ -74,6 +76,9 @@ span {
 }
 .search_btn {
   height: 6.5vh;
+  width: 3vw;
+  border: 1px solid gray;
+  /* border-color: gray; */
   border-radius: 0px 20px 20px 0px;
 }
 .mobile_development_cover {
@@ -126,6 +131,7 @@ span {
   width: 40vw;
   height: 6vh;
   border: 20px;
+  font-size: 1em;
   border-radius: 20px 0px 0px 20px;
   border: 1px solid gray;
 }
@@ -626,10 +632,11 @@ span {
 }
 
 .container {
-  border: 1px solid gray;
+  box-shadow: 2px 2px 8px lightgray;
   position: relative;
   height: 10vh;
   display: flex;
+  z-index: 99;
   justify-content: space-around;
   align-items: center;
 }
@@ -643,8 +650,10 @@ span {
 .parent_list_div {
   /* position: relative; */
   position: absolute;
-  top: 0;
+  top: 1vh;
   left: 6vw;
+  font-size: 1.2em;
+  color: gray;
   cursor: pointer;
   /* border: 2px solid black; */
   /* text-align: center; */
@@ -1379,7 +1388,7 @@ span {
 
 .hover_container_mylearn_child {
   position: absolute;
-  top: 9vh;
+  top: 8.5vh;
   background-color: aliceblue;
   width: 16vw;
   text-align: center;
@@ -1414,6 +1423,7 @@ span {
   display: flex;
   gap: 2vw;
   align-items: center;
+  color: gray;
 }
 .resicondiv {
   display: none;
@@ -1461,6 +1471,9 @@ li i {
 }
 .navbar-listResponsive {
   display: none;
+}
+.addcard_icon {
+  font-size: 1.5em;
 }
 
 @media screen and (min-width: 300px) and (max-width: 600px) {
@@ -1679,6 +1692,12 @@ li i {
   }
   .mylearn_font {
     color: Navy;
+  }
+  .search_btn {
+    height: 6.5vh;
+    width: 8vw;
+
+    border-radius: 0px 20px 20px 0px;
   }
 }
 

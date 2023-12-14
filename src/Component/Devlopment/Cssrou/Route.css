@@ -2,7 +2,8 @@
   display: flex;
   height: 5vh;
   align-items: center;
-  box-shadow: 1px 1px 2px black;
+  border: 10px solid white;
+  /* box-shadow: 1px 1px 2px black; */
   justify-content: space-around;
 }
 
@@ -11,7 +12,7 @@
     display: none;
     height: 5vh;
     align-items: center;
-    box-shadow: 1px 1px 2px black;
+    border: 10px solid white;
     justify-content: space-around;
   }
   

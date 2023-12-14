@@ -13,7 +13,6 @@ function Udemy() {
       );
       const res = await ffdata.json();
       setData(res);
-    
     }
     fetchapi();
   });
@@ -28,10 +27,13 @@ function Udemy() {
     const FindItem = cart && cart.find((items) => items.id === item.id);
     console.log(FindItem);
     if (FindItem) {
-      alert("go to cart ");
+      alert("Add to cart ");
     } else {
       console.log(item.id);
-      await axios.post("https://mern-backend-o0hb.onrender.com/api/addcart", item);
+      await axios.post(
+        "https://mern-backend-o0hb.onrender.com/api/addcart",
+        item
+      );
       alert("Item has successfully added in your cart");
     }
   };
@@ -61,7 +63,7 @@ function Udemy() {
           })}
       </div>
       <div className="second_one">
-        <span>
+        <span className="ff">
           Trusted by over 15,000 companies and millions of learners around the
           world
         </span>
@@ -84,25 +86,25 @@ function Udemy() {
       </div>
 
       <div className="Third_top">
-        <h1>A broad selection pf courses</h1>
+        <h1 className="thir">A broad selection of courses</h1>
         <p className="choose">
           choose from over 210,000 online video courses with new addition
           published every month
         </p>
       </div>
       <div className="static_language">
-        <span>Python</span>
-        <span>Excel</span>
-        <span>Web Development</span>
-        <span>JavaScript</span>
-        <span>Data Science</span>
-        <span>Amazon AWS</span>
-        <span>Drawing</span>
+        <span className="static">Python</span>
+        <span style={{ color: "grey" }}>Excel</span>
+        <span style={{ color: "grey" }}>Web Development</span>
+        <span style={{ color: "grey" }}>JavaScript</span>
+        <span style={{ color: "grey" }}>Data Science</span>
+        <span style={{ color: "grey" }}>Amazon AWS</span>
+        <span style={{ color: "grey" }}>Drawing</span>
       </div>
       <div className="expand_career">
-        <h1>Expand your career opportunities with Python</h1>
+        <h1 className="exxpen">Expand your career opportunities with Python</h1>
         <div className="under_para">
-          <p>
+          <p className="pp">
             Take one of Udemy’s range of Python courses and learn how to code
             using this incredibly useful language. Its simple syntax and
             readability makes Python perfect for Flask, Django, data science,
@@ -134,7 +136,7 @@ function Udemy() {
                         <span className="priceflex">₹{item.price}.00</span>{" "}
                         <span className="hideprice">₹{item.prevprice}.00</span>
                       </span>
-                      <span>Best Saaller</span>
+                      <span className="bestsaller">Best Seller</span>
                     </div>
 
                     <div className="hover_container">
@@ -147,7 +149,12 @@ function Udemy() {
                         <p className="subtitle">✅{item.predata}</p>
                         <p className="subtitle">✅{item.pre}</p>
                         <div className="addbtn">
-                          <button className="addtocart" onClick={() => handleClick(item)}>go to cart</button>
+                          <button
+                            className="addtocart"
+                            onClick={() => handleClick(item)}
+                          >
+                            Add to cart
+                          </button>
                           <span className="love">
                             <i class="fa-regular fa-heart"></i>
                           </span>
@@ -180,7 +187,7 @@ function Udemy() {
                         <span className="priceflex">₹{item.price}.00</span>{" "}
                         <span className="hideprice">₹{item.prevprice}.00</span>
                       </span>
-                      <span>Best Saaller</span>
+                      <span className="bestsaller">Best Seller</span>
                     </div>
 
                     <div className="hover_container">
@@ -193,7 +200,12 @@ function Udemy() {
                         <p className="subtitle">✅{item.predata}</p>
                         <p className="subtitle">✅{item.pre}</p>
                         <div className="addbtntwo">
-                          <button className="addtocarttwo" onClick={() => handleClick(item)}>go to cart</button>
+                          <button
+                            className="addtocarttwo"
+                            onClick={() => handleClick(item)}
+                          >
+                            Add to cart
+                          </button>
                           <span className="love">
                             <i class="fa-regular fa-heart"></i>
                           </span>
@@ -226,7 +238,7 @@ function Udemy() {
                         <span className="priceflex">₹{item.price}.00</span>{" "}
                         <span className="hideprice">₹{item.prevprice}.00</span>
                       </span>
-                      <span>Best Saaller</span>
+                      <span className="bestsaller">Best Seller</span>
                     </div>
 
                     <div className="hover_container_right_two">
@@ -238,9 +250,13 @@ function Udemy() {
                         <p className="subtitle">✅{item.para}</p>
                         <p className="subtitle">✅{item.predata}</p>
                         <p className="subtitle">✅{item.pre}</p>
+
                         <div className="addbtn_three">
-                          <button className="addtocart_three" onClick={() => handleClick(item)}>
-                            go to cart
+                          <button
+                            className="addtocart_three"
+                            onClick={() => handleClick(item)}
+                          >
+                            Add to cart
                           </button>
                           <span className="love">
                             <i class="fa-regular fa-heart"></i>
@@ -274,7 +290,7 @@ function Udemy() {
                         <span className="priceflex">₹{item.price}.00</span>{" "}
                         <span className="hideprice">₹{item.prevprice}.00</span>
                       </span>
-                      <span>Best Saaller</span>
+                      <span className="bestsaller">Best Seller</span>
                     </div>
 
                     <div className="hover_container_right">
@@ -287,7 +303,12 @@ function Udemy() {
                         <p className="subtitle">✅{item.predata}</p>
                         <p className="subtitle">✅{item.pre}</p>
                         <div className="addbtn_four">
-                          <button className="addtocart_four" onClick={() => handleClick(item)}>go to cart</button>
+                          <button
+                            className="addtocart_four"
+                            onClick={() => handleClick(item)}
+                          >
+                            Add to cart
+                          </button>
                           <span className="love">
                             <i class="fa-regular fa-heart"></i>
                           </span>
@@ -328,7 +349,7 @@ function Udemy() {
               <div className="music">
                 <div className="circle_music">
                   <span>
-                    <i class="fa-solid fa-play"></i>
+                    <i class="fa-solid fa-play "></i>
                   </span>
                 </div>
 
@@ -397,7 +418,7 @@ function Udemy() {
       </div>
 
       <div className="expand_career_two">
-        <h1>Learners are viewing</h1>
+        <h2>Learners are viewing</h2>
         <div className="flex_container">
           <div className="underflex">
             {data
@@ -420,7 +441,7 @@ function Udemy() {
                         <span className="priceflex">₹{item.price}.00</span>{" "}
                         <span className="hideprice">₹{item.prevprice}.00</span>
                       </span>
-                      <span>Best Saaller</span>
+                      <span className="bestsaller">Best Seller</span>
                     </div>
 
                     <div className="hover_container">
@@ -433,7 +454,12 @@ function Udemy() {
                         <p className="subtitle">✅{item.predata}</p>
                         <p className="subtitle">✅{item.pre}</p>
                         <div className="addbtn_five">
-                          <button className="addtocartfive" onClick={() => handleClick(item)}>go to cart</button>
+                          <button
+                            className="addtocartfive"
+                            onClick={() => handleClick(item)}
+                          >
+                            Add to cart
+                          </button>
                           <span className="love">
                             <i class="fa-regular fa-heart"></i>
                           </span>
@@ -466,7 +492,7 @@ function Udemy() {
                         <span className="priceflex">₹{item.price}.00</span>{" "}
                         <span className="hideprice">₹{item.prevprice}.00</span>
                       </span>
-                      <span>Best Saaller</span>
+                      <span className="bestsaller">Best Seller</span>
                     </div>
 
                     <div className="hover_container">
@@ -479,7 +505,12 @@ function Udemy() {
                         <p className="subtitle">✅{item.predata}</p>
                         <p className="subtitle">✅{item.pre}</p>
                         <div className="addbtn_six">
-                          <button className="addtocartsix" onClick={() => handleClick(item)}>go to cart</button>
+                          <button
+                            className="addtocartsix"
+                            onClick={() => handleClick(item)}
+                          >
+                            Add to cart
+                          </button>
                           <span className="love_six">
                             <i class="fa-regular fa-heart"></i>
                           </span>
@@ -512,7 +543,7 @@ function Udemy() {
                         <span className="priceflex">₹{item.price}.00</span>{" "}
                         <span className="hideprice">₹{item.prevprice}.00</span>
                       </span>
-                      <span>Best Saaller</span>
+                      <span className="bestsaller">Best Seller</span>
                     </div>
 
                     <div className="hover_container_right_two">
@@ -525,7 +556,12 @@ function Udemy() {
                         <p className="subtitle">✅{item.predata}</p>
                         <p className="subtitle">✅{item.pre}</p>
                         <div className="addbtn_seven">
-                          <button className="addtocartseven" onClick={() => handleClick(item)}>go to cart</button>
+                          <button
+                            className="addtocartseven"
+                            onClick={() => handleClick(item)}
+                          >
+                            Add to cart{" "}
+                          </button>
                           <span className="love">
                             <i class="fa-regular fa-heart"></i>
                           </span>
@@ -558,7 +594,7 @@ function Udemy() {
                         <span className="priceflex">₹{item.price}.00</span>{" "}
                         <span className="hideprice">₹{item.prevprice}.00</span>
                       </span>
-                      <span>Best Saaller</span>
+                      <span className="bestsaller">Best Seller</span>
                     </div>
 
                     <div className="hover_container_right">
@@ -571,7 +607,12 @@ function Udemy() {
                         <p className="subtitle">✅{item.predata}</p>
                         <p className="subtitle">✅{item.pre}</p>
                         <div className="addbtn">
-                          <button className="addtocart" onClick={() => handleClick(item)}>go to cart</button>
+                          <button
+                            className="addtocart"
+                            onClick={() => handleClick(item)}
+                          >
+                            Add to cart
+                          </button>
                           <span className="love">
                             <i class="fa-regular fa-heart"></i>
                           </span>
@@ -611,9 +652,7 @@ function Udemy() {
       <div className="tabledata">
         <table className="table">
           <tr>
-            <th style={{ fontSize: "1.5em" }}>
-              Development
-            </th>
+            <th style={{ fontSize: "1.5em" }}>Development</th>
             <th style={{ fontSize: "1.5em" }}>Business</th>
             <th style={{ fontSize: "1.5em" }}>IT and Software</th>
             <th style={{ fontSize: "1.5em" }}>Design</th>
@@ -729,7 +768,8 @@ function Udemy() {
           <div>
             <img
               src="https://s.udemycdn.com/home/non-student-cta/instructor-1x-v3.jpg"
-              alt="Not Found" className="last_last_img"
+              alt="Not Found"
+              className="last_last_img"
             />
           </div>
           <div className="lastone_details">

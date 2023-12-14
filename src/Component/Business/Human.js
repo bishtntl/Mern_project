@@ -39,10 +39,13 @@ function Human() {
     const FindItem = cart && cart.find((items) => items.id === item.id);
     console.log(FindItem);
     if (FindItem) {
-      alert("go to cart ");
+      alert("Add to cart ");
     } else {
       console.log(item.id);
-      await axios.post("https://mern-backend-o0hb.onrender.com/api/addcart", item);
+      await axios.post(
+        "https://mern-backend-o0hb.onrender.com/api/addcart",
+        item
+      );
       alert("Item has successfully added in your cart");
     }
   };
@@ -76,9 +79,7 @@ function Human() {
                             alt="Not Found"
                           />
                         </div>
-                        <div
-                          className="details_div_devlop"
-                        >
+                        <div className="details_div_devlop">
                           <b>{item.heading}</b>
                           <span>{item.name}</span>
                           <p>{item.rating}</p>
@@ -90,7 +91,7 @@ function Human() {
                               ₹{item.prevprice}.00
                             </span>
                           </span>
-                          <span>Best Saaller</span>
+                          <span>Best Seller</span>
                         </div>
 
                         <div className="hover_container_dev">
@@ -105,8 +106,11 @@ function Human() {
                             <p className="subtitle_dev">✅{item.predata}</p>
                             <p className="subtitle_dev">✅{item.pre}</p>
                             <div className="addbtn_dev">
-                              <button className="addtocart_dev" onClick={() => handleClick(item)}>
-                                go to cart
+                              <button
+                                className="addtocart_dev"
+                                onClick={() => handleClick(item)}
+                              >
+                                Add to cart
                               </button>
                               <span className="love_dev">
                                 <i class="fa-regular fa-heart"></i>
@@ -144,7 +148,7 @@ function Human() {
                               ₹{item.prevprice}.00
                             </span>
                           </span>
-                          <span>Best Saaller</span>
+                          <span>Best Seller</span>
                         </div>
 
                         <div className="hover_container_dev">
@@ -159,8 +163,11 @@ function Human() {
                             <p className="subtitle_dev">✅{item.predata}</p>
                             <p className="subtitle_dev">✅{item.pre}</p>
                             <div className="addbtn_dev">
-                              <button className="addtocart_dev" onClick={() => handleClick(item)}>
-                                go to cart
+                              <button
+                                className="addtocart_dev"
+                                onClick={() => handleClick(item)}
+                              >
+                                Add to cart
                               </button>
                               <span className="love_dev">
                                 <i class="fa-regular fa-heart"></i>
@@ -198,7 +205,7 @@ function Human() {
                               ₹{item.prevprice}.00
                             </span>
                           </span>
-                          <span>Best Saaller</span>
+                          <span>Best Seller</span>
                         </div>
 
                         <div className="hover_container_right_two_dev">
@@ -213,8 +220,11 @@ function Human() {
                             <p className="subtitle_dev">✅{item.predata}</p>
                             <p className="subtitle_dev">✅{item.pre}</p>
                             <div className="addbtn_dev">
-                              <button className="addtocart_dev" onClick={() => handleClick(item)}>
-                                go to cart
+                              <button
+                                className="addtocart_dev"
+                                onClick={() => handleClick(item)}
+                              >
+                                Add to cart
                               </button>
                               <span className="love_dev">
                                 <i class="fa-regular fa-heart"></i>
@@ -252,7 +262,7 @@ function Human() {
                               ₹{item.prevprice}.00
                             </span>
                           </span>
-                          <span>Best Saaller</span>
+                          <span>Best Seller</span>
                         </div>
 
                         <div className="hover_container_right_dev">
@@ -267,8 +277,11 @@ function Human() {
                             <p className="subtitle_dev">✅{item.predata}</p>
                             <p className="subtitle_dev">✅{item.pre}</p>
                             <div className="addbtn_dev">
-                              <button className="addtocart_dev" onClick={() => handleClick(item)}>
-                                go to cart
+                              <button
+                                className="addtocart_dev"
+                                onClick={() => handleClick(item)}
+                              >
+                                Add to cart
                               </button>
                               <span className="love_dev">
                                 <i class="fa-regular fa-heart"></i>
@@ -541,7 +554,7 @@ function Human() {
                             ₹{item.prevprice}.00
                           </span>
                         </span>
-                        <span>Best Saaller</span>
+                        <span>Best Seller</span>
                       </div>
 
                       <div className="hover_container_column">
@@ -557,8 +570,11 @@ function Human() {
                             <p className="subtitle">✅{item.predata}</p>
                             <p className="subtitle">✅{item.pre}</p>
                             <div className="addbtn">
-                              <button className="addtocart_dev_column" onClick={() => handleClick(item)}>
-                                go to cart
+                              <button
+                                className="addtocart_dev_column"
+                                onClick={() => handleClick(item)}
+                              >
+                                Add to cart
                               </button>
                               <span className="love">
                                 <i class="fa-regular fa-heart"></i>
@@ -628,11 +644,14 @@ function Human() {
                         <span>{item.name}</span>
                         <p>{item.rating}</p>
 
-                        <span>Best Saaller</span>
+                        <span>Best Seller</span>
                       </div>
 
                       <div className="hover_container_column">
-                        <div key={index} className="hover_details_dev_column_two">
+                        <div
+                          key={index}
+                          className="hover_details_dev_column_two"
+                        >
                           <div className="middle_one">
                             <h4 className="heading_hover_dev_column">
                               {item.headinghover}
@@ -644,8 +663,11 @@ function Human() {
                             <p className="subtitle">✅{item.predata}</p>
                             <p className="subtitle">✅{item.pre}</p>
                             <div className="addbtn">
-                              <button className="addtocart_dev_column_two" onClick={() => handleClick(item)}>
-                                go to cart
+                              <button
+                                className="addtocart_dev_column_two"
+                                onClick={() => handleClick(item)}
+                              >
+                                Add to cart
                               </button>
                               <span className="love">
                                 <i class="fa-regular fa-heart"></i>

@@ -4,9 +4,29 @@
   width: 85%;
   height: 55vh;
   margin: auto;
+
   border-radius: 5px;
 }
-
+.ff {
+  font-size: 0.8em;
+  position: relative;
+  top: 5vh;
+  /* border: 2px solid black; */
+}
+.thir {
+  font-size: 2.2em;
+}
+.exxpen {
+  font-size: 1.5em;
+  position: relative;
+  top: 3vh;
+}
+.pp {
+  color: black;
+}
+.fa-play {
+  color: white;
+}
 .top_image_div {
   display: flex;
   height: 100%;
@@ -35,7 +55,7 @@
   margin-top: 5vh;
   font-size: 2em;
   text-align: center;
-  background-color: rgb(243, 248, 248);
+  background-color: rgba(240, 255, 255, 0.559);
 }
 
 .second_div {
@@ -60,14 +80,21 @@
   gap: 2vw;
   margin-top: 5vh;
   height: 5vh;
-  font-size: 1.5em;
+  font-size: 1.1em;
+  /* color: gray; */
   font-weight: bold;
+}
+.ss {
+  color: gray;
+}
+.static {
+  color: black;
 }
 .static_language span {
   color: black;
 }
 .choose {
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 .expand_career {
@@ -76,7 +103,7 @@
   margin: auto;
   display: flex;
   flex-direction: column;
-  border: 1px solid gray;
+  border: 1px solid rgba(128, 128, 128, 0.288);
   align-items: flex-start;
 }
 .expand_career_two {
@@ -104,7 +131,15 @@
   /* border: 2px solid black; */
 }
 .explorebtn {
-  height: 5vh;
+  border: 1px solid black;
+  height: 5.7vh;
+  width: 8vw;
+  font-weight: bold;
+  background-color: white;
+}
+.bestsaller {
+  width: 5.5vw;
+  background-color: rgb(240, 244, 195);
 }
 .details_div {
   display: flex;
@@ -171,11 +206,17 @@
 .addtocart {
   width: 15vw;
   height: 6vh;
+  background-color: rgb(149, 55, 207);
+  color: white;
+  font-size: 1.2em;
 }
 
 .addtocart_four {
   width: 15vw;
   height: 6vh;
+  color: white;
+  font-size: 1.2em;
+  background-color: rgb(149, 55, 207);
 }
 .addbtn {
   margin: auto;
@@ -186,6 +227,9 @@
 .addtocartfive {
   width: 15vw;
   height: 6vh;
+  color: white;
+  font-size: 1.2em;
+  background-color: rgb(149, 55, 207);
 }
 
 .addbtn_six {
@@ -194,6 +238,9 @@
 .addtocartsix {
   width: 15vw;
   height: 6vh;
+  color: white;
+  font-size: 1.2em;
+  background-color: rgb(149, 55, 207);
 }
 .addbtntwo {
   margin: auto;
@@ -206,14 +253,21 @@
 .addtocarttwo {
   width: 15vw;
   height: 6vh;
+  color: white;
+  font-size: 1.2em;
+  background-color: rgb(149, 55, 207);
 }
 .addtocart_three,
 .addtocartseven {
   width: 15vw;
   height: 6vh;
+  font-size: 1.2em;
+  color: white;
+  background-color: rgb(149, 55, 207);
 }
 .addbtn_three {
   margin: auto;
+  /* background-color: rgb(149, 55, 207); */
 }
 .addbtn_seven {
   margin: auto;
@@ -253,7 +307,9 @@
   background-color: white;
 }
 .ls_div {
-  background-color: aliceblue;
+  margin-top: 5vh;
+  background-color: rgba(245, 245, 245, 0.692);
+  border: 10px solid rgba(245, 245, 245, 0.692);
 }
 .underflex:hover .hover_container_right_two {
   display: block;
@@ -262,12 +318,13 @@
   width: 80%;
   margin: auto;
   min-height: 60vh;
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
   margin-top: 2vh;
 }
 .headinglastone_div {
+  font-size: 1.5em;
   position: relative;
-  left: 2vw;
+  left: 1vw;
 }
 .circle {
   height: 50px;
@@ -286,13 +343,15 @@
 .box {
   display: flex;
   justify-content: space-around;
+
   /* border: 2px solid black; */
 }
 .first_box {
   width: 30%;
-  border: 2px solid gray;
+  border: 1.5px solid lightgray;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 4vh;
   background-color: white;
   justify-content: center;
   align-items: center;
@@ -327,7 +386,7 @@
   width: 60px;
   border-radius: 50%;
   /* background-color: blue; */
-  background-color: blue;
+  background-color: rgb(149, 55, 207);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -337,7 +396,7 @@
   width: 40px;
   border-radius: 50%;
   /* background-color: blue; */
-  background-color: blue;
+  background-color: rgb(149, 55, 207);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -352,7 +411,7 @@
 }
 .music_details {
   height: 5vh;
-  color: blue;
+  color: rgb(149, 55, 207);
   font-size: 1.1em;
   font-weight: bold;
 }
@@ -583,7 +642,7 @@
     justify-content: flex-start;
     width: 90%;
     margin: auto;
-    gap: 8vw;
+    /* gap: 5vw; */
     text-align: center;
     margin-top: 5vh;
     height: 30vh;
@@ -593,8 +652,10 @@
     flex-wrap: wrap;
     /* border: 2px solid black; */
   }
+
   .static_language span {
     color: black;
+    font-size: 0.8em;
   }
   .choose {
     font-size: 1.5em;
@@ -636,8 +697,13 @@
     /* border: 2px solid black; */
   }
   .explorebtn {
-    height: 5vh;
+    border: 1px solid black;
+    height: 5.7vh;
+    width: 50vw;
+    font-weight: bold;
+    background-color: white;
   }
+
   .details_div {
     display: flex;
     flex-direction: column;
@@ -687,6 +753,7 @@
     width: 65vw;
     height: 30vh;
     z-index: 99;
+
     background-color: white;
   }
   .hover_details {
@@ -709,6 +776,8 @@
   .addtocart {
     width: 50vw;
     height: 6vh;
+
+    background-color: rgb(149, 55, 207);
   }
   .addtocarttwo {
     width: 50vw;
@@ -717,6 +786,7 @@
   .addtocart_four {
     width: 50vw;
     height: 6vh;
+    font-size: 1.2em;
   }
   .addbtn {
     margin: auto;
@@ -812,9 +882,9 @@
     z-index: 99;
     background-color: white;
   }
-  .ls_div {
+  /* .ls_div {
     background-color: aliceblue;
-  }
+  } */
   .underflex:hover .hover_container_right_two {
     display: block;
   }
@@ -822,7 +892,7 @@
     width: 95%;
     margin: auto;
     min-height: 60vh;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     margin-top: 2vh;
   }
   .headinglastone_div {
@@ -838,7 +908,7 @@
     justify-content: center;
     background-color: black;
     position: relative;
-    left: -8vw;
+    left: -28vw;
   }
   .insidecircle {
     color: wheat;
@@ -847,9 +917,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     gap: 2vh;
     width: 100%;
+  }
+  .bestsaller {
+    width: 22vw;
   }
 
   .first_box {
@@ -867,7 +940,7 @@
   }
   .shortname {
     position: relative;
-    left: -7vw;
+    left: -25vw;
     color: black;
   }
   .circle_phil {
@@ -891,7 +964,7 @@
     width: 60px;
     border-radius: 50%;
     /* background-color: blue; */
-    background-color: blue;
+    background-color: rgb(149, 55, 207);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -901,7 +974,7 @@
     width: 40px;
     border-radius: 50%;
     /* background-color: blue; */
-    background-color: blue;
+    background-color: rgb(149, 55, 207);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -916,7 +989,8 @@
   }
   .music_details {
     height: 5vh;
-    color: blue;
+    color: rgb(149, 55, 207);
+
     font-size: 1.1em;
     font-weight: bold;
   }
@@ -1219,8 +1293,12 @@
     /* border: 2px solid black; */
   }
   .explorebtn {
-    height: 5vh;
-    font-size: 2em;
+    border: 1px solid black;
+    height: 5.7vh;
+    width: 50vw;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: white;
   }
   .details_div {
     display: flex;
@@ -1398,9 +1476,7 @@
     z-index: 99;
     background-color: white;
   }
-  .ls_div {
-    background-color: aliceblue;
-  }
+
   .underflex:hover .hover_container_right_two {
     display: block;
   }
@@ -1408,7 +1484,7 @@
     width: 95%;
     margin: auto;
     min-height: 60vh;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     margin-top: 2vh;
   }
   .headinglastone_div {
@@ -1479,7 +1555,7 @@
     width: 60px;
     border-radius: 50%;
     /* background-color: blue; */
-    background-color: blue;
+    background-color: rgb(149, 55, 207);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1489,7 +1565,7 @@
     width: 40px;
     border-radius: 50%;
     /* background-color: blue; */
-    background-color: blue;
+    background-color: rgb(149, 55, 207);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1504,7 +1580,7 @@
   }
   .music_details {
     height: 5vh;
-    color: blue;
+    color: rgb(149, 55, 207);
     font-size: 1.1em;
     font-weight: bold;
   }

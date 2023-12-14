@@ -1,21 +1,20 @@
 .developmentNav {
   display: flex;
-  height: 5vh;
+  height: 15vh;
+  border: 10px solid white;
   align-items: center;
-  box-shadow: 1px 1px 2px black;
+  box-shadow: 2px 2px 5px lightgray;
+  /* box-shadow: 1px 1px 8px lightgray; */
   justify-content: space-around;
 }
 
 @media screen and (min-width: 300px) and (max-width: 667px) {
   .developmentNav {
     display: none;
-    
   }
- 
 }
 @media screen and (min-width: 600px) and (max-width: 1000px) {
   .developmentNav {
     display: none;
-    
   }
 }

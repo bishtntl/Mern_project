@@ -112,6 +112,7 @@ function Display() {
         <NavLink to="/">
           <img
             className="logo"
+            onClick={() => Navi("/")}
             src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"
             alt="Not Found"
           />
@@ -265,7 +266,7 @@ function Display() {
                       </li>
                       <li className="Bevrage_container">
                         <NavLink to="/life/food/bevrage">
-                        Food & Beverage
+                          Food & Beverage
                         </NavLink>
                       </li>
                       <li className="Bevrage_container">
@@ -414,7 +415,9 @@ function Display() {
 
         <div className="tooltip">
           <ul className="teachonudemy">
-            <NavLink to="techon/udemy">Teach on Udemy</NavLink>
+            <NavLink to="techon/udemy" style={{ color: "grey" }}>
+              Teach on Udemy
+            </NavLink>
             <li className="tooltiptext">
               Turn What You Knonw into an opportunity and reach millions around
               the word
@@ -433,12 +436,12 @@ function Display() {
               <div className="hover_container_mylearn_underdiv">
                 <div> My learn</div>
 
-                <div className="circle_top">{name.slice(0,1)}</div>
+                <div className="circle_top">{name}</div>
               </div>
 
               <div className="hover_container_mylearn_child">
                 <div className="fetch_mail_name">
-                  <div className="circle_top_under">{name.slice(0,1)}</div>
+                  <div className="circle_top_under">{name}</div>
 
                   <div className="fetch_mail">
                     <p>{name}</p>

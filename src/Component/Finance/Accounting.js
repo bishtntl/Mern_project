@@ -28,10 +28,13 @@ function Accounting() {
     const FindItem = cart && cart.find((items) => items.id === item.id);
     console.log(FindItem);
     if (FindItem) {
-      alert("go to cart ");
+      alert("Add to cart ");
     } else {
       console.log(item.id);
-      await axios.post("https://mern-backend-o0hb.onrender.com/api/addcart", item);
+      await axios.post(
+        "https://mern-backend-o0hb.onrender.com/api/addcart",
+        item
+      );
       alert("Item has successfully added in your cart");
     }
   };
@@ -80,7 +83,7 @@ function Accounting() {
                               ₹{item.prevprice}.00
                             </span>
                           </span>
-                          <span>Best Saaller</span>
+                          <span>Best Seller</span>
                         </div>
 
                         <div className="hover_container_dev">
@@ -95,8 +98,11 @@ function Accounting() {
                             <p className="subtitle_dev">✅{item.predata}</p>
                             <p className="subtitle_dev">✅{item.pre}</p>
                             <div className="addbtn_dev">
-                              <button className="addtocart_dev"  onClick={() => handleClick(item)}>
-                                go to cart
+                              <button
+                                className="addtocart_dev"
+                                onClick={() => handleClick(item)}
+                              >
+                                Add to cart
                               </button>
                               <span className="love_dev">
                                 <i class="fa-regular fa-heart"></i>
@@ -134,7 +140,7 @@ function Accounting() {
                               ₹{item.prevprice}.00
                             </span>
                           </span>
-                          <span>Best Saaller</span>
+                          <span>Best Seller</span>
                         </div>
 
                         <div className="hover_container_dev">
@@ -149,8 +155,11 @@ function Accounting() {
                             <p className="subtitle_dev">✅{item.predata}</p>
                             <p className="subtitle_dev">✅{item.pre}</p>
                             <div className="addbtn_dev">
-                              <button className="addtocart_dev"  onClick={() => handleClick(item)}>
-                                go to cart
+                              <button
+                                className="addtocart_dev"
+                                onClick={() => handleClick(item)}
+                              >
+                                Add to cart
                               </button>
                               <span className="love_dev">
                                 <i class="fa-regular fa-heart"></i>
@@ -188,7 +197,7 @@ function Accounting() {
                               ₹{item.prevprice}.00
                             </span>
                           </span>
-                          <span>Best Saaller</span>
+                          <span>Best Seller</span>
                         </div>
 
                         <div className="hover_container_right_two_dev">
@@ -203,8 +212,11 @@ function Accounting() {
                             <p className="subtitle_dev">✅{item.predata}</p>
                             <p className="subtitle_dev">✅{item.pre}</p>
                             <div className="addbtn_dev">
-                              <button className="addtocart_dev"  onClick={() => handleClick(item)}>
-                                go to cart
+                              <button
+                                className="addtocart_dev"
+                                onClick={() => handleClick(item)}
+                              >
+                                Add to cart
                               </button>
                               <span className="love_dev">
                                 <i class="fa-regular fa-heart"></i>
@@ -242,7 +254,7 @@ function Accounting() {
                               ₹{item.prevprice}.00
                             </span>
                           </span>
-                          <span>Best Saaller</span>
+                          <span>Best Seller</span>
                         </div>
 
                         <div className="hover_container_right_dev">
@@ -257,8 +269,11 @@ function Accounting() {
                             <p className="subtitle_dev">✅{item.predata}</p>
                             <p className="subtitle_dev">✅{item.pre}</p>
                             <div className="addbtn_dev">
-                              <button className="addtocart_dev"  onClick={() => handleClick(item)}>
-                                go to cart
+                              <button
+                                className="addtocart_dev"
+                                onClick={() => handleClick(item)}
+                              >
+                                Add to cart
                               </button>
                               <span className="love_dev">
                                 <i class="fa-regular fa-heart"></i>
@@ -526,7 +541,7 @@ function Accounting() {
                             ₹{item.prevprice}.00
                           </span>
                         </span>
-                        <span>Best Saaller</span>
+                        <span>Best Seller</span>
                       </div>
 
                       <div className="hover_container_column">
@@ -542,8 +557,11 @@ function Accounting() {
                             <p className="subtitle">✅{item.predata}</p>
                             <p className="subtitle">✅{item.pre}</p>
                             <div className="addbtn">
-                              <button className="addtocart_dev_column"  onClick={() => handleClick(item)}>
-                                go to cart
+                              <button
+                                className="addtocart_dev_column"
+                                onClick={() => handleClick(item)}
+                              >
+                                Add to cart
                               </button>
                               <span className="love">
                                 <i class="fa-regular fa-heart"></i>
@@ -613,7 +631,7 @@ function Accounting() {
                         <span>{item.name}</span>
                         <p>{item.rating}</p>
 
-                        <span>Best Saaller</span>
+                        <span>Best Seller</span>
                       </div>
 
                       <div className="hover_container_column">
@@ -629,8 +647,11 @@ function Accounting() {
                             <p className="subtitle">✅{item.predata}</p>
                             <p className="subtitle">✅{item.pre}</p>
                             <div className="addbtn">
-                              <button className="addtocart_dev_column"  onClick={() => handleClick(item)}>
-                                go to cart
+                              <button
+                                className="addtocart_dev_column"
+                                onClick={() => handleClick(item)}
+                              >
+                                Add to cart
                               </button>
                               <span className="love">
                                 <i class="fa-regular fa-heart"></i>

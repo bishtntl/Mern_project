@@ -25,10 +25,15 @@ function LearCart() {
         </div>
       ) : Learn.length === 0 ? (
         <>
-          <div className="dataempty">
+          <div  className="dataempty">
             {" "}
-            <img src="https://codehap.com/images/empty_cart.jpeg"  alt="Not Found"/>
-            <img src="http://www.carezips.com/images/empty_cart.png"  alt="Not Found"/>
+            {/* <img src="https://codehap.com/images/empty_cart.jpeg"  alt="Not Found"/>
+            <img src="http://www.carezips.com/images/empty_cart.png"  alt="Not Found"/> */}
+            <img
+             
+              src="https://assets-v2.lottiefiles.com/a/7b264970-1167-11ee-813e-fb3408905ffd/cBuAtbkfQC.gif"
+              alt="Not Found"
+            />
           </div>
         </>
       ) : (
