@@ -26,9 +26,9 @@ const BusinessRoute = () => {
           {" "}
           <NavLink to="/business/Oprations"> Oprations</NavLink>
         </span>
-        <span>
+        {/* <span>
           <NavLink to="/business/Human/Resources"> Human Resources</NavLink>
-        </span>
+        </span> */}
       </div>
     </>
   );
